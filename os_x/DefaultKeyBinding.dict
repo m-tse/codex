@@ -1,0 +1,16 @@
+/* mkdir ~/Library/KeyBindings */
+/* cp ./DefaultKeyBinding.dict ~/Library/KeyBindings/ */
+/* gets rid of dumb OS X special characters used with option key*/
+{
+    "~f"        = "moveWordForward:";           /* M-f */
+    "~b"        = "moveWordBackward:";          /* M-b */
+    "~<"        = "moveToBeginningOfDocument:"; /* M-< */
+    "~>"        = "moveToEndOfDocument:";       /* M-> */
+    "~v"        = "pageUp:";                    /* M-v */
+    "^v"        = "pageDown:";                  /* C-v */
+    "~d"        = "deleteWordForward:";         /* M-d */
+    "~h"        = "deleteWordBackward:";        /* M-C-h */
+    "~\010"     = "deleteWordBackward:";        /* M-backspace */
+    "~\177"     = "deleteWordBackward:";        /* M-delete */
+    "~\UF728"   = "deleteWordForward:";         /* delete */
+}

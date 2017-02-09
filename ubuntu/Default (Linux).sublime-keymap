@@ -1,0 +1,80 @@
+[
+  { "keys": ["alt+a"], "command": "select_all"},
+  { "keys": ["alt+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+  { "keys": ["alt+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+  { "keys": ["alt+x"], "command": "cut" },
+  { "keys": ["alt+c"], "command": "copy" },
+  { "keys": ["alt+v"], "command": "paste" },
+  { "keys": ["alt+z"], "command": "undo" },
+  { "keys": ["alt+y"], "command": "redo_or_repeat" },
+  
+
+  { "keys": ["alt+shift+z"], "command": "redo" },
+  { "keys": ["alt+y"], "command": "redeo_or_repeat" },
+  { "keys": ["alt+shift+v"], "command": "paste_and_indent" },
+
+  { "keys": ["alt+s"], "command": "save" },
+  { "keys": ["alt+w"], "command": "close" },
+  { "keys": ["alt+q"], "command": "exit" },
+  { "keys": ["alt+n"], "command": "new_file" },
+  { "keys": ["alt+d"], "command": "find_under_expand" },
+  { "keys": ["alt+l"], "command": "expand_selection", "args": {"to": "line"} },
+
+
+  { "keys": ["ctrl+d"], "command": "right_delete" },
+  { "keys": ["ctrl+h"], "command": "left_delete" },
+  { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false } },
+
+
+  { "keys": ["ctrl+b"], "command": "move", "args": {"by": "characters", "forward": false} },
+  { "keys": ["ctrl+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+  { "keys": ["ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false} },
+  { "keys": ["ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true} },
+  { "keys": ["shift+ctrl+b"], "command": "move", "args": {"by": "characters", "forward": false, "extend": true} },
+  { "keys": ["shift+ctrl+f"], "command": "move", "args": {"by": "characters", "forward": true, "extend": true} },
+  { "keys": ["shift+ctrl+p"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+  { "keys": ["shift+ctrl+n"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+  { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+  { "keys": ["shift+ctrl+a"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+  { "keys": ["ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+  { "keys": ["shift+ctrl+e"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+
+  { "keys": ["super+b"], "command": "move", "args": {"by": "subwords", "forward": false} },
+  { "keys": ["super+f"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+  { "keys": ["super+shift+b"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+  { "keys": ["super+shift+f"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+
+  { "keys": ["insert"], "command": "none" },
+
+  { "keys": ["tab"], "command": "indent", "context":
+    [
+      { "key": "auto_complete_visible", "operator": "equal", "operand": false },
+    ]
+  },
+  { "keys": ["tab"], "command": "insert", "args": {"characters": "\t"}, "context":
+    [
+      { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "preceding_text", "operator": "regex_match", "operand": "^$", "match_all": true },
+      { "key": "following_text", "operator": "regex_match", "operand": "^$", "match_all": true }
+    ]
+  },
+
+  { "keys": ["ctrl+alt+up"], "command": "swap_line_up" },
+  { "keys": ["ctrl+alt+down"], "command": "swap_line_down" },
+  { "keys": ["alt+shift+d"], "command": "duplicate_line" },
+
+  { "keys": ["alt+/"], "command": "toggle_comment", "args": { "block": false } },
+  { "keys": ["alt+shift+/"], "command": "toggle_comment", "args": { "block": true } },
+
+  { "keys": ["alt+p"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+  { "keys": ["alt+shift+p"], "command": "show_overlay", "args": {"overlay": "command_palette"} },
+
+  { "keys": ["ctrl+k"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete to Hard EOL.sublime-macro"} },
+  { "keys": ["ctrl+a"], "command": "move_to", "args": {"to": "hardbol", "extend": false} },
+  { "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "hardbol", "extend": true} },
+
+  { "keys": ["alt+g"], "command": "goto_definition" },
+  { "keys": ["alt+shift+w"], "command": "close_other_tabs"},
+  { "keys": ["alt+shift+q"], "command": "close_other_windows"},
+]
