@@ -6,7 +6,7 @@
             "<shift>", 
             "<super>"
         ], 
-        "enabled": true
+        "enabled": false
     }, 
     "settings": {
         "showTrayIcon": false, 
@@ -19,8 +19,8 @@
         "menuTakesFocus": false, 
         "interfaceType": "XRecord", 
         "windowDefaultSize": [
-            1281, 
-            722
+            1276, 
+            452
         ], 
         "showToolbar": true, 
         "serviceRunning": true, 
@@ -30,7 +30,7 @@
             100
         ], 
         "workAroundApps": ".*VirtualBox.*|krdc.Krdc", 
-        "hPanePosition": 323, 
+        "hPanePosition": 322, 
         "isFirstRun": true
     }, 
     "userCodeDir": null, 
@@ -40,6 +40,6 @@
         "modifiers": [
             "<super>"
         ], 
-        "enabled": true
+        "enabled": false
     }
 }
