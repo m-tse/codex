@@ -1,5 +1,5 @@
 {
-    "usageCount": 0, 
+    "usageCount": 37, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+f", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": null, 
+        "regex": "!terminator", 
         "isRecursive": false
     }, 
     "type": "phrase", 

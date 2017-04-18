@@ -1,5 +1,5 @@
 {
-    "usageCount": 0, 
+    "usageCount": 5, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+p", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": null, 
+        "regex": "!terminator", 
         "isRecursive": false
     }, 
     "type": "phrase", 
