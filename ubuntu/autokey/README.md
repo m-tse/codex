@@ -1,1 +1,1 @@
-put phrases in ~/config/autokey/data/My Phrases
+# link autokey_phrases to ~/.config/autokey/data/My Phrases
