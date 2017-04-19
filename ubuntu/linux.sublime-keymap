@@ -75,6 +75,18 @@
   { "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "hardbol", "extend": true} },
 
   { "keys": ["alt+g"], "command": "goto_definition" },
-  { "keys": ["alt+shift+w"], "command": "close_other_tabs"},
+  { "keys": ["alt+shift+w"], "command": "close_all"},
   { "keys": ["alt+shift+q"], "command": "close_other_windows"},
+  {
+    "keys": ["alt+shift+1"],
+    "command": "set_layout",
+    "args":
+    {
+      "cols": [0.0, 1.0],
+      "rows": [0.0, 1.0],
+      "cells": [[0, 0, 1, 1]]
+    }
+  },
+  { "keys": ["alt+t"], "command": "move_to_neighboring_group"},
+  { "keys": ["alt+shift+s"], "command": "toggle_side_bar"},
 ]
