@@ -126,7 +126,7 @@ bindsym $sup+x move workspace to output right
 exec xset r rate 220 36
 
 # Autokey
-exec --no-startup-id autokey-gtk
+exec_always --no-startup-id autokey-smart
 
 # reload the configuration file
 bindsym $sup+Shift+c reload
