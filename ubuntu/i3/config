@@ -202,4 +202,5 @@ client.unfocused        #333333 #222222 #888888 #292d2e #222222
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
-bindsym --release $sup+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png 
+bindsym --release $sup+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
+
