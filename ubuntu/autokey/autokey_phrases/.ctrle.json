@@ -1,5 +1,5 @@
 {
-    "usageCount": 4, 
+    "usageCount": 21, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+e", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "!terminator", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 

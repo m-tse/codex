@@ -1,5 +1,5 @@
 {
-    "usageCount": 6, 
+    "usageCount": 20, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+k", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "!terminator", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 

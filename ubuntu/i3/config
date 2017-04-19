@@ -126,7 +126,7 @@ bindsym $sup+x move workspace to output right
 exec xset r rate 220 36
 
 # Autokey
-exec autokey-gtk
+exec_always autokey-gtk
 
 # reload the configuration file
 bindsym $sup+Shift+c reload
@@ -181,7 +181,7 @@ bar {
 #
 # Please remove the following exec line:
 #######################################################################
-exec i3-config-wizard
+#exec i3-config-wizard
 
 # Window Assignment
 workspace 1 output DVI-I-1
