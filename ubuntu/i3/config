@@ -137,7 +137,7 @@ bindsym $alt+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $sup+shift+s exec "i3lock -c 000000"
 
 # Key repeat speed
-exec xset r rate 250 90
+exec xset r rate 250 40
 
 exec_always --no-startup-id autokey-smart
 
