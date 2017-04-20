@@ -6,11 +6,9 @@
   { "keys": ["alt+c"], "command": "copy" },
   { "keys": ["alt+v"], "command": "paste" },
   { "keys": ["alt+z"], "command": "undo" },
-  { "keys": ["alt+y"], "command": "redo_or_repeat" },
-  
 
   { "keys": ["alt+shift+z"], "command": "redo" },
-  { "keys": ["alt+y"], "command": "redeo_or_repeat" },
+  { "keys": ["alt+y"], "command": "redo_or_repeat" },
   { "keys": ["alt+shift+v"], "command": "paste_and_indent" },
 
   { "keys": ["alt+s"], "command": "save" },
@@ -24,7 +22,6 @@
   { "keys": ["ctrl+d"], "command": "right_delete" },
   { "keys": ["ctrl+h"], "command": "left_delete" },
   { "keys": ["alt+backspace"], "command": "delete_word", "args": { "forward": false } },
-
 
   { "keys": ["ctrl+b"], "command": "move", "args": {"by": "characters", "forward": false} },
   { "keys": ["ctrl+f"], "command": "move", "args": {"by": "characters", "forward": true} },
@@ -89,4 +86,7 @@
   },
   { "keys": ["alt+t"], "command": "move_to_neighboring_group"},
   { "keys": ["alt+shift+s"], "command": "toggle_side_bar"},
+  { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
+  { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} }
 ]
+
