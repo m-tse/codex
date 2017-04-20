@@ -9,32 +9,15 @@
 # layout, use the i3-config-wizard
 #
 
-set $mod Mod1
+set $alt Mod1
 set $sup Mod4
 
-# Font for window titles. Will also be used by the bar unless a different font
-# is used in the bar {} block below. ISO 10646 = Unicode
-#font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, if you need a lot of unicode glyphs or
-# right-to-left text rendering, you should instead use pango for rendering and
-# chose a FreeType font, such as:
-# font pango:DejaVu Sans Mono 10
-
-# use Mouse+Mod1 to drag floating windows to their wanted position
-# floating_modifier $sup
-
-# start a terminal
-bindsym $sup+Return exec i3-sensible-terminal
+font xft:Inconsolata Medium 10
 
 # kill focused window
 bindsym $sup+q kill
 # start dmenu (a program launcher)
 bindsym $sup+space exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-# bindsym Mod1+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 bindsym $sup+h focus left
@@ -61,39 +44,16 @@ bindsym $sup+Shift+Up move up
 bindsym $sup+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $sup+$mod+h split h
+bindsym $sup+$alt+h split h
 
 # split in vertical orientation
-bindsym $sup+$mod+v split v
-
-default_orientation horizontal
+bindsym $sup+$alt+v split v
 
 # enter fullscreen mode for the focused container
 bindsym $sup+f fullscreen
 
-# change container layout (stacked, tabbed, toggle split)
-# bindsym $sup+s layout stacking
-# bindsym $sup+w layout tabbed
-bindsym $sup+e layout toggle split
-
 # toggle tiling / floating
-bindsym $sup+$mod+f floating toggle
-
-# change focus between tiling / floating windows
-#bindsym $sup+space focus mode_toggle
-
-# focus the parent container
-#bindsym $sup+a focus parent
-
-# focus the child container
-#bindsym $sup+d focus child
-
-# move the currently focused window to the scratchpad
-#bindsym $sup+Shift+minus move scratchpad
-
-# Show the next scratchpad window or hide the focused scratchpad window.
-# If there are multiple scratchpad windows, this command cycles through them.
-bindsym $sup+minus scratchpad show
+bindsym $sup+$alt+f floating toggle
 
 # switch to workspace
 bindsym $sup+1 workspace 1
@@ -119,24 +79,7 @@ bindsym $sup+Shift+8 move container to workspace 8
 bindsym $sup+Shift+9 move container to workspace 9
 bindsym $sup+Shift+0 move container to workspace 10
 
-# toggle workspace screen
-bindsym $sup+x move workspace to output right
-
-# Key repeat speed
-exec xset r rate 220 36
-
-# Autokey
-exec_always --no-startup-id autokey-smart
-
-# reload the configuration file
-bindsym $sup+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $sup+Shift+r restart
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
-# lock/sleep
-bindsym $sup+shift+s exec "i3lock -c 000000"
+bindsym $sup+r mode "resize"
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -146,7 +89,7 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h           resize shrink width 10 px or 10 ppt
-        bindsym r           resize grow height 10 px or 10 ppt
+        bindsym k           resize grow height 10 px or 10 ppt
         bindsym j           resize shrink height 10 px or 10 ppt
         bindsym l           resize grow width 10 px or 10 ppt
 
@@ -161,8 +104,6 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $sup+r mode "resize"
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -172,16 +113,10 @@ bar {
         font xft:Inconsolata Medium 11
 }
 
-#######################################################################
-# automatically start i3-config-wizard to offer the user to create a
-# keysym-based config which used his favorite modifier (alt or windows)
-#
-# i3-config-wizard will not launch if there already is a config file
-# in ~/.i3/config.
-#
-# Please remove the following exec line:
-#######################################################################
-#exec i3-config-wizard
+# reload the configuration file
+bindsym $sup+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $sup+Shift+r restart
 
 # Window Assignment
 workspace 1 output DVI-I-1
@@ -191,16 +126,25 @@ workspace 4 output DP-1
 
 focus_follows_mouse no
 
-exec_always --no-startup-id numlockx on
-
-# Font
-font xft:Inconsolata Medium 10
-
 client.focused          #656565 #656565 #ffffff #656565 #285577
 client.focused_inactive #333333 #222222 #888888 #484e50 #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e #222222
 
+# exit i3 (logs you out of your X session)
+bindsym $alt+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# lock/sleep
+bindsym $sup+shift+s exec "i3lock -c 000000"
+
+# Key repeat speed
+exec xset r rate 250 90
+
+exec_always --no-startup-id autokey-smart
+
+exec_always --no-startup-id numlockx on
+
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
+# Screenshot
 bindsym --release $sup+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
 
