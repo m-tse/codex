@@ -53,7 +53,7 @@ bindsym $sup+v split v
 bindsym $sup+f fullscreen
 
 # toggle tiling / floating
-bindsym $sup+$alt+f floating toggle
+bindsym $sup+shift+f floating toggle
 
 # switch to workspace
 bindsym $sup+1 workspace 1
