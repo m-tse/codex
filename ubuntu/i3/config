@@ -93,8 +93,8 @@ mode "resize" {
         bindsym j           resize shrink height 10 px or 10 ppt
         bindsym l           resize grow width 10 px or 10 ppt
 
-        bindsym plus        resize grow width 10 px or 10 ppt
-        bindsym minus       resize shrink width 10 px or 10 ppt
+        bindsym plus        resize grow width 5 px or 5 ppt
+        bindsym minus       resize shrink width 5 px or 5 ppt
 
         # same bindings, but
         bindsym Left        resize shrink width 10 px or 10 ppt
