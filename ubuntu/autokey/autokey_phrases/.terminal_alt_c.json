@@ -1,8 +1,8 @@
 {
-    "usageCount": 145, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "alt_c", 
+    "description": "terminal_alt_c", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "gnome-terminal.Gnome-terminal", 
         "isRecursive": false
     }, 
     "type": "phrase", 
