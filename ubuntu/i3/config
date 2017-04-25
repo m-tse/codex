@@ -79,6 +79,9 @@ bindsym $sup+Shift+8 move container to workspace 8
 bindsym $sup+Shift+9 move container to workspace 9
 bindsym $sup+Shift+0 move container to workspace 10
 
+bindsym $sup+plus        resize grow width 5 px or 5 ppt
+bindsym $sup+minus       resize shrink width 5 px or 5 ppt
+
 bindsym $sup+r mode "resize"
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -92,9 +95,6 @@ mode "resize" {
         bindsym k           resize grow height 10 px or 10 ppt
         bindsym j           resize shrink height 10 px or 10 ppt
         bindsym l           resize grow width 10 px or 10 ppt
-
-        bindsym plus        resize grow width 5 px or 5 ppt
-        bindsym minus       resize shrink width 5 px or 5 ppt
 
         # same bindings, but
         bindsym Left        resize shrink width 10 px or 10 ppt
