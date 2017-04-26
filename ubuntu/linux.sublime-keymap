@@ -16,6 +16,7 @@
   { "keys": ["alt+q"], "command": "exit" },
   { "keys": ["alt+n"], "command": "new_file" },
   { "keys": ["alt+d"], "command": "find_under_expand" },
+  { "keys": ["ctrl+alt+shift+f"], "command": "find_all_under" },
   { "keys": ["alt+l"], "command": "expand_selection", "args": {"to": "line"} },
 
 
@@ -89,4 +90,3 @@
   { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
   { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} }
 ]
-
