@@ -16,7 +16,7 @@
   { "keys": ["alt+q"], "command": "exit" },
   { "keys": ["alt+n"], "command": "new_file" },
   { "keys": ["alt+d"], "command": "find_under_expand" },
-  { "keys": ["ctrl+alt+shift+f"], "command": "find_all_under" },
+  { "keys": ["ctrl+alt+shift+d"], "command": "find_all_under" },
   { "keys": ["alt+l"], "command": "expand_selection", "args": {"to": "line"} },
 
 
