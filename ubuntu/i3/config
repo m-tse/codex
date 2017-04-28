@@ -82,6 +82,9 @@ bindsym $sup+Shift+0 move container to workspace 10
 bindsym $sup+plus        resize grow width 100 px or 10 ppt
 bindsym $sup+minus       resize shrink width 100 px or 10 ppt
 
+bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
+bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
+
 bindsym $sup+r mode "resize"
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -135,7 +138,7 @@ client.focused_inactive #333333 #222222 #888888 #484e50 #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e #222222
 
 # exit i3 (logs you out of your X session)
-bindsym $alt+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock/sleep
 bindsym $sup+shift+s exec "i3lock -c 000000"
