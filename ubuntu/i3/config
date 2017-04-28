@@ -131,6 +131,11 @@ workspace 2 output DVI-I-1
 workspace 3 output DP-1
 workspace 4 output DP-1
 
+# Application Assignment
+assign [class="jetbrains-idea-ce"] 2
+assign [class="sublime_text"] 1
+assign [class="HipChat"] 4
+
 focus_follows_mouse no
 
 client.focused          #656565 #656565 #ffffff #656565 #285577
