@@ -135,6 +135,7 @@ workspace 4 output DP-1
 assign [class="jetbrains-idea-ce"] 2
 assign [class="sublime_text"] 1
 assign [class="HipChat"] 4
+assign [class="Terminator"] 3
 
 focus_follows_mouse no
 
