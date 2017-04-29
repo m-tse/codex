@@ -192,12 +192,12 @@
   <action id="RecentFiles" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
-    <keyboard-shortcut first-keystroke="alt r" />
+    <keyboard-shortcut first-keystroke="shift alt r" />
   </action>
   <action id="RerunTests" />
   <action id="Run">
     <keyboard-shortcut first-keystroke="shift f10" />
-    <keyboard-shortcut first-keystroke="shift alt r" />
+    <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="SaveAll">
     <keyboard-shortcut first-keystroke="ctrl s" />
