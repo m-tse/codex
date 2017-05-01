@@ -160,4 +160,3 @@ exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
 # Screenshot
 bindsym --release $sup+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
-
