@@ -82,6 +82,9 @@ bindsym $sup+Shift+0 move container to workspace 10
 bindsym $sup+plus        resize grow width 100 px or 10 ppt
 bindsym $sup+minus       resize shrink width 100 px or 10 ppt
 
+bindsym $sup+$alt+plus   resize grow height 50 px or 5 ppt
+bindsym $sup+$alt+minus  resize shrink height 50 px or 5 ppt
+
 bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
 bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
 
