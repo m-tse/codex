@@ -18,7 +18,7 @@
 				<key>background</key>
 				<string>#000000</string>
 				<key>caret</key>
-				<string>#FFFFFFA6</string>
+				<string>#E30000</string>
 				<key>foreground</key>
 				<string>#E8E8E8</string>
 				<key>invisibles</key>
@@ -52,7 +52,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#3363FF</string>
+				<string>#FF2424</string>
 			</dict>
 		</dict>
 		<dict>
@@ -63,7 +63,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#81FF47</string>
+				<string>#95FF91</string>
 			</dict>
 		</dict>
 		<dict>
@@ -76,7 +76,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#BD94FF</string>
+				<string>#BC8FFF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -102,7 +102,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FF5D30</string>
+				<string>#FF8800</string>
 			</dict>
 		</dict>
 		<dict>
@@ -128,33 +128,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#6197FA</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid – Deprecated</string>
-			<key>scope</key>
-			<string>invalid.deprecated</string>
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
-				<key>foreground</key>
-				<string>#AB2A1D</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Invalid – Illegal</string>
-			<key>scope</key>
-			<string>invalid.illegal</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#9D1E15</string>
-				<key>foreground</key>
-				<string>#F8F8F8</string>
+				<string>#7FA1FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -200,6 +174,6 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>semanticClass</key>
-	<string>theme.dark.blackboard_black</string>
+	<string>theme.dark.inoffensive</string>
 </dict>
 </plist>
