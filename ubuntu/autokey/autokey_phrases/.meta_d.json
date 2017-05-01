@@ -1,5 +1,5 @@
 {
-    "usageCount": 1, 
+    "usageCount": 3, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "meta_d", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "terminator.Terminator", 
+        "regex": null, 
         "isRecursive": false
     }, 
     "type": "phrase", 

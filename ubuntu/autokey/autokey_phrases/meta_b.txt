@@ -1,1 +1,1 @@
-<alt>+b
+<ctrl>+<left>

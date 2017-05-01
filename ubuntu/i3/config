@@ -50,10 +50,10 @@ bindsym $sup+$alt+h split h
 bindsym $sup+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $sup+f fullscreen
+bindsym $sup+Shift+f fullscreen
 
 # toggle tiling / floating
-bindsym $sup+shift+f floating toggle
+#bindsym $sup+shift+f floating toggle
 
 # switch to workspace
 bindsym $sup+1 workspace 1
