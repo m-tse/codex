@@ -7,9 +7,9 @@
 <plist version="1.0">
 <dict>
 	<key>author</key>
-	<string>Domenico Carbotta</string>
+	<string>Matthew Tse</string>
 	<key>name</key>
-	<string>Blackboard Black</string>
+	<string>inoffensive</string>
 	<key>settings</key>
 	<array>
 		<dict>
@@ -52,7 +52,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#33ADFF</string>
+				<string>#3363FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -62,10 +62,8 @@
 			<string>entity</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#A8FF7F</string>
+				<string>#81FF47</string>
 			</dict>
 		</dict>
 		<dict>
@@ -78,7 +76,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#AAA6FF</string>
+				<string>#BD94FF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -88,10 +86,10 @@
 			<string>storage</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#46C2BE</string>
+				<string>#46C297</string>
+				<key>fontStyle</key>
+				<string> italic</string>
 			</dict>
 		</dict>
 		<dict>
@@ -130,7 +128,7 @@
 				<key>fontStyle</key>
 				<string></string>
 				<key>foreground</key>
-				<string>#FFF78A</string>
+				<string>#6197FA</string>
 			</dict>
 		</dict>
 		<dict>
@@ -166,10 +164,8 @@
 			<string>entity.other.inherited-class</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string>italic</string>
 				<key>foreground</key>
-				<string>#85FFD4</string>
+				<string>#46C2BE</string>
 			</dict>
 		</dict>
 		<dict>
