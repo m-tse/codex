@@ -11,10 +11,18 @@
   { "keys": ["tab"], "command": "indent", "context":
     [
       { "key": "auto_complete_visible", "operator": "equal", "operand": false },
-      { "key": "setting.auto_complete_commit_on_tab" }
+    ]
+  },
+  { "keys": ["tab"], "command": "insert", "args": {"characters": "\t"}, "context":
+    [
+      { "key": "setting.auto_indent", "operator": "equal", "operand": true },
+      { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+      { "key": "preceding_text", "operator": "regex_match", "operand": "^$", "match_all": true },
+      { "key": "following_text", "operator": "regex_match", "operand": "^$", "match_all": true }
     ]
   },
   { "keys": ["super+k", "super+t"], "command": "title_case" },
   { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
-  { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} }
+  { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"github"} },
+  { "keys": ["super+shift+s"], "command": "toggle_side_bar" }
 ]
