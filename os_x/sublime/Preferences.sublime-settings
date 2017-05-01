@@ -1,52 +1,51 @@
 {
-  "auto_complete_commit_on_tab": true,
-  "color_scheme": "Packages/Theme - Seti Monokai/scheme/Seti Monokai.tmTheme",
-  "drag_text": false,
-  "draw_white_space": "all",
-  "file_exclude_patterns":
-  [
-    "*.pyc",
-    "*.pyo",
-    "*.exe",
-    "*.dll",
-    "*.obj",
-    "*.o",
-    "*.a",
-    "*.lib",
-    "*.so",
-    "*.dylib",
-    "*.ncb",
-    "*.sdf",
-    "*.suo",
-    "*.pdb",
-    "*.idb",
-    ".DS_Store",
-    "*.pdf",
-    "*.class",
-    ".hgignore",
-    "*.sublime-workspace"
-  ],
-  "find_selected_text": true,
-  "font_face": "Monaco",
-  "font_size": 12.0,
-  "highlight_line": true,
-  "highlight_modified_tabs": true,
-  "hot_exit": false,
-  "ignored_packages":
-  [
-    "Vintage"
-  ],
-  "remember_open_files": false,
-  "rulers":
-  [
-    80,
-    120
-  ],
-  "save_on_focus_lost": false,
-  "scroll_past_end": true,
-  "shift_tab_unindent": true,
-  "tab_size": 2,
-  "theme": "Seti_orig.sublime-theme",
-  "translate_tabs_to_spaces": true
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/Colorsublime-themes/inoffensive.tmTheme",
+	"drag_text": false,
+	"draw_white_space": "all",
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.pdf",
+		"*.class",
+		".hgignore",
+		"*.sublime-workspace"
+	],
+	"find_selected_text": true,
+	"font_face": "Monaco",
+	"font_size": 12.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"remember_open_files": false,
+	"rulers":
+	[
+		80,
+		120
+	],
+	"save_on_focus_lost": false,
+	"scroll_past_end": true,
+	"shift_tab_unindent": true,
+	"tab_size": 2,
+	"theme": "Seti_orig.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
-
