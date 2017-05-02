@@ -88,5 +88,7 @@
   { "keys": ["alt+t"], "command": "move_to_neighboring_group"},
   { "keys": ["alt+shift+s"], "command": "toggle_side_bar"},
   { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
-  { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} }
+  { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
+  { "keys": ["alt+left"], "command": "jump_back"},
+  { "keys": ["alt+right"], "command": "jump_forward"},
 ]
