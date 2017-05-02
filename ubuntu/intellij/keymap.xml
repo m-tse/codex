@@ -36,6 +36,11 @@
     <keyboard-shortcut first-keystroke="shift alt 3" />
     <keyboard-shortcut first-keystroke="alt f" />
   </action>
+  <action id="Back">
+    <keyboard-shortcut first-keystroke="shift alt left" />
+    <mouse-shortcut keystroke="button4" />
+    <keyboard-shortcut first-keystroke="alt left" />
+  </action>
   <action id="CheckinProject" />
   <action id="CloseAllEditorsButActive">
     <keyboard-shortcut first-keystroke="shift alt w" />
@@ -153,6 +158,11 @@
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
+  <action id="Forward">
+    <keyboard-shortcut first-keystroke="shift alt right" />
+    <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="alt right" />
+  </action>
   <action id="GotoAction" />
   <action id="GotoChangedFile" />
   <action id="GotoClass" />
@@ -184,10 +194,12 @@
   <action id="MoveLineUp">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
+  <action id="NextTab" />
   <action id="OpenEditorInOppositeTabGroup">
     <keyboard-shortcut first-keystroke="alt o" />
   </action>
   <action id="ParameterInfo" />
+  <action id="PreviousTab" />
   <action id="RecentChangedFiles" />
   <action id="RecentFiles" />
   <action id="RenameElement">
