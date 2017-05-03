@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string, meta.verbatim</string>
+			<string>string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -133,17 +133,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Superclass</string>
-			<key>scope</key>
-			<string>entity.other.inherited-class</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#46C2BE</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>String interpolation</string>
 			<key>scope</key>
 			<string>string constant.other.placeholder</string>
@@ -170,24 +159,13 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown Titles</string>
+			<string>Markdown Headings</string>
 			<key>scope</key>
-			<string>entity.name.section.markdown</string>
+			<string>markup.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#FF9F29</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markdown Title Hash</string>
-			<key>scope</key>
-			<string>punctuation.definition.heading.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#FF9F29</string>
+				<string>#00D400</string>
 			</dict>
 		</dict>
 		<dict>
@@ -198,47 +176,14 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#ffffff</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markdown bold stars</string>
-			<key>scope</key>
-			<string>punctuation.definition.bold.markdown, punctuation.definition.italic.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#eeeeee</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markdown link title braces</string>
-			<key>scope</key>
-			<string>punctuation.definition.string.begin.markdown, punctuation.definition.string.end.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#eeeeee</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Markdown link braces</string>
-			<key>scope</key>
-			<string>punctuation.definition.metadata.markdown</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#2E62FF</string>
+				<string>#FF9F29</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Markdown link</string>
 			<key>scope</key>
-			<string>markup.underline.link.markdown, markup.underline.link.image.markdown, meta.image.inline.markdown</string>
+			<string>markup.underline.link</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -251,11 +196,44 @@
 			<key>name</key>
 			<string>Markdown bold&#x2f;italic</string>
 			<key>scope</key>
-			<string>markup.bold.markdown, markup.italic.markdown</string>
+			<string>markup.bold, markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#FF3B3B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF3B3B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter inserted</string>
+			<key>scope</key>
+			<string>markup.inserted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00D400</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter changed</string>
+			<key>scope</key>
+			<string>markup.changed.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF9F29</string>
 			</dict>
 		</dict>
 	</array>
