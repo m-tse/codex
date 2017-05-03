@@ -176,11 +176,13 @@
     <mouse-shortcut keystroke="control alt button1" />
     <keyboard-shortcut first-keystroke="alt i" />
   </action>
+  <action id="GotoTest" />
   <action id="GotoTypeDeclaration">
     <mouse-shortcut keystroke="shift control button1" />
   </action>
   <action id="GuiDesigner.Duplicate" />
   <action id="HippieCompletion" />
+  <action id="Images.ShowThumbnails" />
   <action id="IntroduceLambdaParameter" />
   <action id="IpnbRunAllCellsAction">
     <keyboard-shortcut first-keystroke="shift f10" />
@@ -204,13 +206,18 @@
   <action id="RecentFiles" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
-    <keyboard-shortcut first-keystroke="shift alt r" />
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
   </action>
   <action id="RerunTests" />
   <action id="Run">
     <keyboard-shortcut first-keystroke="shift f10" />
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="shift ctrl f10" />
+    <keyboard-shortcut first-keystroke="shift alt r" />
+  </action>
+  <action id="RunTargetAction" />
   <action id="SaveAll">
     <keyboard-shortcut first-keystroke="ctrl s" />
     <keyboard-shortcut first-keystroke="alt s" />
@@ -251,4 +258,6 @@
   <action id="hg4idea.QFold" />
   <action id="hg4idea.QGotoFromPatches" />
   <action id="tasks.close" />
+  <action id="tasks.switch" />
+  <action id="tasks.switch.toolbar" />
 </keymap>
