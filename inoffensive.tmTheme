@@ -96,7 +96,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string, meta.verbatim</string>
+			<string>string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -133,17 +133,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Superclass</string>
-			<key>scope</key>
-			<string>entity.other.inherited-class</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#46C2BE</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>String interpolation</string>
 			<key>scope</key>
 			<string>string constant.other.placeholder</string>
@@ -166,6 +155,85 @@
 				<string></string>
 				<key>foreground</key>
 				<string>#46C2BE</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Headings</string>
+			<key>scope</key>
+			<string>markup.heading</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00D400</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Raw</string>
+			<key>scope</key>
+			<string>markup.raw.inline.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF9F29</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown link</string>
+			<key>scope</key>
+			<string>markup.underline.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#7FA1FF</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown bold&#x2f;italic</string>
+			<key>scope</key>
+			<string>markup.bold, markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF3B3B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter deleted</string>
+			<key>scope</key>
+			<string>markup.deleted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF3B3B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter inserted</string>
+			<key>scope</key>
+			<string>markup.inserted.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00D400</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>GitGutter changed</string>
+			<key>scope</key>
+			<string>markup.changed.git_gutter</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#FF9F29</string>
 			</dict>
 		</dict>
 	</array>
