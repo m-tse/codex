@@ -165,7 +165,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00D400</string>
+				<string>#00B800</string>
 			</dict>
 		</dict>
 		<dict>
@@ -181,19 +181,6 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Markdown Link</string>
-			<key>scope</key>
-			<string>markup.underline.link</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#7FA1FF</string>
-				<key>fontStyle</key>
-				<string>italic</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Markdown Bold&#x2f;Italic</string>
 			<key>scope</key>
 			<string>markup.bold, markup.italic</string>
@@ -201,6 +188,30 @@
 			<dict>
 				<key>foreground</key>
 				<string>#FF3B3B</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Link URL</string>
+			<key>scope</key>
+			<string>markup.underline.link</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#5C85FF</string>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Markdown Link Text</string>
+			<key>scope</key>
+			<string>meta.link.inline.markdown string.other.link.title.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#99B3FF</string>
 			</dict>
 		</dict>
 		<dict>
