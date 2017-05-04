@@ -63,7 +63,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00B800</string>
+				<string>#27C265</string>
 			</dict>
 		</dict>
 		<dict>
@@ -87,7 +87,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#46C297</string>
+				<string>#5F4AFF</string>
 				<key>fontStyle</key>
 				<string> italic</string>
 			</dict>
@@ -151,10 +151,8 @@
 			<string>text.tex.latex support.function</string>
 			<key>settings</key>
 			<dict>
-				<key>fontStyle</key>
-				<string></string>
 				<key>foreground</key>
-				<string>#46C2BE</string>
+				<string>#27C265</string>
 			</dict>
 		</dict>
 		<dict>
@@ -165,7 +163,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00B800</string>
+				<string>#27C265</string>
 			</dict>
 		</dict>
 		<dict>
@@ -233,7 +231,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#00B800</string>
+				<string>#27C265</string>
 			</dict>
 		</dict>
 		<dict>
