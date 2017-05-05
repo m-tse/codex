@@ -144,16 +144,6 @@
 				<string>#FF3B3B</string>
 			</dict>
 		</dict>
-		<dict>
-			<key>name</key>
-			<string>Latex Support</string>
-			<key>scope</key>
-			<string>text.tex.latex support.function</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#27C265</string>
-			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
