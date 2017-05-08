@@ -87,6 +87,8 @@ bindsym $sup+$alt+minus  resize shrink height 50 px or 5 ppt
 
 bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
 bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
+bindsym $sup+m exec amixer -D pulse sset Master mute
+bindsym $sup+Shift+m exec amixer -D pulse sset Master unmute
 
 bindsym $sup+r mode "resize"
 # resize window (you can also use the mouse for that)
