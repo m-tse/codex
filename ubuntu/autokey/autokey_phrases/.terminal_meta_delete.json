@@ -1,8 +1,8 @@
 {
-    "usageCount": 144, 
+    "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "meta_backspace", 
+    "description": "terminal_meta_delete", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,7 +12,7 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<backspace>", 
+        "hotKey": "<delete>", 
         "modifiers": [
             "<super>"
         ]
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "gnome-terminal.Gnome-terminal", 
         "isRecursive": false
     }, 
     "type": "phrase", 
