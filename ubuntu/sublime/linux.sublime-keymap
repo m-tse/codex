@@ -4,12 +4,12 @@
   { "keys": ["alt+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
   { "keys": ["alt+x"], "command": "cut" },
   { "keys": ["alt+c"], "command": "copy" },
-  { "keys": ["alt+v"], "command": "paste" },
+  { "keys": ["alt+v"], "command": "paste_and_indent" },
   { "keys": ["alt+z"], "command": "undo" },
 
   { "keys": ["alt+shift+z"], "command": "redo" },
   { "keys": ["alt+y"], "command": "redo_or_repeat" },
-  { "keys": ["alt+shift+v"], "command": "paste_and_indent" },
+  { "keys": ["alt+shift+v"], "command": "paste" },
 
   { "keys": ["alt+s"], "command": "save" },
   { "keys": ["alt+w"], "command": "close" },
@@ -41,6 +41,9 @@
   { "keys": ["super+f"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
   { "keys": ["super+shift+b"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
   { "keys": ["super+shift+f"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+  { "keys": ["super+backspace"], "command": "delete_word", "args": { "forward": false } },
+  { "keys": ["super+d"], "command": "delete_word", "args": { "forward": true } },
+  { "keys": ["super+delete"], "command": "delete_word", "args": { "forward": true } },
 
   { "keys": ["insert"], "command": "none" },
 
@@ -91,4 +94,5 @@
   { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
   { "keys": ["alt+left"], "command": "jump_back"},
   { "keys": ["alt+right"], "command": "jump_forward"},
+
 ]
