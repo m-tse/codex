@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "gnome-terminal.Gnome-terminal", 
+        "regex": "gnome-terminal.Gnome-terminal|gnome-terminal-server.Gnome-terminal", 
         "isRecursive": false
     }, 
     "type": "phrase", 
