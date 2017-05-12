@@ -152,8 +152,8 @@ client.unfocused        #333333 #222222 #888888 #292d2e #222222
 bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock/sleep
-bindsym $sup+s exec "i3lock -c 000000"
-exec_always xautolock -detectsleep -time 5 -locker "i3lock -c 000000"
+bindsym $sup+s exec "~/Development/codex/ubuntu/pixellate_lock.sh"
+exec_always xautolock -detectsleep -time 5 -locker "~/Development/codex/ubuntu/pixellate_lock.sh"
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
