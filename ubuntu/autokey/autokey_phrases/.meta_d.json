@@ -1,5 +1,5 @@
 {
-    "usageCount": 14, 
+    "usageCount": 17, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "meta_d", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|sublime_text.Sublime_text", 
         "isRecursive": false
     }, 
     "type": "phrase", 
