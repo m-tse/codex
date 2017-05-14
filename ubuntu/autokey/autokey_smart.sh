@@ -1,5 +1,6 @@
 #!/bin/bash
-# useful for i3, which reloads all the time
+
+# Useful for i3, which auto-reloads all the time
 
 ps aux | pgrep autokey-gtk
 
