@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # source this customized profile via `source ~/.profile` in the ~/.bash_profile
 export LSCOLORS="dxfxBxDxbxHxHxBxxghxhx"
 export CLICOLOR=1
@@ -5,3 +7,8 @@ alias ls='ls -aFh'
 export PS1='\[\e[0;31m\]\u\[\e[0m\]|\[\e[0;33m\]\W\[\e[0m\]$(__git_ps1) » '
 export EDITOR=vim
 export HISTTIMEFORMAT="%y/%m/%d %T "
+
+# bash_script_dir is how to get the script's directory in bash.
+function bash_script_dir {
+  printf 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"\n'
+}
