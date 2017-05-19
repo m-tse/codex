@@ -1,1 +1,1 @@
-sudo apt-get install git vim autokey-gtk numlockx
+sudo apt-get install git vim tree autokey-gtk numlockx
