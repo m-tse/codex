@@ -3,8 +3,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/Seti (SL).tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
-	"file_exclude_patterns":
-	[
+	"file_exclude_patterns": [
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
@@ -25,6 +24,13 @@
 		"*.class",
 		".hgignore",
 		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns": [
+		".svn",
+		".git",
+		".hg",
+		"CVS",
+		"vendor"
 	],
 	"find_selected_text": true,
 	"font_face": "Monaco",
