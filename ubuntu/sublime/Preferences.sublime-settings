@@ -1,9 +1,13 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/User/SublimeLinter/Seti (SL).tmTheme",
+	"color_scheme": "Packages/Ultraviolet/ultraviolet.tmTheme",
+	"caret_extra_width": 2,
+	"caret_extra_top": 4,
+	"caret_extra_bottom": 4,
 	"drag_text": false,
 	"draw_white_space": "all",
-	"file_exclude_patterns": [
+	"file_exclude_patterns":
+	[
 		"*.pyc",
 		"*.pyo",
 		"*.exe",
@@ -25,16 +29,16 @@
 		".hgignore",
 		"*.sublime-workspace"
 	],
-	"folder_exclude_patterns": [
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
 		".svn",
 		".git",
 		".hg",
 		"CVS",
 		"vendor"
 	],
-	"find_selected_text": true,
-	"font_face": "Monaco",
-	"font_size": 12.0,
+	"font_size": 11.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
@@ -42,6 +46,7 @@
 	[
 		"Vintage"
 	],
+	"indent_guide_options": ["draw_active"],
 	"remember_open_files": false,
 	"rulers":
 	[
@@ -51,8 +56,9 @@
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
 	"shift_tab_unindent": true,
-	"soda_classic_tabs": true,
+	"show_tab_close_buttons": false,
 	"tab_size": 2,
 	"theme": "Seti.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
+
