@@ -9,7 +9,7 @@ __prompt_command() {
   local GREY='\[\e[0;37m\]'
   local USER='\u'
   local BASENAME='\W'
-  PS1="${RED}${USER}${NORMAL_COLOR}|${YELLOW}${BASENAME}${GREY}$(__git_ps1)${NORMAL_COLOR} » "
+  PS1="${RED}${USER}${NORMAL_COLOR}|${YELLOW}${BASENAME}${GREY}$(__git_ps1)${NORMAL_COLOR} → "
 }
 
 export LSCOLORS="dxfxBxDxbxHxHxBxxghxhx"
