@@ -46,6 +46,7 @@
   { "keys": ["super+delete"], "command": "delete_word", "args": { "forward": true } },
 
   { "keys": ["insert"], "command": "none" },
+  { "keys": ["ctrl+["], "command": "exit_insert_mode"},
 
   { "keys": ["tab"], "command": "indent", "context":
     [
