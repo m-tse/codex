@@ -18,6 +18,7 @@
   { "keys": ["alt+d"], "command": "find_under_expand" },
   { "keys": ["ctrl+alt+shift+d"], "command": "find_all_under" },
   { "keys": ["alt+l"], "command": "expand_selection", "args": {"to": "line"} },
+  { "keys": ["alt+o"], "command": "clone_file" },
 
 
   { "keys": ["ctrl+d"], "command": "right_delete" },
