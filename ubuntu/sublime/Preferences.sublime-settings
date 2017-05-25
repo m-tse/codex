@@ -1,5 +1,6 @@
 {
 	"auto_complete_commit_on_tab": true,
+        "auto_complete": false,
 	"color_scheme": "Packages/Ultraviolet/ultraviolet.tmTheme",
 	"caret_extra_width": 2,
 	"caret_extra_top": 4,

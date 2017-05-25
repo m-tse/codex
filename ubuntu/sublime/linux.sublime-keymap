@@ -11,6 +11,8 @@
   { "keys": ["alt+y"], "command": "redo_or_repeat" },
   { "keys": ["alt+shift+v"], "command": "paste" },
 
+  { "keys": ["alt+o"], "command": "clone_file"},
+
   { "keys": ["alt+s"], "command": "save" },
   { "keys": ["alt+w"], "command": "close" },
   { "keys": ["alt+q"], "command": "exit" },
