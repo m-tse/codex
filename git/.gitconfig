@@ -16,9 +16,9 @@
 [color]
   ui = always
 [color "diff"]
-  meta = yellow bold
+  meta = yellow
   commit = green bold
-  frag = magenta bold
+  frag = blue bold
   old = red bold
   new = green bold
   whitespace = red reverse
