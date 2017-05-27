@@ -1,5 +1,5 @@
 {
-    "usageCount": 101, 
+    "usageCount": 103, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "alt_v", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk|crx_bikioccmkafdpakkkcpdbppfkghcmihk.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 
