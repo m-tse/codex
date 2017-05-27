@@ -16,6 +16,7 @@
   { "keys": ["alt+q"], "command": "exit" },
   { "keys": ["alt+n"], "command": "new_file" },
   { "keys": ["alt+d"], "command": "find_under_expand" },
+  { "keys": ["alt+k", "alt+d"], "command": "find_under_expand_skip" },
   { "keys": ["ctrl+alt+shift+d"], "command": "find_all_under" },
   { "keys": ["alt+l"], "command": "expand_selection", "args": {"to": "line"} },
   { "keys": ["alt+o"], "command": "clone_file" },
