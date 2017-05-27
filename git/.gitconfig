@@ -1,0 +1,30 @@
+# Example ~/.gitconfig.local
+# [user]
+#   name = Matthew Tse
+#   email = matt.s.tse@gmail.com
+
+[include]
+  path = ~/.gitconfig.local
+
+[alias]
+  glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+
+[push]
+  default = current
+
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+  ui = always
+[color "diff"]
+  meta = yellow
+  commit = green bold
+  frag = blue bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
