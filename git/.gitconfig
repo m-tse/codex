@@ -1,8 +1,10 @@
-# This is Git's per-user configuration file.
-[user]
-# Please adapt and uncomment the following lines:
-# name = Matthew Tse
-# email = mtse.google.com
+# Example ~/.gitconfig.local
+# [user]
+#   name = Matthew Tse
+#   email = matt.s.tse@gmail.com
+
+[include]
+  path = ~/.gitconfig.local
 
 [alias]
   glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
@@ -12,7 +14,6 @@
 
 [core]
   pager = diff-so-fancy | less --tabs=4 -RFX
-
 [color]
   ui = always
 [color "diff"]
