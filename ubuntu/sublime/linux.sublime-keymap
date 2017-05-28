@@ -78,7 +78,7 @@
   { "keys": ["ctrl+shift+a"], "command": "move_to", "args": {"to": "hardbol", "extend": true} },
 
   { "keys": ["alt+g"], "command": "goto_definition" },
-  { "keys": ["alt+shift+w"], "command": "close_all"},
+  { "keys": ["alt+shift+w"], "command": "close_others"},
   { "keys": ["alt+shift+q"], "command": "close_other_windows"},
   {
     "keys": ["alt+shift+1"],
@@ -97,6 +97,6 @@
   { "keys": ["alt+left"], "command": "jump_back"},
   { "keys": ["alt+right"], "command": "jump_forward"},
 
-  { "keys": ["alt+1"], "command": "focus_group", "args": { "group": 0 } },
-  { "keys": ["alt+2"], "command": "focus_group", "args": { "group": 1 } },
+  { "keys": ["alt+shift+1"], "command": "focus_group", "args": { "group": 0 } },
+  { "keys": ["alt+shift+2"], "command": "focus_group", "args": { "group": 1 } },
 ]
