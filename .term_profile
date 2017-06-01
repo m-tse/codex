@@ -26,3 +26,13 @@ function bash_script_dir {
 function datefromint () {
   date --date="@$1"
 }
+
+function rnum () {
+  head /dev/urandom | tr -dc 0-9 | head -c "$1" ; echo ''
+}
+function ralpha () {
+  head /dev/urandom | tr -dc a-z | head -c "$1" ; echo ''
+}
+function ran () {
+  head /dev/urandom | tr -dc a-z0-9 | head -c "$1" ; echo ''
+}
