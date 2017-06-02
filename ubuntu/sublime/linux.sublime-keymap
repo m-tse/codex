@@ -103,4 +103,6 @@
 
   { "keys": ["alt+shift+g", "g"], "command": "go_guru"},
   { "keys": ["alt+shift+g", "d"], "command": "go_guru", "args": {"mode": "describe"}},
+
+  { "keys": ["alt+shift+e"], "command": "error_enum"},
 ]
