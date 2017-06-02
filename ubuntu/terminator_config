@@ -1,4 +1,3 @@
-# ln -s ~/Development/codex/ubuntu/terminator_config ~/.config/terminator/config
 [global_config]
   title_hide_sizetext = True
   title_transmit_fg_color = "#d12400"
@@ -34,12 +33,13 @@
   [[default]]
     word_chars = "-A-Za-z0-9./?%&#:_"
     use_system_font = False
-    font = Inconsolata 12
+    font = Inconsolata Medium 12
     background_darkness = 0.86
     scrollback_lines = 10000
     background_image = None
     foreground_color = "#839496"
     scroll_on_output = False
+    icon_bell = False
     delete_binding = automatic
     copy_on_selection = True
     background_color = "#002b36"
