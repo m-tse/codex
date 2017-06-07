@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "gnome-terminal.Gnome-terminal|pantheon-terminal.Pantheon-terminal", 
+        "regex": "terminator.Terminator", 
         "isRecursive": false
     }, 
     "type": "phrase", 
