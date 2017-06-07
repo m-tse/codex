@@ -110,7 +110,6 @@
     <keyboard-shortcut first-keystroke="shift ctrl b" />
   </action>
   <action id="EditorLineEnd">
-    <keyboard-shortcut first-keystroke="end" />
     <keyboard-shortcut first-keystroke="ctrl e" />
   </action>
   <action id="EditorLineEndWithSelection">
@@ -118,7 +117,6 @@
     <keyboard-shortcut first-keystroke="shift ctrl e" />
   </action>
   <action id="EditorLineStart">
-    <keyboard-shortcut first-keystroke="home" />
     <keyboard-shortcut first-keystroke="ctrl a" />
   </action>
   <action id="EditorLineStartWithSelection">
@@ -135,6 +133,14 @@
   </action>
   <action id="EditorSelectLine">
     <keyboard-shortcut first-keystroke="alt l" />
+  </action>
+  <action id="EditorTextEnd">
+    <keyboard-shortcut first-keystroke="ctrl end" />
+    <keyboard-shortcut first-keystroke="end" />
+  </action>
+  <action id="EditorTextStart">
+    <keyboard-shortcut first-keystroke="ctrl home" />
+    <keyboard-shortcut first-keystroke="home" />
   </action>
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />

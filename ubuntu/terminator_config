@@ -31,18 +31,17 @@
   switch_to_tab_9 = <Alt>9
 [profiles]
   [[default]]
-    word_chars = "-A-Za-z0-9./?%&#:_"
     use_system_font = False
-    font = Inconsolata Medium 12
+    font = Inconsolata-dz Medium 11
     background_darkness = 0.86
     scrollback_lines = 10000
     background_image = None
-    foreground_color = "#839496"
+    foreground_color = "#cacaca"
     scroll_on_output = False
     icon_bell = False
     delete_binding = automatic
     copy_on_selection = True
-    background_color = "#002b36"
+    word_chars = "-A-Za-z0-9./?%&#:_"
 [layouts]
   [[default]]
     [[[child1]]]
