@@ -13,20 +13,20 @@
   zoom_in = <Alt>equal
   close_window = <Alt>q
   switch_to_tab_10 = <Alt>0
-  new_tab = <Alt>t
+  new_tab = <Primary><Shift>t
   move_tab_right = <Shift><Alt>Right
   switch_to_tab_5 = <Alt>5
   new_window = <Alt>n
   switch_to_tab_6 = <Alt>6
   zoom_out = <Alt>minus
   switch_to_tab_4 = <Alt>4
-  close_term = <Alt>w
+  close_term = <Primary><Shift>w
   switch_to_tab_2 = <Alt>2
   switch_to_tab_3 = <Alt>3
   switch_to_tab_1 = <Alt>1
   move_tab_left = <Shift><Alt>Left
-  copy = <Alt>c
-  paste = <Alt>v
+  copy = <Primary><Shift>c
+  paste = <Primary><Shift>v
   switch_to_tab_8 = <Alt>8
   switch_to_tab_9 = <Alt>9
 [profiles]
