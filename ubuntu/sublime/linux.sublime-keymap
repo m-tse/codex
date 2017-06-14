@@ -98,6 +98,7 @@
   { "keys": ["alt+left"], "command": "jump_back"},
   { "keys": ["alt+b"], "command": "jump_back"},
   { "keys": ["alt+right"], "command": "jump_forward"},
+  { "keys": ["alt+h"], "command": "jump_forward"},
 
   { "keys": ["alt+shift+g", "g"], "command": "go_guru"},
   { "keys": ["alt+shift+g", "d"], "command": "go_guru", "args": {"mode": "describe"}},

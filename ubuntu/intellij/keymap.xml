@@ -173,6 +173,7 @@
     <keyboard-shortcut first-keystroke="shift alt right" />
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="alt right" />
+    <keyboard-shortcut first-keystroke="alt h" />
   </action>
   <action id="GotoAction" />
   <action id="GotoChangedFile" />
