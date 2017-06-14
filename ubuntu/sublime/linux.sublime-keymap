@@ -96,13 +96,9 @@
   { "keys": ["home"], "command": "move_to", "args": {"to": "bof", "extend": false} },
   { "keys": ["end"], "command": "move_to", "args": {"to": "eof", "extend": false} },
   { "keys": ["alt+left"], "command": "jump_back"},
+  { "keys": ["alt+b"], "command": "jump_back"},
   { "keys": ["alt+right"], "command": "jump_forward"},
-
-  { "keys": ["alt+shift+1"], "command": "focus_group", "args": { "group": 0 } },
-  { "keys": ["alt+shift+2"], "command": "focus_group", "args": { "group": 1 } },
 
   { "keys": ["alt+shift+g", "g"], "command": "go_guru"},
   { "keys": ["alt+shift+g", "d"], "command": "go_guru", "args": {"mode": "describe"}},
-
-  { "keys": ["alt+shift+e"], "command": "error_enum"},
 ]
