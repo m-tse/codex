@@ -97,6 +97,7 @@
   <action id="EditorDownWithSelection">
     <keyboard-shortcut first-keystroke="shift down" />
     <keyboard-shortcut first-keystroke="shift ctrl n" />
+    <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="shift alt d" />
@@ -130,9 +131,6 @@
   <action id="EditorRightWithSelection">
     <keyboard-shortcut first-keystroke="shift right" />
     <keyboard-shortcut first-keystroke="shift ctrl f" />
-  </action>
-  <action id="EditorSelectLine">
-    <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="EditorSelectWord">
     <keyboard-shortcut first-keystroke="ctrl w" />
