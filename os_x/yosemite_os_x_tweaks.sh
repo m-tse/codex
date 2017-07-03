@@ -46,3 +46,7 @@ read -r response
 if [[ $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
   defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 fi
+
+echo ""
+echo "Setting screenshots location to ~/Downloads/"
+defaults write com.apple.screencapture location ~/Downloads/
