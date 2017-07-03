@@ -1,6 +1,3 @@
-/* mkdir ~/Library/KeyBindings */
-/* cp ./DefaultKeyBinding.dict ~/Library/KeyBindings/ */
-/* gets rid of dumb OS X special characters used with option key*/
 {
     "~f"        = "moveWordForward:";           /* M-f */
     "~b"        = "moveWordBackward:";          /* M-b */
