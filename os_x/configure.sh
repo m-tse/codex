@@ -26,3 +26,7 @@ defaults write com.apple.screencapture location ~/Downloads/
 # Set meta key shortcuts
 mkdir -p ~/Library/KeyBindings
 cp ./DefaultKeyBinding.dict ~/Library/KeyBindings/
+
+# Set key repeat settings
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain KeyRepeat -int 2
