@@ -1,8 +1,9 @@
 {
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/mtse/inoffensive.tmTheme",
+	"color_scheme": "Packages/Themes/ultraviolet.tmTheme",
 	"drag_text": false,
 	"draw_white_space": "all",
+	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
 		"*.pyc",
