@@ -25,6 +25,10 @@
   <action id="EditorSelectLine">
     <keyboard-shortcut first-keystroke="meta l" />
   </action>
+  <action id="EditorSelectWord">
+    <keyboard-shortcut first-keystroke="alt up" />
+    <keyboard-shortcut first-keystroke="meta e" />
+  </action>
   <action id="FileChooser.GotoDesktop" />
   <action id="GotoLine">
     <keyboard-shortcut first-keystroke="ctrl g" />
@@ -41,6 +45,7 @@
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="alt space" />
   </action>
+  <action id="RecentFiles" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="ctrl meta r" />
@@ -54,5 +59,8 @@
   <action id="SendEOF" />
   <action id="ShelvedChanges.Diff" />
   <action id="Vcs.Log.FocusTextFilter" />
+  <action id="Vcs.ShowMessageHistory">
+    <keyboard-shortcut first-keystroke="ctrl m" />
+  </action>
   <action id="openAssertEqualsDiff" />
 </keymap>
