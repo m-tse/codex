@@ -1,3 +1,5 @@
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # Disabling press-and-hold for special keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
@@ -25,8 +27,11 @@ defaults write com.apple.screencapture location ~/Downloads/
 
 # Set meta key shortcuts
 mkdir -p ~/Library/KeyBindings
-cp ./DefaultKeyBinding.dict ~/Library/KeyBindings/
+ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
 
 # Set key repeat settings
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain KeyRepeat -int 2
+
+# Disable dock bouncing on notification
+defaults write com.apple.dock no-bouncing -bool TRUE
