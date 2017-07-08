@@ -10,4 +10,5 @@
     "~\010"     = "deleteWordBackward:";        /* M-backspace */
     "~\177"     = "deleteWordBackward:";        /* M-delete */
     "~\UF728"   = "deleteWordForward:";         /* delete */
+    "^@\UF701"  = "noop:";                      /* cancel annoying beep in intelliJ */
 }
