@@ -163,6 +163,8 @@ exec_always --no-startup-id autokey-smart
 
 exec_always --no-startup-id numlockx on
 
+exec_always --no-startup-id xss-lock ~/Development/codex/ubuntu/pixellate_lock.sh
+
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
 # Screenshot

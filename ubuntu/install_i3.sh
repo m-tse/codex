@@ -1,1 +1,1 @@
-sudo apt-get install i3 xautolock i3lock i3status
+sudo apt-get install i3 xautolock i3lock i3status xss-lock
