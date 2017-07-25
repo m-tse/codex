@@ -50,6 +50,7 @@
     <keyboard-shortcut first-keystroke="ctrl f4" />
     <keyboard-shortcut first-keystroke="alt w" />
   </action>
+  <action id="CodeInspection.OnEditor" />
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="ctrl slash" />
     <keyboard-shortcut first-keystroke="ctrl divide" />
@@ -173,6 +174,7 @@
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="alt right" />
     <keyboard-shortcut first-keystroke="alt h" />
+    <keyboard-shortcut first-keystroke="shift alt b" />
   </action>
   <action id="GotoAction" />
   <action id="GotoChangedFile" />
@@ -194,6 +196,10 @@
   <action id="GuiDesigner.Duplicate" />
   <action id="HippieCompletion" />
   <action id="Images.ShowThumbnails" />
+  <action id="ImplementMethods">
+    <keyboard-shortcut first-keystroke="ctrl i" />
+    <keyboard-shortcut first-keystroke="shift alt i" />
+  </action>
   <action id="IntroduceLambdaParameter" />
   <action id="IpnbRunAllCellsAction">
     <keyboard-shortcut first-keystroke="shift f10" />
@@ -269,6 +275,7 @@
   <action id="hg4idea.QFold" />
   <action id="hg4idea.QGotoFromPatches" />
   <action id="tasks.close" />
+  <action id="tasks.open.in.browser" />
   <action id="tasks.switch" />
   <action id="tasks.switch.toolbar" />
 </keymap>
