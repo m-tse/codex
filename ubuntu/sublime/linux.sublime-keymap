@@ -100,6 +100,6 @@
   { "keys": ["alt+right"], "command": "jump_forward"},
   { "keys": ["alt+h"], "command": "jump_forward"},
 
-  { "keys": ["alt+shift+g", "g"], "command": "go_guru"},
+  { "keys": ["alt+shift+g", "g"], "command": "go_guru", "args": {"output": false, "mode": "definition"}},
   { "keys": ["alt+shift+g", "d"], "command": "go_guru", "args": {"mode": "describe"}},
 ]
