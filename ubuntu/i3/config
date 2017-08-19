@@ -139,7 +139,6 @@ workspace 5 output DP-1
 
 # Application Assignment
 assign [class="Sublime_text"] 3
-assign [class="jetbrains-idea-ce"] 2
 assign [class="Terminator"] 5
 assign [class="HipChat"] 6
 

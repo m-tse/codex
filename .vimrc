@@ -6,6 +6,7 @@ set expandtab
 set cursorline
 filetype indent on
 set showmatch
+set ruler
 set hlsearch
 set incsearch
 set smartcase
