@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk|crx_bikioccmkafdpakkkcpdbppfkghcmihk.Google-chrome", 
+        "regex": "Navigator.Firefox|hipchat4.HipChat|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk|crx_bikioccmkafdpakkkcpdbppfkghcmihk.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 
