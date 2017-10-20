@@ -34,6 +34,16 @@
     <keyboard-shortcut first-keystroke="delete" />
     <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
+  <action id="EditorDeleteToWordEnd" />
+  <action id="EditorDeleteToWordEndInDifferentHumpsMode">
+    <keyboard-shortcut first-keystroke="alt delete" />
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
+  <action id="EditorDeleteToWordStart" />
+  <action id="EditorDeleteToWordStartInDifferentHumpsMode">
+    <keyboard-shortcut first-keystroke="alt back_space" />
+    <keyboard-shortcut first-keystroke="alt h" />
+  </action>
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="shift meta d" />
   </action>
@@ -64,6 +74,12 @@
   </action>
   <action id="EditorMoveUpAndScroll">
     <keyboard-shortcut first-keystroke="shift ctrl p" />
+  </action>
+  <action id="EditorNextWordInDifferentHumpsMode">
+    <keyboard-shortcut first-keystroke="alt f" />
+  </action>
+  <action id="EditorPreviousWordInDifferentHumpsMode">
+    <keyboard-shortcut first-keystroke="alt b" />
   </action>
   <action id="EditorRightWithSelection">
     <keyboard-shortcut first-keystroke="shift right" />
