@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "google-chrome.Google-chrome", 
+        "regex": "Navigator.Firefox|google-chrome.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 
