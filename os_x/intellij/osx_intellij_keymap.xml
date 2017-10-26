@@ -15,6 +15,8 @@
     <keyboard-shortcut first-keystroke="shift meta w" />
   </action>
   <action id="CompareTwoFiles" />
+  <action id="Console.Execute.Multiline" />
+  <action id="Console.Jdbc.Execute" />
   <action id="Console.TableResult.CloneRow" />
   <action id="Console.TableResult.Reload" />
   <action id="Database.OpenDbStorageAction">
@@ -26,6 +28,7 @@
   <action id="Diff.ShowDiff" />
   <action id="Diff.ShowSettingsPopup" />
   <action id="Diff.UpdatedFiles" />
+  <action id="DirDiffMenu.SynchronizeDiff.All" />
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
@@ -96,6 +99,7 @@
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="meta e" />
   </action>
+  <action id="EditorSplitLine" />
   <action id="EditorTextEnd">
     <keyboard-shortcut first-keystroke="meta end" />
     <keyboard-shortcut first-keystroke="end" />
@@ -162,6 +166,7 @@
     <keyboard-shortcut first-keystroke="ctrl meta r" />
   </action>
   <action id="Replace" />
+  <action id="ReplaceInPath" />
   <action id="Rerun" />
   <action id="RerunTests">
     <keyboard-shortcut first-keystroke="shift alt r" />
@@ -169,6 +174,10 @@
   <action id="Run">
     <keyboard-shortcut first-keystroke="ctrl r" />
     <keyboard-shortcut first-keystroke="meta r" />
+  </action>
+  <action id="RunClass">
+    <keyboard-shortcut first-keystroke="shift ctrl r" />
+    <keyboard-shortcut first-keystroke="shift meta r" />
   </action>
   <action id="SearchEverywhere">
     <keyboard-shortcut first-keystroke="meta p" />
@@ -178,6 +187,10 @@
   </action>
   <action id="SendEOF" />
   <action id="ShelvedChanges.Diff" />
+  <action id="ShowIntentionActions">
+    <keyboard-shortcut first-keystroke="alt enter" />
+    <keyboard-shortcut first-keystroke="meta enter" />
+  </action>
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="alt home" />
   </action>
@@ -201,6 +214,7 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt up" />
     <keyboard-shortcut first-keystroke="meta up" />
   </action>
+  <action id="ViewSource" />
   <action id="XDebugger.JumpToSource">
     <keyboard-shortcut first-keystroke="f4" />
   </action>
