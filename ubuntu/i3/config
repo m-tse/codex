@@ -82,11 +82,11 @@ bindsym $sup+Shift+0 move container to workspace 10
 bindsym $sup+plus        resize grow width 100 px or 10 ppt
 bindsym $sup+minus       resize shrink width 100 px or 10 ppt
 
-bindsym $sup+$alt+plus   resize grow height 50 px or 5 ppt
-bindsym $sup+$alt+minus  resize shrink height 50 px or 5 ppt
+bindsym $sup+Shift+plus   resize grow height 50 px or 5 ppt
+bindsym $sup+Shift+minus  resize shrink height 50 px or 5 ppt
 
-bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
-bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
+#bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
+#bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
 bindsym $sup+m exec amixer -D pulse sset Master mute
 bindsym $sup+Shift+m exec amixer -D pulse sset Master unmute
 
@@ -138,7 +138,7 @@ workspace 4 output DP-1
 workspace 5 output DP-1
 
 # Application Assignment
-assign [class="Sublime_text"] 3
+assign [class="Subl"] 3
 assign [class="Terminator"] 5
 assign [class="HipChat"] 6
 
