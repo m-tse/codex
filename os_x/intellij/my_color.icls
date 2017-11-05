@@ -4,15 +4,15 @@
     <property name="created">2017-02-08T10:34:31</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2016.3.1.0.0</property>
-    <property name="modified">2017-07-21T23:02:43</property>
+    <property name="modified">2017-11-04T17:03:16</property>
     <property name="originalScheme">_@user_Darcula</property>
   </metaInfo>
   <option name="LINE_SPACING" value="0.9" />
   <option name="EDITOR_FONT_SIZE" value="13" />
-  <option name="CONSOLE_LINE_SPACING" value="1.0" />
   <option name="EDITOR_FONT_NAME" value="Monaco" />
+  <option name="CONSOLE_FONT_NAME" value="Menlo" />
   <colors>
-    <option name="SELECTION_BACKGROUND" value="454549" />
+    <option name="SELECTION_BACKGROUND" value="545458" />
   </colors>
   <attributes>
     <option name="DEFAULT_CLASS_NAME">
