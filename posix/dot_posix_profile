@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# source this customized profile via `source ~/.profile` in the ~/.bash_profile
+# posix (os_x or linux) terminal profile
 PROMPT_COMMAND=__prompt_command
 __prompt_command() {
   local NORMAL_COLOR='\[\e[0m\]'
@@ -22,10 +21,6 @@ export HISTTIMEFORMAT="%y/%m/%d %T "
 # bash_script_dir is how to get the script's directory in bash.
 function bash_script_dir {
   printf 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"\n'
-}
-
-function datefromint () {
-  date --date="@$1"
 }
 
 function rnum () {

@@ -1,7 +1,0 @@
-# cp ~/Development/codex/ubuntu/elementary/after_login.desktop ~/.config/autostart/after_login.desktop
-
-[Desktop Entry]
-Type=Application
-Name=AfterLogin
-Exec=/home/m/Development/codex/ubuntu/elementary/after_login.sh
-X-GNOME-Autostart-enabled=true

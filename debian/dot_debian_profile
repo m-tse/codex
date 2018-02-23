@@ -1,0 +1,5 @@
+#!/bin/bash
+# debian specific default terminal profile
+function datefromint () {
+  date --date="@$1"
+}
