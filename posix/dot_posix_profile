@@ -14,7 +14,7 @@ __prompt_command() {
 
 export LSCOLORS="dxfxBxDxbxHxHxBxxghxhx"
 export CLICOLOR=1
-alias ls='ls -aFh'
+alias ls='ls -aF --color'
 export EDITOR=vim
 export HISTTIMEFORMAT="%y/%m/%d %T "
 
