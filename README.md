@@ -1,3 +1,3 @@
 Codex
 =====
-Codex for setting up your Linux or OS-X developer environment
+Codex for setting up OS-X or Linux to Matt's preferences.
