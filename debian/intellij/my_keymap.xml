@@ -60,6 +60,7 @@
   </action>
   <action id="CompareTwoFiles" />
   <action id="Diff.ShowDiff" />
+  <action id="Django.RunManageTaskAction" />
   <action id="Editor Copy">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
@@ -209,6 +210,10 @@
   <action id="RecentFiles" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
+    <keyboard-shortcut first-keystroke="ctrl alt r" />
+  </action>
+  <action id="Run">
+    <keyboard-shortcut first-keystroke="shift f10" />
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="SaveAll">
