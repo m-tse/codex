@@ -49,12 +49,6 @@ bindsym $sup+$alt+h split h
 # split in vertical orientation
 bindsym $sup+v split v
 
-# enter fullscreen mode for the focused container
-bindsym $sup+Shift+f fullscreen
-
-# toggle tiling / floating
-#bindsym $sup+shift+f floating toggle
-
 # switch to workspace
 bindsym $sup+1 workspace 1
 bindsym $sup+2 workspace 2
@@ -85,37 +79,6 @@ bindsym $sup+minus       resize shrink width 100 px or 10 ppt
 bindsym $sup+Shift+plus   resize grow height 50 px or 5 ppt
 bindsym $sup+Shift+minus  resize shrink height 50 px or 5 ppt
 
-#bindsym $sup+Shift+plus exec amixer -D pulse sset Master 5%+
-#bindsym $sup+Shift+minus exec amixer -D pulse sset Master 5%-
-bindsym $sup+m exec amixer -D pulse sset Master mute
-bindsym $sup+Shift+m exec amixer -D pulse sset Master unmute
-
-bindsym $sup+r mode "resize"
-# resize window (you can also use the mouse for that)
-mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h           resize shrink width 10 px or 10 ppt
-        bindsym k           resize grow height 10 px or 10 ppt
-        bindsym j           resize shrink height 10 px or 10 ppt
-        bindsym l           resize grow width 10 px or 10 ppt
-
-        # same bindings, but
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $sup+r mode "default"
-}
-
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -139,8 +102,6 @@ workspace 5 output DP-1
 
 # Application Assignment
 assign [class="Subl"] 3
-assign [class="Terminator"] 5
-assign [class="HipChat"] 6
 
 focus_follows_mouse no
 
@@ -152,8 +113,9 @@ client.unfocused        #333333 #222222 #888888 #292d2e #222222
 bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock/sleep
-bindsym $sup+s exec "~/Development/codex/ubuntu/pixellate_lock.sh"
-exec_always xautolock -detectsleep -time 5 -locker "~/Development/codex/ubuntu/pixellate_lock.sh"
+exec_always --no-startup-id cinnamon-screensaver
+bindsym $sup+s exec "cinnamon-screensaver-command -l"
+exec_always --no-startup-id xautolock -time 5 -locker "cinnamon-screensaver-command -l"
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
@@ -161,8 +123,6 @@ exec_always --no-startup-id xset r rate 250 40
 exec_always --no-startup-id autokey-smart
 
 exec_always --no-startup-id numlockx on
-
-exec_always --no-startup-id xss-lock ~/Development/codex/ubuntu/pixellate_lock.sh
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
