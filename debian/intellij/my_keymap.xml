@@ -59,8 +59,15 @@
     <keyboard-shortcut first-keystroke="alt slash" />
   </action>
   <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.NavigateAction" />
+  <action id="DSM.OpenInEditor" />
+  <action id="Database.OpenDbStorageAction" />
+  <action id="Debugger.EditFrameSource" />
   <action id="Diff.ShowDiff" />
   <action id="Django.RunManageTaskAction" />
+  <action id="DomCollectionControl.Edit" />
+  <action id="DomElementsTreeView.GotoDomElementDeclarationAction" />
+  <action id="EditSource" />
   <action id="Editor Copy">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
@@ -158,6 +165,7 @@
   </action>
   <action id="ExportToTextFile" />
   <action id="ExpressionTypeInfo" />
+  <action id="ExternalSystem.OpenConfig" />
   <action id="FileChooser.GotoDesktop" />
   <action id="FileChooser.NewFolder">
     <keyboard-shortcut first-keystroke="alt insert" />
@@ -189,6 +197,8 @@
   <action id="GuiDesigner.Duplicate" />
   <action id="HippieCompletion" />
   <action id="IntroduceLambdaParameter" />
+  <action id="Jdbc.OpenConsole" />
+  <action id="Jdbc.OpenEditor" />
   <action id="MethodDown" />
   <action id="MethodUp" />
   <action id="MoveEditorToOppositeTabGroup">
@@ -205,9 +215,13 @@
   <action id="OpenEditorInOppositeTabGroup">
     <keyboard-shortcut first-keystroke="alt o" />
   </action>
-  <action id="ParameterInfo" />
+  <action id="OpenModuleSettings" />
+  <action id="ParameterInfo">
+    <keyboard-shortcut first-keystroke="f4" />
+  </action>
   <action id="RecentChangedFiles" />
   <action id="RecentFiles" />
+  <action id="RemoteHostView.EditSource" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="ctrl alt r" />
@@ -216,6 +230,7 @@
     <keyboard-shortcut first-keystroke="shift f10" />
     <keyboard-shortcut first-keystroke="alt r" />
   </action>
+  <action id="RunDashboard.EditConfiguration" />
   <action id="SaveAll">
     <keyboard-shortcut first-keystroke="ctrl s" />
     <keyboard-shortcut first-keystroke="alt s" />
@@ -250,10 +265,13 @@
     <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
   <action id="UsageView.ShowRecentFindUsages" />
+  <action id="Vcs.EditSource" />
+  <action id="Vcs.Log.OpenRepositoryVersion" />
   <action id="Vcs.ShowMessageHistory">
     <keyboard-shortcut first-keystroke="ctrl m" />
   </action>
   <action id="XDebugger.CopyWatch" />
+  <action id="XDebugger.JumpToSource" />
   <action id="XDebugger.MoveWatchDown" />
   <action id="XDebugger.MoveWatchUp" />
   <action id="hg4idea.QFold" />
