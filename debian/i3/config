@@ -115,7 +115,7 @@ bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # lock/sleep
 exec_always --no-startup-id cinnamon-screensaver
 bindsym $sup+s exec "cinnamon-screensaver-command -l"
-exec_always --no-startup-id xautolock -time 5 -locker "cinnamon-screensaver-command -l"
+exec_always --no-startup-id xautolock -time 5 -locker "cinnamon-screensaver-command -l && xset dpms force off"
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
