@@ -117,9 +117,9 @@ bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 exec_always --no-startup-id cinnamon-screensaver
 # Start screensaver and turn off monitor
 bindsym $sup+s exec "cinnamon-screensaver-command -l && xset dpms force off"
-# Watch for keyboard activity, and lock after a certain amount of time, '-detectsleep' is needed
-# so the sleeper works after coming back from sleep.
-exec_always --no-startup-id xautolock -detectsleep -time 5 -locker "cinnamon-screensaver-command -l && xset dpms force off"
+# use xss-lock and xset to set a screensaver timeout and command
+exec_always --no-startup-id xset s 300
+exec_always --no-startup-id xss-lock -- cinnamon-screensaver-command -l
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
