@@ -44,6 +44,7 @@
     <mouse-shortcut keystroke="button4" />
     <keyboard-shortcut first-keystroke="alt b" />
   </action>
+  <action id="BaseOnThisFunction" />
   <action id="CheckinProject" />
   <action id="ChoosePrevSubsequentPropertyValueEditorAction" />
   <action id="CloseAllEditorsButActive">
@@ -92,12 +93,21 @@
   <action id="EditorAddOrRemoveCaret">
     <mouse-shortcut keystroke="shift control alt button3" />
   </action>
+  <action id="EditorBackSpace">
+    <keyboard-shortcut first-keystroke="back_space" />
+    <keyboard-shortcut first-keystroke="shift back_space" />
+    <keyboard-shortcut first-keystroke="ctrl h" />
+  </action>
   <action id="EditorCutLineEnd">
     <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="EditorDeleteLine">
     <keyboard-shortcut first-keystroke="ctrl y" />
     <keyboard-shortcut first-keystroke="alt k" />
+  </action>
+  <action id="EditorDeleteToWordStart" />
+  <action id="EditorDeleteToWordStartInDifferentHumpsMode">
+    <keyboard-shortcut first-keystroke="ctrl back_space" />
   </action>
   <action id="EditorDown">
     <keyboard-shortcut first-keystroke="down" />
@@ -183,6 +193,7 @@
     <mouse-shortcut keystroke="button5" />
     <keyboard-shortcut first-keystroke="shift alt b" />
   </action>
+  <action id="GoTypeHierarchyPopupMenu.BaseOnThisType" />
   <action id="GotoAction" />
   <action id="GotoChangedFile" />
   <action id="GotoClass" />
@@ -264,6 +275,9 @@
   <action id="SwitchUp">
     <keyboard-shortcut first-keystroke="shift alt up" />
   </action>
+  <action id="TypeHierarchy" />
+  <action id="TypeHierarchy.BaseOnThisType" />
+  <action id="TypeHierarchyBase.BaseOnThisType" />
   <action id="UsageView.ShowRecentFindUsages" />
   <action id="Vcs.EditSource" />
   <action id="Vcs.Log.OpenRepositoryVersion" />
