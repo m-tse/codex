@@ -15,7 +15,7 @@
   { "keys": ["alt+w"], "command": "close" },
   { "keys": ["alt+q"], "command": "exit" },
   { "keys": ["alt+n"], "command": "new_file" },
-  { "keys": ["alt+d"], "command": "find_under_expand" },
+  { "keys": ["alt+shift+e"], "command": "find_under_expand" },
   { "keys": ["alt+k", "alt+d"], "command": "find_under_expand_skip" },
   { "keys": ["ctrl+alt+shift+d"], "command": "find_all_under" },
   { "keys": ["alt+e"], "command": "expand_region"},
@@ -64,8 +64,8 @@
     ]
   },
 
-  { "keys": ["ctrl+alt+up"], "command": "swap_line_up" },
-  { "keys": ["ctrl+alt+down"], "command": "swap_line_down" },
+  { "keys": ["alt+up"], "command": "swap_line_up" },
+  { "keys": ["alt+down"], "command": "swap_line_down" },
   { "keys": ["alt+shift+d"], "command": "duplicate_line" },
 
   { "keys": ["alt+/"], "command": "toggle_comment", "args": { "block": false } },
