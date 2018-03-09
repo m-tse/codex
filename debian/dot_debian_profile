@@ -3,3 +3,4 @@
 function datefromint () {
   date --date="@$1"
 }
+alias ls='ls -aF --color'

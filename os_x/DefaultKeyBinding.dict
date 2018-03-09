@@ -1,4 +1,6 @@
 {
+    "@\UF700"   = noop:;                        // disable command-up
+    "@\UF701"   = noop:;                        // disable command-down
     "~f"        = "moveWordForward:";           /* M-f */
     "~b"        = "moveWordBackward:";          /* M-b */
     "~<"        = "moveToBeginningOfDocument:"; /* M-< */
