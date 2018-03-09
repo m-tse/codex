@@ -22,6 +22,10 @@ function bash_script_dir {
   printf 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"\n'
 }
 
+function git_prune {
+  git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
+}
+
 function rnum () {
   head /dev/urandom | tr -dc 0-9 | head -c "$1" ; echo ''
 }
