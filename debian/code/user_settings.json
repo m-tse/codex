@@ -7,5 +7,6 @@
     "workbench.startupEditor": "newUntitledFile",
     "files.autoSave": "onWindowChange",
     "editor.renderWhitespace": "boundary",
+    "editor.quickSuggestionsDelay": 1000,
 }
 

@@ -81,26 +81,6 @@
         "command": "-workbench.action.files.save"
     },
     {
-        "key": "ctrl+shift+p",
-        "command": "cursorUpSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+up",
-        "command": "-cursorUpSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+n",
-        "command": "cursorDownSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+down",
-        "command": "-cursorDownSelect",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+e",
         "command": "cursorEnd",
         "when": "editorTextFocus"
@@ -138,16 +118,6 @@
     {
         "key": "shift+home",
         "command": "-cursorHomeSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+shift+b",
-        "command": "cursorLeftSelect",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "shift+left",
-        "command": "-cursorLeftSelect",
         "when": "editorTextFocus"
     },
     {
@@ -243,6 +213,10 @@
     {
         "key": "ctrl+p",
         "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
     },
     {
         "key": "shift+alt+d",
