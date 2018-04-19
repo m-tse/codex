@@ -1,0 +1,32 @@
+{
+    "usageCount": 9, 
+    "omitTrigger": false, 
+    "prompt": false, 
+    "description": "ctrl+shift+n", 
+    "abbreviation": {
+        "wordChars": "[\\w]", 
+        "abbreviations": [], 
+        "immediate": false, 
+        "ignoreCase": false, 
+        "backspace": true, 
+        "triggerInside": false
+    }, 
+    "hotkey": {
+        "hotKey": "n", 
+        "modifiers": [
+            "<ctrl>", 
+            "<shift>"
+        ]
+    }, 
+    "modes": [
+        3
+    ], 
+    "showInTrayMenu": false, 
+    "matchCase": false, 
+    "filter": {
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|code.Code", 
+        "isRecursive": false
+    }, 
+    "type": "phrase", 
+    "sendMode": "kb"
+}
