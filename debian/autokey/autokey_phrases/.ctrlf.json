@@ -1,5 +1,5 @@
 {
-    "usageCount": 156, 
+    "usageCount": 181, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+f", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|code.Code|autokey.Autokey", 
         "isRecursive": false
     }, 
     "type": "phrase", 
