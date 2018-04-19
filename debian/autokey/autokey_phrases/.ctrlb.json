@@ -1,5 +1,5 @@
 {
-    "usageCount": 210, 
+    "usageCount": 238, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "ctrl+b", 
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|code.Code", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|code.Code|autokey.Autokey", 
         "isRecursive": false
     }, 
     "type": "phrase", 

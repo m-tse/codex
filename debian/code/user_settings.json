@@ -1,5 +1,11 @@
 {
     "editor.minimap.enabled": false,
     "editor.dragAndDrop": false,
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
+    "workbench.startupEditor": "newUntitledFile",
+    "files.autoSave": "onWindowChange",
+    "editor.renderWhitespace": "boundary",
 }
+

@@ -81,46 +81,6 @@
         "command": "-workbench.action.files.save"
     },
     {
-        "key": "ctrl+b",
-        "command": "cursorLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "left",
-        "command": "-cursorLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+f",
-        "command": "cursorRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "right",
-        "command": "-cursorRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "down",
-        "command": "-cursorDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "cursorUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "up",
-        "command": "-cursorUp",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "ctrl+shift+p",
         "command": "cursorUpSelect",
         "when": "editorTextFocus"
@@ -205,7 +165,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "alt+d",
+        "key": "alt+shift+e",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
