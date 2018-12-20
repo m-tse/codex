@@ -247,5 +247,8 @@
         "key": "ctrl+/",
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
-    }
+    },
+    {   "key": "alt+shift+f",
+        "command": "workbench.action.findInFiles"
+    },
 ]
