@@ -63,6 +63,10 @@
   <action id="Console.TableResult.NavigateAction" />
   <action id="DSM.OpenInEditor" />
   <action id="Database.OpenDbStorageAction" />
+  <action id="Debug">
+    <keyboard-shortcut first-keystroke="shift f9" />
+    <keyboard-shortcut first-keystroke="alt d" />
+  </action>
   <action id="Debugger.EditFrameSource" />
   <action id="Diff.ShowDiff" />
   <action id="Django.RunManageTaskAction" />
@@ -165,6 +169,10 @@
     <keyboard-shortcut first-keystroke="ctrl home" />
     <keyboard-shortcut first-keystroke="home" />
   </action>
+  <action id="EditorToggleColumnMode">
+    <keyboard-shortcut first-keystroke="shift alt insert" />
+    <keyboard-shortcut first-keystroke="shift alt c" />
+  </action>
   <action id="EditorUp">
     <keyboard-shortcut first-keystroke="up" />
     <keyboard-shortcut first-keystroke="ctrl p" />
@@ -173,6 +181,7 @@
     <keyboard-shortcut first-keystroke="shift up" />
     <keyboard-shortcut first-keystroke="shift ctrl p" />
   </action>
+  <action id="ExecuteInPyConsoleAction" />
   <action id="ExportToTextFile" />
   <action id="ExpressionTypeInfo" />
   <action id="ExternalSystem.OpenConfig" />
@@ -231,6 +240,7 @@
     <keyboard-shortcut first-keystroke="f4" />
   </action>
   <action id="RecentChangedFiles" />
+  <action id="RecentChanges" />
   <action id="RecentFiles" />
   <action id="RemoteHostView.EditSource" />
   <action id="RenameElement">
@@ -252,7 +262,7 @@
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="alt j" />
-    <keyboard-shortcut first-keystroke="alt d" />
+    <keyboard-shortcut first-keystroke="shift alt e" />
   </action>
   <action id="SendEOF" />
   <action id="ShelvedChanges.Diff" />

@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|sublime_text.Sublime_text", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|sublime_text.Sublime_text|Focus-Proxy-Window.FocusProxy", 
         "isRecursive": false
     }, 
     "type": "phrase", 

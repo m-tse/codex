@@ -24,7 +24,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "hipchat4.HipChat|google-chrome.Google-chrome|code.Code", 
         "isRecursive": false
     }, 
     "type": "phrase", 
