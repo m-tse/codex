@@ -2,9 +2,10 @@
 
 `sudo apt-get install autokey-gtk`
 
-# link autokey_phrases to ~/.config/autokey/data/My Phrases
+# NOTE: there are hidden `.*` files in autokey_phrases, you must copy those as well
+# to ~/.config/autokey/data/My\ Phrases
+
+# Link autokey-smart
 ```
-rm -rf ~/.config/autokey/data/My\ Phrases/
-ln -s ~/Development/codex/debian/autokey/autokey_phrases/ ~/.config/autokey/data/My\ Phrases
 sudo ln -s ~/Development/codex/debian/autokey/autokey-smart /usr/local/bin/autokey-smart
 ```

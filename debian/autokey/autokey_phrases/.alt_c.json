@@ -1,31 +1,31 @@
 {
-    "usageCount": 204, 
-    "omitTrigger": false, 
-    "prompt": false, 
-    "description": "alt_c", 
+    "usageCount": 204,
+    "omitTrigger": false,
+    "prompt": false,
+    "description": "alt_c",
     "abbreviation": {
-        "wordChars": "[\\w]", 
-        "abbreviations": [], 
-        "immediate": false, 
-        "ignoreCase": false, 
-        "backspace": true, 
+        "wordChars": "[\\w]",
+        "abbreviations": [],
+        "immediate": false,
+        "ignoreCase": false,
+        "backspace": true,
         "triggerInside": false
-    }, 
+    },
     "hotkey": {
-        "hotKey": "c", 
+        "hotKey": "c",
         "modifiers": [
             "<alt>"
         ]
-    }, 
+    },
     "modes": [
         3
-    ], 
-    "showInTrayMenu": false, 
-    "matchCase": false, 
+    ],
+    "showInTrayMenu": false,
+    "matchCase": false,
     "filter": {
-        "regex": "Navigator.Firefox|hipchat4.HipChat|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk|crx_bikioccmkafdpakkkcpdbppfkghcmihk.Google-chrome", 
+        "regex": "slack.Slack|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk|crx_bikioccmkafdpakkkcpdbppfkghcmihk.Google-chrome",
         "isRecursive": false
-    }, 
-    "type": "phrase", 
+    },
+    "type": "phrase",
     "sendMode": "kb"
 }
