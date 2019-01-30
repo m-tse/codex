@@ -23,9 +23,10 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "google-chrome.Google-chrome", 
+        "regex": "slack.Slack|google-chrome.Google-chrome",
         "isRecursive": false
     }, 
     "type": "phrase", 
     "sendMode": "kb"
 }
+
