@@ -92,18 +92,18 @@ bindsym $sup+Shift+c reload
 bindsym $sup+Shift+r restart
 
 # Window Assignment
-workspace 1 output DP-2
-workspace 2 output DP-2
-workspace 3 output DP-2
-workspace 4 output DP-6
-workspace 5 output DP-6
-workspace 6 output DP-6
+workspace 1 output eDP-1-1
+workspace 2 output eDP-1-1
+workspace 3 output eDP-1-1
+workspace 4 output DP-1-2
+workspace 5 output DP-1-2
+workspace 6 output DP-1-2
 #workspace 4 output DP-1
 #workspace 5 output DP-1
 
 # Application Assignment
-assign [class="Code"] 2
-assign [class="jetbrains-idea"] 3
+#assign [class="Code"] 2
+#assign [class="jetbrains-idea"] 3
 
 focus_follows_mouse no
 
@@ -132,7 +132,9 @@ exec_always --no-startup-id numlockx on
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
-exec_always --no-startup-id xrandr --output DP-6 --mode 2560x1440 --output DP-2 --mode 2560x1440 --output DP-2 --left-of DP-6 --output DP-2 --primary
+exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --output DP-1-2 --pos 1920x0 --primary
 
 # Screenshot
 bindsym --release $sup+shift+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
+
+

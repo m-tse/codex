@@ -18,20 +18,3 @@ export EDITOR=vim
 export HISTTIMEFORMAT="%y/%m/%d %T "
 
 # bash_script_dir is how to get the script's directory in bash.
-function bash_script_dir {
-  printf 'DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"\n'
-}
-
-function git_prune {
-  git branch --merged | grep -v "\*" | xargs -n 1 git branch -d
-}
-
-function rnum () {
-  head /dev/urandom | tr -dc 0-9 | head -c "$1" ; echo ''
-}
-function ralpha () {
-  head /dev/urandom | tr -dc a-z | head -c "$1" ; echo ''
-}
-function ran () {
-  head /dev/urandom | tr -dc a-z0-9 | head -c "$1" ; echo ''
-}
