@@ -1,31 +1,31 @@
 {
-    "usageCount": 45,
-    "omitTrigger": false,
-    "prompt": false,
-    "description": "ctrl+a",
+    "usageCount": 45, 
+    "omitTrigger": false, 
+    "prompt": false, 
+    "description": "ctrl+a", 
     "abbreviation": {
-        "wordChars": "[\\w]",
-        "abbreviations": [],
-        "immediate": false,
-        "ignoreCase": false,
-        "backspace": true,
+        "wordChars": "[\\w]", 
+        "abbreviations": [], 
+        "immediate": false, 
+        "ignoreCase": false, 
+        "backspace": true, 
         "triggerInside": false
-    },
+    }, 
     "hotkey": {
-        "hotKey": "a",
+        "hotKey": "a", 
         "modifiers": [
             "<ctrl>"
         ]
-    },
+    }, 
     "modes": [
         3
-    ],
-    "showInTrayMenu": false,
-    "matchCase": false,
+    ], 
+    "showInTrayMenu": false, 
+    "matchCase": false, 
     "filter": {
-        "regex": "Navigator.Firefox|slack.Slack|google-chrome.Google-chrome|autokey.Autokey",
+        "regex": "Navigator.Firefox|slack.Slack|google-chrome.Google-chrome|autokey-gtk.Autokey-gtk", 
         "isRecursive": false
-    },
-    "type": "phrase",
+    }, 
+    "type": "phrase", 
     "sendMode": "kb"
 }
