@@ -1,9 +1,8 @@
-// Place your key bindings in this file to overwrite the defaults
+// Place your key bindings in this file to override the defaults
 [
     {
         "key": "alt+x",
         "command": "editor.action.clipboardCutAction",
-        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+x",
@@ -13,7 +12,6 @@
     {
         "key": "alt+c",
         "command": "editor.action.clipboardCopyAction",
-        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+c",
@@ -65,7 +63,6 @@
     {
         "key": "alt+v",
         "command": "editor.action.clipboardPasteAction",
-        "when": "editorTextFocus && !editorReadonly"
     },
     {
         "key": "ctrl+v",
@@ -103,7 +100,7 @@
     {
         "key": "ctrl+a",
         "command": "cursorHome",
-        "when": "editorTextFocus"
+        "when": "textInputFocus",
     },
     {
         "key": "home",
@@ -194,7 +191,6 @@
     {
         "key": "ctrl+end",
         "command": "-cursorBottom",
-        "when": "editorTextFocus"
     },
     {
         "key": "home",
@@ -248,7 +244,25 @@
         "command": "-editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
-    {   "key": "alt+shift+f",
+    {
+        "key": "alt+shift+f",
         "command": "workbench.action.findInFiles"
     },
+    {
+        "key": "shift+alt+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "shift+alt+x",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-workbench.view.explorer"
+    },
 ]
+

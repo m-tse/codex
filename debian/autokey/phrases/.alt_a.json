@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "hipchat4.HipChat|google-chrome.Google-chrome", 
+        "regex": "slack.Slack|google-chrome.Google-chrome", 
         "isRecursive": false
     }, 
     "type": "phrase", 
