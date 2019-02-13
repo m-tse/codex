@@ -132,7 +132,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "alt+shift+e",
+        "key": "ctrl+alt+e",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
@@ -263,6 +263,28 @@
     {
         "key": "ctrl+shift+e",
         "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+k ctrl+s",
+        "command": "-workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "ctrl+shift+alt+p",
+        "command": "workbench.action.openGlobalSettings"
+    },
+    {
+        "key": "shift+alt+e",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
     },
 ]
 
