@@ -84,6 +84,9 @@ bar {
         status_command i3status
         position top
         tray_output primary
+        # Turn off mouse scrolling on i3 bar window.
+        wheel_up_cmd nop
+        wheel_down_cmd nop
 }
 
 # reload the configuration file
@@ -91,13 +94,14 @@ bindsym $sup+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $sup+Shift+r restart
 
+
 # Window Assignment
 workspace 1 output eDP-1-1
 workspace 2 output eDP-1-1
 workspace 3 output eDP-1-1
-workspace 4 output DP-1-2
-workspace 5 output DP-1-2
-workspace 6 output DP-1-2
+#workspace 4 output DP-1-2
+#workspace 5 output DP-1-2
+#workspace 6 output DP-1-2
 #workspace 4 output DP-1
 #workspace 5 output DP-1
 
@@ -111,6 +115,8 @@ client.focused          #656565 #656565 #ffffff #656565 #285577
 client.focused_inactive #333333 #222222 #888888 #484e50 #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e #222222
 
+mouse_warping none
+
 # exit i3 (logs you out of your X session)
 bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -122,6 +128,9 @@ bindsym $sup+s exec "cinnamon-screensaver-command -l && xset dpms force off"
 # use xss-lock and xset to set a screensaver timeout and command
 exec_always --no-startup-id xset s 300
 exec_always --no-startup-id xss-lock -- cinnamon-screensaver-command -l
+# Disable touchscreen for asus laptop
+exec_always --no-startup-id xinput --disable 'ELAN Touchscreen'
+exec_always --no-startup-id xinput --disable 'ELAN Touchscreen Pen'
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
@@ -132,9 +141,9 @@ exec_always --no-startup-id numlockx on
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
-exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --output DP-1-2 --pos 1920x0 --primary
+exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-2 --pos 1920x0
+# Turn off linux touchpad tap to click.
+exec_always --no-startup-id synclient MaxTapTime=0
 
 # Screenshot
-bindsym --release $sup+shift+s exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
-
-
+bindsym --release $alt+shift+4 exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
