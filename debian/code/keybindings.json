@@ -19,11 +19,6 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "alt+e",
-        "command": "editor.action.smartSelect.grow",
-        "when": "editorTextFocus"
-    },
-    {
         "key": "shift+alt+right",
         "command": "-editor.action.smartSelect.grow",
         "when": "editorTextFocus"
@@ -132,7 +127,7 @@
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     },
     {
-        "key": "ctrl+alt+e",
+        "key": "shift+alt+s",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
@@ -275,6 +270,16 @@
     {
         "key": "ctrl+shift+alt+p",
         "command": "workbench.action.openGlobalSettings"
+    },
+    {
+        "key": "alt+e",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
     },
     {
         "key": "shift+alt+e",
