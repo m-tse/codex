@@ -83,7 +83,7 @@ bindsym $sup+Shift+minus  resize shrink height 50 px or 5 ppt
 bar {
         status_command i3status
         position top
-        tray_output primary
+        tray_output none
         # Turn off mouse scrolling on i3 bar window.
         wheel_up_cmd nop
         wheel_down_cmd nop
