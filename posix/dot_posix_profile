@@ -17,4 +17,4 @@ export CLICOLOR=1
 export EDITOR=vim
 export HISTTIMEFORMAT="%y/%m/%d %T "
 
-# bash_script_dir is how to get the script's directory in bash.
+source ~/Development/codex/posix/dot-git-completion
