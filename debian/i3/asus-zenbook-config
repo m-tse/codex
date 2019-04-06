@@ -1,0 +1,153 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+# This config file uses keycodes (bindsym) and was written for the QWERTY
+# layout.
+#
+# To get a config file with the same key positions, but for your current
+# layout, use the i3-config-wizard
+#
+
+set $alt Mod1
+set $sup Mod4
+
+
+# kill focused window
+bindsym $sup+q kill
+# start dmenu (a program launcher)
+bindsym $sup+space exec dmenu_run
+
+# change focus
+bindsym $sup+h focus left
+bindsym $sup+j focus down
+bindsym $sup+k focus up
+bindsym $sup+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $sup+Left focus left
+bindsym $sup+Down focus down
+bindsym $sup+Up focus up
+bindsym $sup+Right focus right
+
+# move focused window
+bindsym $sup+Shift+h move left
+bindsym $sup+Shift+j move down
+bindsym $sup+Shift+k move up
+bindsym $sup+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $sup+Shift+Left move left
+bindsym $sup+Shift+Down move down
+bindsym $sup+Shift+Up move up
+bindsym $sup+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $sup+$alt+h split h
+
+# split in vertical orientation
+bindsym $sup+v split v
+
+# switch to workspace
+bindsym $sup+1 workspace 1
+bindsym $sup+2 workspace 2
+bindsym $sup+3 workspace 3
+bindsym $sup+4 workspace 4
+bindsym $sup+5 workspace 5
+bindsym $sup+6 workspace 6
+bindsym $sup+7 workspace 7
+bindsym $sup+8 workspace 8
+bindsym $sup+9 workspace 9
+bindsym $sup+0 workspace 10
+
+# move focused container to workspace
+bindsym $sup+Shift+1 move container to workspace 1
+bindsym $sup+Shift+2 move container to workspace 2
+bindsym $sup+Shift+3 move container to workspace 3
+bindsym $sup+Shift+4 move container to workspace 4
+bindsym $sup+Shift+5 move container to workspace 5
+bindsym $sup+Shift+6 move container to workspace 6
+bindsym $sup+Shift+7 move container to workspace 7
+bindsym $sup+Shift+8 move container to workspace 8
+bindsym $sup+Shift+9 move container to workspace 9
+bindsym $sup+Shift+0 move container to workspace 10
+
+#bindsym $sup+plus        resize grow width 100 px or 10 ppt
+#bindsym $sup+minus       resize shrink width 100 px or 10 ppt
+
+bindsym $sup+Shift+plus   resize grow height 50 px or 5 ppt
+bindsym $sup+Shift+minus  resize shrink height 50 px or 5 ppt
+
+bindsym $sup+plus exec pactl -- set-sink-volume 0 +10%
+bindsym $sup+minus exec pactl -- set-sink-volume 0 -10%
+
+# Start i3bar to display a workspace bar (plus the system information i3status
+# finds out, if available)
+bar {
+        status_command i3status
+        position top
+        tray_output none
+        # Turn off mouse scrolling on i3 bar window.
+        wheel_up_cmd nop
+        wheel_down_cmd nop
+}
+
+# reload the configuration file
+bindsym $sup+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $sup+Shift+r restart
+
+
+# Window Assignment
+workspace 1 output eDP-1-1
+workspace 2 output eDP-1-1
+workspace 3 output eDP-1-1
+#workspace 4 output DP-1-2
+#workspace 5 output DP-1-2
+#workspace 6 output DP-1-2
+#workspace 4 output DP-1
+#workspace 5 output DP-1
+
+# Application Assignment
+#assign [class="Code"] 2
+#assign [class="jetbrains-idea"] 3
+
+focus_follows_mouse no
+
+client.focused          #656565 #656565 #ffffff #656565 #285577
+client.focused_inactive #333333 #222222 #888888 #484e50 #5f676a
+client.unfocused        #333333 #222222 #888888 #292d2e #222222
+
+mouse_warping none
+
+# exit i3 (logs you out of your X session)
+bindsym $sup+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# Lock/Sleep
+# Needed to start a daemon that enables cinnamon-screensaver
+exec_always --no-startup-id cinnamon-screensaver
+# Start screensaver and turn off monitor
+bindsym $sup+s exec "cinnamon-screensaver-command -l && xset dpms force off"
+# use xss-lock and xset to set a screensaver timeout and command
+#exec_always --no-startup-id xset s 300
+#exec_always --no-startup-id xss-lock -- cinnamon-screensaver-command -l
+# Disable touchscreen for asus laptop
+exec_always --no-startup-id xinput --disable 'ELAN Touchscreen'
+exec_always --no-startup-id xinput --disable 'ELAN Touchscreen Pen'
+exec_always --no-startup-id xautolock -detectsleep -time 5 -locker "i3lock -d -c 000070"
+
+# Key repeat speed
+exec_always --no-startup-id xset r rate 250 40
+
+exec_always --no-startup-id autokey-smart
+
+exec_always --no-startup-id numlockx on
+
+exec gsettings set org.gnome.desktop.background show-desktop-icons false
+
+exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-2 --pos 1920x0
+exec_always --no-startup-id synclient MaxTapTime=0
+
+# Screenshot
+bindsym --release $alt+shift+4 exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
+
