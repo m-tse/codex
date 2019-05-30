@@ -5,6 +5,10 @@
         100
     ],
     "workbench.startupEditor": "newUntitledFile",
+    "files.associations": {
+        "*.yaml.tpl": "yaml",
+        "*.yml.tpl": "yaml",
+    },
     "files.autoSave": "onFocusChange",
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
@@ -14,10 +18,31 @@
     "beautify.onSave": true,
     "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
-    "workbench.editor.showTabs": false,
     "breadcrumbs.enabled": true,
+    "search.followSymlinks": false,
+    "terraform.codelens.enabled": false,
+    "editor.codeLens": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.tabSize": 2,
     "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
-    "search.followSymlinks": false
+    "workbench.editor.showTabs": false,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "python.linting.pylintEnabled": false,
+    "python.linting.pep8Enabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pep8Args": [
+        "--max-line-length=100"
+    ],
+    "python.linting.flake8Args": [
+        "--max-line-length=100"
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=100"
+    ],
+    "editor.formatOnPaste": true,
+    "update.channel": "none"
 }
 
