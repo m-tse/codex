@@ -37,10 +37,10 @@ bindsym $sup+Shift+k move up
 bindsym $sup+Shift+l move right
 
 # alternatively, you can use the cursor keys:
-bindsym $sup+Shift+Left move left
+#bindsym $sup+Shift+Left move left
 bindsym $sup+Shift+Down move down
 bindsym $sup+Shift+Up move up
-bindsym $sup+Shift+Right move right
+#bindsym $sup+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $sup+$alt+h split h
@@ -59,6 +59,11 @@ bindsym $sup+7 workspace 7
 bindsym $sup+8 workspace 8
 bindsym $sup+9 workspace 9
 bindsym $sup+0 workspace 10
+
+# move workspace to different output
+bindsym $sup+Shift+Left move workspace to output left
+bindsym $sup+Shift+Right move workspace to output right
+
 
 # move focused container to workspace
 bindsym $sup+Shift+1 move container to workspace 1
@@ -145,7 +150,7 @@ exec_always --no-startup-id numlockx on
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
-exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-2 --pos 1920x0
+exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-1 --pos 1920x0
 exec_always --no-startup-id synclient MaxTapTime=0
 
 # Screenshot
