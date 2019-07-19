@@ -83,8 +83,8 @@ bindsym $sup+minus       resize shrink width 100 px or 10 ppt
 #bindsym $sup+Shift+plus   resize grow height 50 px or 5 ppt
 #bindsym $sup+Shift+minus  resize shrink height 50 px or 5 ppt
 
-bindsym $sup+Shift+plus exec pactl -- set-sink-volume 0 +10%
-bindsym $sup+Shift+minus exec pactl -- set-sink-volume 0 -10%
+bindsym $sup+Shift+plus exec amixer set 'PCM' 10%+
+bindsym $sup+Shift+minus exec amixer set 'PCM' 10%-
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
