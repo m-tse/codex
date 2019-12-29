@@ -52,6 +52,10 @@
     {
         "key": "alt+up",
         "command": "editor.action.moveLinesUpAction"
-    }
+    },
+    {
+        "key": "cmd+shift+2",
+        "command": "workbench.action.splitEditor"
+    },
 ]
 
