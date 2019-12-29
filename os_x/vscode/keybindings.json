@@ -17,7 +17,41 @@
     },
     {
         "key": "cmd+shift+e",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+s",
         "command": "editor.action.addSelectionToNextFindMatch",
         "when": "editorFocus"
     },
+    {
+        "key": "cmd+g",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "cmd+b",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+down",
+        "command": "-editor.action.moveLinesDownAction"
+    },
+    {
+        "key": "alt+up",
+        "command": "editor.action.moveLinesUpAction"
+    }
 ]
+
