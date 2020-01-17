@@ -16,7 +16,7 @@
     "editor.renderWhitespace": "boundary",
     "editor.quickSuggestionsDelay": 1000,
     "beautify.onSave": true,
-    "editor.formatOnSave": true,
+    // "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
     "breadcrumbs.enabled": true,
     "search.followSymlinks": false,
@@ -43,6 +43,9 @@
         "--max-line-length=100"
     ],
     "editor.formatOnPaste": true,
-    "update.channel": "none"
+    "update.channel": "none",
+    "window.zoomLevel": 0,
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false
 }
 
