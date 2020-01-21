@@ -31,9 +31,9 @@
         "editor.tabSize": 4
     },
     "python.linting.pylintEnabled": false,
-    "python.linting.pep8Enabled": false,
+    "python.linting.pycodestyleEnabled": false,
     "python.linting.flake8Enabled": true,
-    "python.linting.pep8Args": [
+    "python.linting.pycodestyleArgs": [
         "--max-line-length=100"
     ],
     "python.linting.flake8Args": [
@@ -46,6 +46,7 @@
     "update.channel": "none",
     "window.zoomLevel": 0,
     "window.customMenuBarAltFocus": false,
-    "window.enableMenuBarMnemonics": false
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "hidden" // there's an annoying thing in ubuntu where alt highlights the menu bar, breaking shortcuts
 }
 
