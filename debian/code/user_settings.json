@@ -47,6 +47,7 @@
     "window.zoomLevel": 0,
     "window.customMenuBarAltFocus": false,
     "window.enableMenuBarMnemonics": false,
-    "window.menuBarVisibility": "hidden" // there's an annoying thing in ubuntu where alt highlights the menu bar, breaking shortcuts
+    "window.menuBarVisibility": "hidden", // there's an annoying thing in ubuntu where alt highlights the menu bar, breaking shortcuts
+    "explorer.compactFolders": false,
 }
 
