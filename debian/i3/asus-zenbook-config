@@ -150,7 +150,8 @@ exec_always --no-startup-id numlockx on
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
 
-exec_always --no-startup-id xrandr --auto && xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-1 --pos 1920x0
+# Depending on which USB port we plug into, monitor might be DP-1-1 or DP-1-2, and we'll choose the same spot either way.
+exec_always --no-startup-id xrandr --auto && xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-1 --pos 1920x0 --output DP-1-2 --pos 1920x0
 exec_always --no-startup-id synclient MaxTapTime=0
 
 # Screenshot
