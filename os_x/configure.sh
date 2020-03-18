@@ -25,10 +25,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # Set screenshots location to ~/Downloads/"
 defaults write com.apple.screencapture location ~/Downloads/
 
-# Set meta key shortcuts
-mkdir -p ~/Library/KeyBindings
-ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
-
 # Set key repeat settings
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
 defaults write NSGlobalDomain KeyRepeat -int 2
