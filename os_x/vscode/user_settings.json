@@ -12,5 +12,5 @@
     "editor.formatOnSave": true,
     "explorer.confirmDelete": false,
     "files.insertFinalNewline": true,
+    "editor.wordWrap": "on",
 }
-
