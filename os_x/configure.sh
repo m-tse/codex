@@ -3,8 +3,11 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # Disabling press-and-hold for special keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
-# Show dotfiles in Finder by default
-defaults write com.apple.finder AppleShowAllFiles TRUE
+# Show dotfiles in Finder by default. I don't do this anymore, because
+# I only ever use dotfiles when in the terminal. When I'm clicking around
+# in the finder, I'm not going to click on one of those. So this just creates
+# extra bloat when navigating the finder.
+# defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # Show all filename extensions in Finder by default
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
