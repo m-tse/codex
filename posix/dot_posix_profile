@@ -24,4 +24,5 @@ shopt -s histappend                      # append to history, don't overwrite it
 export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 
-source ~/Development/codex/posix/dot-git-completion
+source ~/Development/codex/posix/git-completion.bash
+source ~/Development/codex/posix/git-prompt.sh
