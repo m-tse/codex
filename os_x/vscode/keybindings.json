@@ -57,5 +57,13 @@
         "key": "cmd+shift+2",
         "command": "workbench.action.splitEditor"
     },
+    {
+        "key": "shift+cmd+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+cmd+n",
+        "command": "explorer.newFolder"
+    },
 ]
 
