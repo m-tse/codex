@@ -85,4 +85,29 @@
         "command": "-cursorBottom",
         "when": "textInputFocus"
     },
+    {
+        "key": "shift+cmd+1",
+        "command": "workbench.action.editorLayoutSingle"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "-editor.action.replaceOne",
+        "when": "editorFocus && findWidgetVisible"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "-search.action.replace",
+        "when": "matchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "-search.action.replaceAllInFile",
+        "when": "fileMatchFocus && replaceActive && searchViewletVisible"
+    },
+    {
+        "key": "shift+cmd+1",
+        "command": "-search.action.replaceAllInFolder",
+        "when": "folderMatchFocus && replaceActive && searchViewletVisible"
+    },
 ]
+
