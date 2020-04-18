@@ -65,5 +65,25 @@
         "key": "ctrl+shift+cmd+n",
         "command": "explorer.newFolder"
     },
+    {
+        "key": "home",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
 ]
 
