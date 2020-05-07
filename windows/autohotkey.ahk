@@ -39,11 +39,9 @@ F12::SoundSet,+5
 
 !v::+Insert ; Paste in kitty.
 
-
-;;; Things to only apply outside the KiTTY terminal;;;
+;;; Things to only apply outside the KiTTY terminal ;;;
 #IfWinNotActive, ahk_class KiTTY
 
-^e::Send {End} ; move to end of line
 ^+e::Send +{End} ; highlight to end of line
 
 ; Rebind paste for everyone else normally
@@ -51,56 +49,36 @@ F12::SoundSet,+5
 ; Don't send ctrl C to KiTTY, it would kill the process
 !c::Send ^c
 
-^a::Send {Home} ; beginning of line
-^+a::Send +{Home} ; highlight to beginning of line
-; select all that doesn't conflict
-!a::
-Hotkey, ^a, Off
-Send ^a
-HotKey, ^a, On
-return
 
-^f::Send {Right} ; forward character
+$^f::Send {Right} ; forward character
 ^+f::Send +{Right} ; highlight forward
 ; find that doesn't conflict
-!f::
-Hotkey, ^f, Off
-Send ^f
-HotKey, ^f, On
-return
+!f::Send ^f
 
 ^b::Send {Left} ; move back
 ^+b::Send +{Left} ; highlight back
 ^d::Send {Del} ; delete character in front
 
-^p::Send {Up} ; move up a line
+$^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
-; print that doesn't conflict
-!p::
-Hotkey, ^p, Off
-Send ^p
-HotKey, ^p, On
-return
+!p::Send ^p
 
-^n::Send {Down} ; move down a line
-^+n::Send +{Down} ; highlight down a line
+$^n::Send {Down} ; move down a line
+$^+n::Send +{Down} ; highlight down a line
 ; new that doesn't conflict
-!n::
-Hotkey, ^n, Off
-Send ^n
-HotKey, ^n, On
-return
+!n::Send ^n
 ; incognito new that doesn't conflict
-!+n::
-Hotkey, ^+n, Off
-Send ^+n
-Hotkey, ^+n, On
-return
+!+n::Send ^+n
 
-^k::Send ^{Del} ; delete line
+
+$^k::Send ^{Del} ; delete line
 ; slack jump to that doesn't conflict
-!k::
-Hotkey, ^k, Off
-Send ^k
-HotKey, ^k, On
-return
+!k::Send ^k
+
+;;; Things to only apply outside VS Code ;;;
+#IfWinNotActive, ahk_exe Code.exe
+$^a::Send {Home} ; beginning of line
+^+a::Send +{Home} ; highlight to beginning of line
+!a::Send ^a
+
+^e::Send {End} ; move to end of line
