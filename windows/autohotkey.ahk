@@ -6,7 +6,10 @@
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
- 
+
+
+;;; Things to apply everywhere ;;;
+
 ; Set F11/F12 to decrease/increase volume.
 F11::SoundSet,-5
 F12::SoundSet,+5
@@ -18,10 +21,56 @@ F12::SoundSet,+5
 !t::Send ^t ; new tab
 !r::Send ^r ; refresh
 !z::Send ^z ; undo
-^b::Send {Left} ; move back
-^+b::Send +{Left} ; highlight back
+; Tab navigation
+!1::Send ^1
+!2::Send ^2
+!3::Send ^3
+!4::Send ^4
+!5::Send ^5
+!6::Send ^6
+!7::Send ^7
+!8::Send ^8
+!9::Send ^9
+!0::Send ^0
+
+
+;;; Things to only apply in the KiTTY terminal ;;;
+#IfWinActive, ahk_class KiTTY
+
+!v::+Insert ; Paste in kitty.
+
+
+;;; Things to only apply outside the KiTTY terminal;;;
+#IfWinNotActive, ahk_class KiTTY
+
 ^e::Send {End} ; move to end of line
 ^+e::Send +{End} ; highlight to end of line
+
+; Rebind paste for everyone else normally
+!v::Send ^v
+; Don't send ctrl C to KiTTY, it would kill the process
+!c::Send ^c
+
+^a::Send {Home} ; beginning of line
+^+a::Send +{Home} ; highlight to beginning of line
+; select all that doesn't conflict
+!a::
+Hotkey, ^a, Off
+Send ^a
+HotKey, ^a, On
+return
+
+^f::Send {Right} ; forward character
+^+f::Send +{Right} ; highlight forward
+; find that doesn't conflict
+!f::
+Hotkey, ^f, Off
+Send ^f
+HotKey, ^f, On
+return
+
+^b::Send {Left} ; move back
+^+b::Send +{Left} ; highlight back
 ^d::Send {Del} ; delete character in front
 
 ^p::Send {Up} ; move up a line
@@ -48,32 +97,10 @@ Send ^+n
 Hotkey, ^+n, On
 return
 
-^f::Send {Right} ; forward character
-^+f::Send +{Right} ; highlight forward
-; find that doesn't conflict
-!f::
-Hotkey, ^f, Off
-Send ^f
-HotKey, ^f, On
+^k::Send ^{Del} ; delete line
+; slack jump to that doesn't conflict
+!k::
+Hotkey, ^k, Off
+Send ^k
+HotKey, ^k, On
 return
-
-^a::Send {Home} ; beginning of line
-^+a::Send +{Home} ; highlight to beginning of line
-; select all that doesn't conflict
-!a::
-Hotkey, ^a, Off
-Send ^a
-HotKey, ^a, On
-return
- 
-#IfWinActive, ahk_class KiTTY
-; Rebind alt-v to mouse middle click (paste) in kitty.
-!v::
-MouseClick, middle
-Send, {DOWN}
-Return
-#IfWinActive
-; Rebind paste for everyone else normally
-!v::Send ^v
-; Don't send ctrl C to KiTTY, it would kill the process
-!c::Send ^c
