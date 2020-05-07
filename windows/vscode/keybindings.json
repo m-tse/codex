@@ -1,0 +1,144 @@
+// Place your key bindings in this file to override the defaultsauto[]
+// NOTE: some of these rely on or overlap with keybindings from AutoHotKey.
+[
+    {
+        "key": "shift+alt+p",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "alt+e",
+        "command": "editor.action.smartSelect.grow"
+    },
+    {
+        "key": "shift+alt+e",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+alt+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+g",
+        "command": "editor.action.revealDeclaration"
+    },
+    {
+        "key": "alt+g",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "home",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+home",
+        "command": "-cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+end",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "alt+1",
+        "command": "-workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "alt+2",
+        "command": "-workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "ctrl+3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "alt+3",
+        "command": "-workbench.action.openEditorAtIndex3"
+    },
+    {
+        "key": "ctrl+4",
+        "command": "workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "alt+4",
+        "command": "-workbench.action.openEditorAtIndex4"
+    },
+    {
+        "key": "ctrl+5",
+        "command": "workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "alt+5",
+        "command": "-workbench.action.openEditorAtIndex5"
+    },
+    {
+        "key": "ctrl+6",
+        "command": "workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "alt+6",
+        "command": "-workbench.action.openEditorAtIndex6"
+    },
+    {
+        "key": "ctrl+7",
+        "command": "workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "alt+7",
+        "command": "-workbench.action.openEditorAtIndex7"
+    },
+    {
+        "key": "ctrl+8",
+        "command": "workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "alt+8",
+        "command": "-workbench.action.openEditorAtIndex8"
+    },
+    {
+        "key": "ctrl+9",
+        "command": "workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "alt+9",
+        "command": "-workbench.action.openEditorAtIndex9"
+    },
+    {
+        "key": "shift+alt+s",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+b",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+left",
+        "command": "-workbench.action.navigateBack"
+    }
+]
