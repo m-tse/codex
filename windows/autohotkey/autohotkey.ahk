@@ -7,7 +7,6 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-
 ;;; Things to apply everywhere ;;;
 
 ; Set F11/F12 to decrease/increase volume.
@@ -36,7 +35,6 @@ F12::SoundSet,+5
 
 ;;; Things to only apply in the KiTTY terminal ;;;
 #IfWinActive, ahk_class KiTTY
-
 !v::+Insert ; Paste in kitty.
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
@@ -49,11 +47,9 @@ F12::SoundSet,+5
 ; Don't send ctrl C to KiTTY, it would kill the process
 !c::Send ^c
 
-
 $^f::Send {Right} ; forward character
 ^+f::Send +{Right} ; highlight forward
-; find that doesn't conflict
-!f::Send ^f
+!f::Send ^f ;find
 
 ^b::Send {Left} ; move back
 ^+b::Send +{Left} ; highlight back
@@ -61,24 +57,19 @@ $^f::Send {Right} ; forward character
 
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
-!p::Send ^p
+!p::Send ^p ;print
 
 $^n::Send {Down} ; move down a line
 $^+n::Send +{Down} ; highlight down a line
-; new that doesn't conflict
-!n::Send ^n
-; incognito new that doesn't conflict
-!+n::Send ^+n
-
+!n::Send ^n ; new
+!+n::Send ^+n ; incognito window
 
 $^k::Send ^{Del} ; delete line
-; slack jump to that doesn't conflict
-!k::Send ^k
+!k::Send ^k ; slack jump
 
-;;; Things to only apply outside VS Code ;;;
-#IfWinNotActive, ahk_exe Code.exe
 $^a::Send {Home} ; beginning of line
 ^+a::Send +{Home} ; highlight to beginning of line
-!a::Send ^a
+!a::Send ^a ; select all
 
 ^e::Send {End} ; move to end of line
+
