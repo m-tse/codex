@@ -8,4 +8,6 @@
         100
     ],
     "files.insertFinalNewline": true,
+    "editor.copyWithSyntaxHighlighting": false,
+    "files.autoSave": "onFocusChange",
 }
