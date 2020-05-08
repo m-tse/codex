@@ -67,6 +67,7 @@ $^+n::Send +{Down} ; highlight down a line
 $^k::Send ^{Del} ; delete line
 !k::Send ^k ; slack jump
 
+#IfWinNotActive, ahk_exe Code.exe
 $^a::Send {Home} ; beginning of line
 ^+a::Send +{Home} ; highlight to beginning of line
 !a::Send ^a ; select all
