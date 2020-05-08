@@ -236,5 +236,23 @@
         "key": "end",
         "command": "-cursorEnd",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+n",
+        "command": "explorer.newFile"
+    },
+    {
+        "key": "ctrl+shift+alt+n",
+        "command": "explorer.newFolder"
+    },
+    {
+        "key": "alt+/",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+/",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]
