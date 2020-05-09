@@ -1,7 +1,3 @@
-; Autohotkey script for my windows PC. Create this in the Documents folder, then copy the file,
-; then "Paste Shortcut" into the the Startup Folder, which can be navigated to via "Windows + R",
-; "shell:startup"
- 
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -32,10 +28,16 @@ F12::SoundSet,+5
 !9::Send ^9
 !0::Send ^0
 
-
 ;;; Things to only apply in the KiTTY terminal ;;;
 #IfWinActive, ahk_class KiTTY
 !v::+Insert ; Paste in kitty.
+; shift click instead of normal click for better tmux highlighting while in scroll mode
+LButton::
+Send, {Shift down}
+Mouseclick, left
+Send {Shift up}
+Return
+
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
 #IfWinNotActive, ahk_class KiTTY
