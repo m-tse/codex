@@ -33,9 +33,11 @@ F12::SoundSet,+5
 !v::+Insert ; Paste in kitty.
 ; shift click instead of normal click for better tmux highlighting while in scroll mode
 LButton::
-Send, {Shift down}
-Mouseclick, left
-Send {Shift up}
+ {
+   Sendinput, {Shift down}{LButton down}
+   keywait, LButton
+   Sendinput, {LButton up}{Shift up}
+ }
 Return
 
 
