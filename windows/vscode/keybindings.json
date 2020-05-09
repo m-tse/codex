@@ -208,7 +208,7 @@
         "when": "inFilesPicker && inQuickOpen"
     },
     {
-        "key": "alt+a",
+        "key": "ctrl+a",
         "command": "editor.action.selectAll",
         "when": "textInputFocus"
     },
@@ -312,7 +312,7 @@
         "command": "deleteAllRight"
     },
     {
-        "key": "ctrl+a",
+        "key": "home",
         "command": "cursorHome",
         "when": "textInputFocus"
     },
@@ -322,7 +322,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+e",
+        "key": "end",
         "command": "cursorEnd",
         "when": "textInputFocus"
     },
