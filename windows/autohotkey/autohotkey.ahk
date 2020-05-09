@@ -28,6 +28,11 @@ F12::SoundSet,+5
 !9::Send ^9
 !0::Send ^0
 
+; Weird hack I found online to disable the start menu from opening when I'm cycling through desktops.
+; Weirdly, it doesn't capture the first time you do it, but locks it down ever after.
+*LWin::Send {Blind}{LWin Down}
+*LWin Up::Send {Blind}{vk00}{LWin Up}
+
 ;;; Things to only apply in the KiTTY terminal ;;;
 #IfWinActive, ahk_class KiTTY
 !v::+Insert ; Paste in kitty.
