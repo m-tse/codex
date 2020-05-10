@@ -21,13 +21,13 @@
   ui = auto
 [color "diff"]
   meta = yellow
-  commit = green bold
-  frag = blue bold
-  old = red bold
-  new = green bold
+  commit = green
+  frag = blue
+  old = red
+  new = green
   whitespace = red reverse
 [color "diff-highlight"]
-  oldNormal = red bold
-  oldHighlight = red bold 52
-  newNormal = green bold
-  newHighlight = green bold 22
+  oldNormal = red
+  oldHighlight = red 52
+  newNormal = green
+  newHighlight = green 22
