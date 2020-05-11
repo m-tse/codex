@@ -57,12 +57,21 @@ Return
 !c::Send ^c
 
 $^f::Send {Right} ; forward character
+#f::Send ^{Right} ; forward by word
 ^+f::Send +{Right} ; highlight forward
+#+f::Send ^+{Right} ; highlight forward by word
 !f::Send ^f ;find
 
 ^b::Send {Left} ; move back
+#b::Send ^{Left} ; back by word
 ^+b::Send +{Left} ; highlight back
+#+b::Send ^+{Left} ; highlight back by word
+
 ^d::Send {Del} ; delete character in front
+#d::Send ^{Del} ; delete word in front
+
+^h::Send {Backspace} ; backspace from home row
+#h::Send ^{Backspace} ; delete word in back
 
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
