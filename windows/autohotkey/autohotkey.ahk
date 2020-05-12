@@ -45,6 +45,13 @@ LButton::
  }
 Return
 
+; Kitty terminal accepts weird meta character keys
+#b::Send !b ; back by word
+#f::Send !f ; forward by word
+#d::Send !d ; delete forward by word
+#h::Send !{Backspace} ; delete backward by word
+#Backspace::Send !{Backspace} ; delete backward by word
+
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
 #IfWinNotActive, ahk_class KiTTY
