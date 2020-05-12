@@ -33,10 +33,15 @@ F12::SoundSet,+5
 *LWin::Send {Blind}{LWin Down}
 *LWin Up::Send {Blind}{vk00}{LWin Up}
 
-;;; Things to only apply in the KiTTY terminal ;;;
-#IfWinActive, ahk_class KiTTY
-!v::+Insert ; Paste in kitty.
-; shift click instead of normal click for better tmux highlighting while in scroll mode
+; Function that determines if the mouse is over a specific window, which is different
+; from whether a window is active or not.
+MouseIsOver(WinTitle) {
+  MouseGetPos,,, Win
+  return WinExist(WinTitle . " ahk_id " . Win)
+}
+
+; shift click instead of normal click for better tmux highlighting while in scroll mode.
+#If MouseIsOver("ahk_class KiTTY")
 LButton::
  {
    Sendinput, {Shift down}{LButton down}
@@ -44,6 +49,11 @@ LButton::
    Sendinput, {LButton up}{Shift up}
  }
 Return
+#If
+
+;;; Things to only apply in the KiTTY terminal ;;;
+#IfWinActive, ahk_class KiTTY
+!v::+Insert ; Paste in kitty.
 
 ; Kitty terminal accepts weird meta character keys
 #b::Send !b ; back by word
@@ -79,6 +89,7 @@ $^f::Send {Right} ; forward character
 
 ^h::Send {Backspace} ; backspace from home row
 #h::Send ^{Backspace} ; delete word in back
+#Backspace::Send ^{Backspace} ; delete word in back
 
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
