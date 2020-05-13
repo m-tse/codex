@@ -28,6 +28,9 @@ F12::SoundSet,+5
 !9::Send ^9
 !0::Send ^0
 
+; Quick way to shrug
+::;shrug::¯\_(ツ)_/¯ 
+
 ; Weird hack I found online to disable the start menu from opening when I'm cycling through desktops.
 ; Weirdly, it doesn't capture the first time you do it, but locks it down ever after.
 *LWin::Send {Blind}{LWin Down}
