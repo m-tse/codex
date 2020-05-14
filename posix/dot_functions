@@ -1,4 +1,9 @@
-# Shortcut to diff your current branch against the merge point in the maste branch.
+# Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffbranch() {
   git diff $(git merge-base --fork-point master)
+}
+
+# Rebase the current branch off the merge point in the master branch.
+gitrebase() {
+  git rebase -i $(git merge-base --fork-point master)
 }
