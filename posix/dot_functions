@@ -3,7 +3,12 @@ gitdiffbranch() {
   git diff $(git merge-base --fork-point master)
 }
 
-# Rebase the current branch off the merge point in the master branch.
+# Rebase the current branch off the merge point in the master branch and autosquash any fixup commits.
 gitrebase() {
-  git rebase -i $(git merge-base --fork-point master)
+  git rebase --interactive --autosquash $(git merge-base --fork-point master)
+}
+
+# Quickly add all files and commit with a fixup message based off the last commit, which will be autosquashed
+gitcommit() {
+  git commit --all -m "fixup! $(git rev-parse HEAD)"
 }
