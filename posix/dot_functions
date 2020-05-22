@@ -4,9 +4,13 @@ gitdiffbranch() {
 }
 
 # Rebase the current branch off the merge point in the master branch and autosquash any fixup commits.
+# Set the GIT_EDITOR to true to automatically accept the changes, then set it back to normal.
 gitrebase() {
-  git rebase --interactive --autosquash $(git merge-base --fork-point master)
+  export GIT_EDITOR=true;
+  git rebase --interactive --autosquash $(git merge-base --fork-point master);
+  export GIT_EDITOR=vim;
 }
+
 
 # Quickly add all files and commit with a fixup message based off the last commit, which will be autosquashed
 gitcommit() {
