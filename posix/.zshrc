@@ -20,3 +20,14 @@ setopt HIST_IGNORE_ALL_DUPS # Erase duplicates in history file
 
 # Get timestamps in history
 alias history="history -i"
+
+# Enable git completion
+autoload -Uz compinit && compinit -i
+
+# Put the git branch info on the right side
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=%F{82}\$vcs_info_msg_0_
+zstyle ':vcs_info:git:*' formats '⎇ %b'
