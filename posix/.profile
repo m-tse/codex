@@ -20,3 +20,8 @@ gitcommit() {
 
 # Use bat(syntax highlighted cat) instead of cat
 alias cat='bat'
+
+# Set default editors to vim
+export EDITOR=vim
+export VISUAL=vim
+export GIT_EDITOR=vim
