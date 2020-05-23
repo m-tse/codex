@@ -9,3 +9,6 @@ brew cask install rectangle
 brew cask install karabiner-elements
 # To get mouse 4/5 to behave as back/forward
 brew cask install sensiblesidebuttons
+
+# Command line tools
+brew install bat diff-so-fancy

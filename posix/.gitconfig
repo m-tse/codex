@@ -1,0 +1,11 @@
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+[color]
+  ui = auto
+[color "diff"]
+  meta = yellow
+  commit = green
+  frag = blue
+  old = red
+  new = green
+  whitespace = red reverse
