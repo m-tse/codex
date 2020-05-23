@@ -39,3 +39,6 @@ ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
 
 # Make zsh the default shell
 chsh -s /bin/zsh
+
+# Link the .zshrc
+ln -s ~/Development/codex/posix/.zshrc ~/.zshrc
