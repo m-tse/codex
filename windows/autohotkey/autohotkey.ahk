@@ -28,15 +28,23 @@ F12::SoundSet,+5
 !9::Send ^9
 !0::Send ^0
 
+; Quick way to shrug
+::;shrug::¯\_(ツ)_/¯ 
+
 ; Weird hack I found online to disable the start menu from opening when I'm cycling through desktops.
 ; Weirdly, it doesn't capture the first time you do it, but locks it down ever after.
 *LWin::Send {Blind}{LWin Down}
 *LWin Up::Send {Blind}{vk00}{LWin Up}
 
-;;; Things to only apply in the KiTTY terminal ;;;
-#IfWinActive, ahk_class KiTTY
-!v::+Insert ; Paste in kitty.
-; shift click instead of normal click for better tmux highlighting while in scroll mode
+; Function that determines if the mouse is over a specific window, which is different
+; from whether a window is active or not.
+MouseIsOver(WinTitle) {
+  MouseGetPos,,, Win
+  return WinExist(WinTitle . " ahk_id " . Win)
+}
+
+; shift click instead of normal click for better tmux highlighting while in scroll mode.
+#If MouseIsOver("ahk_class KiTTY")
 LButton::
  {
    Sendinput, {Shift down}{LButton down}
@@ -44,6 +52,18 @@ LButton::
    Sendinput, {LButton up}{Shift up}
  }
 Return
+#If
+
+;;; Things to only apply in the KiTTY terminal ;;;
+#IfWinActive, ahk_class KiTTY
+!v::+Insert ; Paste in kitty.
+
+; Kitty terminal accepts weird meta character keys
+#b::Send !b ; back by word
+#f::Send !f ; forward by word
+#d::Send !d ; delete forward by word
+#h::Send !{Backspace} ; delete backward by word
+#Backspace::Send !{Backspace} ; delete backward by word
 
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
@@ -57,12 +77,22 @@ Return
 !c::Send ^c
 
 $^f::Send {Right} ; forward character
+#f::Send ^{Right} ; forward by word
 ^+f::Send +{Right} ; highlight forward
+#+f::Send ^+{Right} ; highlight forward by word
 !f::Send ^f ;find
 
 ^b::Send {Left} ; move back
+#b::Send ^{Left} ; back by word
 ^+b::Send +{Left} ; highlight back
+#+b::Send ^+{Left} ; highlight back by word
+
 ^d::Send {Del} ; delete character in front
+#d::Send ^{Del} ; delete word in front
+
+^h::Send {Backspace} ; backspace from home row
+#h::Send ^{Backspace} ; delete word in back
+#Backspace::Send ^{Backspace} ; delete word in back
 
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
