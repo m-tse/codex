@@ -1,3 +1,4 @@
 Codex
 =====
-Codex for setting up OS-X or Linux to Matt's preferences.
+A place to store all my configuration settings to be productive across environments, Windows, Linux,
+and MacOS. Feel free to use any of this if you find it useful!
