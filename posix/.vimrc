@@ -13,4 +13,5 @@ set smartcase
 set smarttab
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
-colorscheme murphy # A nice default color scheme that looks close to the homebrew terminal colors
+" A nice default color scheme that looks clsoe to the homebrew terminal colors
+colorscheme murphy
