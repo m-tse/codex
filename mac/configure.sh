@@ -36,3 +36,6 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 # Add meta key shortcuts os-wide
 mkdir -p ~/Library/KeyBindings
 ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
+
+# Make zsh the default shell
+chsh -s /bin/zsh
