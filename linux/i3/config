@@ -128,9 +128,6 @@ bindsym $sup+s exec "cinnamon-screensaver-command -l && xset dpms force off"
 # use xss-lock and xset to set a screensaver timeout and command
 exec_always --no-startup-id xset s 300
 exec_always --no-startup-id xss-lock -- cinnamon-screensaver-command -l
-# Disable touchscreen for asus laptop
-exec_always --no-startup-id xinput --disable 'ELAN Touchscreen'
-exec_always --no-startup-id xinput --disable 'ELAN Touchscreen Pen'
 
 # Key repeat speed
 exec_always --no-startup-id xset r rate 250 40
@@ -140,10 +137,6 @@ exec_always --no-startup-id autokey-smart
 exec_always --no-startup-id numlockx on
 
 exec gsettings set org.gnome.desktop.background show-desktop-icons false
-
-exec_always --no-startup-id xrandr --output eDP-1-1 --pos 0x360 --primary --output DP-1-2 --pos 1920x0
-# Turn off linux touchpad tap to click.
-exec_always --no-startup-id synclient MaxTapTime=0
 
 # Screenshot
 bindsym --release $alt+shift+4 exec --no-startup-id import ~/Downloads/`date --iso-8601=seconds`_screenshot.png
