@@ -17,3 +17,6 @@ gitrebase() {
 gitcommit() {
   git commit --all -m "fixup! $(git rev-parse HEAD)"
 }
+
+# Use bat(syntax highlighted cat) instead of cat
+alias cat='bat'
