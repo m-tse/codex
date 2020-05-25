@@ -11,4 +11,4 @@ brew cask install karabiner-elements
 brew cask install sensiblesidebuttons
 
 # Command line tools
-brew install bat diff-so-fancy
+brew install bat diff-so-fancy tree
