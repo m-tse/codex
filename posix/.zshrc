@@ -1,4 +1,4 @@
-PROMPT='%F{178}%~ %F{52}> %f'
+PROMPT='%F{178}%~ %F{1}> %f'
 
 # History Settings
 HISTFILESIZE=100000
@@ -30,4 +30,4 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=%F{82}\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '⎇ %b'
+zstyle ':vcs_info:git:*' formats '[%b]'
