@@ -1,3 +1,6 @@
+# Enable 256 colors (might not be necessary on mac, but required for putty)
+export TERM=screen-256color
+# Set the prompt to path and symbol
 PROMPT='%F{178}%~ %F{1}> %f'
 
 # History Settings
@@ -18,8 +21,9 @@ setopt HIST_IGNORE_ALL_DUPS # Erase duplicates in history file
 # Currently this is disabled.
 # setopt incappendhistory
 
-# Get timestamps in history
-alias history="history -i"
+# -i adds timestamps to history
+# 0 grabs the history from the first entry
+alias history="history -i 0"
 
 # Enable git completion
 autoload -Uz compinit && compinit -i
