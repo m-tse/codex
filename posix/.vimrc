@@ -1,6 +1,7 @@
 set paste " set paste mode (paste code in insert without weird newlines/indents)
+" autoindent is turned off because it interferes with paste mode
+"set autoindent " newlines inherit indent of previous lines
 
-set autoindent " newlines inherit indent of previous lines
 set tabstop=2 " indent using 2 spaces
 set smarttab " Insert tab stop number of spaces when Tab is pressed
 set expandtab " convert tabs to spaces
