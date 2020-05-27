@@ -1,7 +1,7 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
-# Set the prompt to path and symbol
-PROMPT='%F{178}%~ %F{1}> %f'
+# Set the prompt to 'host:path >' with colors
+PROMPT='%F{12}%m:%F{178}%~ %F{1}> %f' 
 
 # History Settings
 HISTFILESIZE=100000
