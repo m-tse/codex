@@ -28,6 +28,12 @@ alias history="history -i 0"
 # Enable git completion
 autoload -Uz compinit && compinit -i
 
+# Turn on full fuzzy path completion
+zstyle ':completion:*' matcher-list '' \
+  'm:{a-z\-}={A-Z\_}' \
+  'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
+  'r:|?=** m:{a-z\-}={A-Z\_}'
+
 # Put the git branch info on the right side
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
