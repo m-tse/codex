@@ -41,3 +41,7 @@ precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=%F{82}\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '[%b]'
+
+# Turn on fish-style autosuggestions. You first need to install this script from
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
+# source ~/.zsh/zsh-autosuggestions.zsh
