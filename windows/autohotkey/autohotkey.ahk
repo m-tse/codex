@@ -31,11 +31,6 @@ F12::SoundSet,+5
 ; Quick way to shrug
 ::;shrug::¯\_(ツ)_/¯ 
 
-; Weird hack I found online to disable the start menu from opening when I'm cycling through desktops.
-; Weirdly, it doesn't capture the first time you do it, but locks it down ever after.
-*LWin::Send {Blind}{LWin Down}
-*LWin Up::Send {Blind}{vk00}{LWin Up}
-
 ; Function that determines if the mouse is over a specific window, which is different
 ; from whether a window is active or not.
 MouseIsOver(WinTitle) {
@@ -64,7 +59,6 @@ Return
 #d::Send !d ; delete forward by word
 #h::Send !{Backspace} ; delete backward by word
 #Backspace::Send !{Backspace} ; delete backward by word
-
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
 #IfWinNotActive, ahk_class KiTTY
