@@ -10,6 +10,7 @@ F11::SoundSet,-5
 F12::SoundSet,+5
 
 ; Rebind CapsLock to ctrl to stop stressing my thumb
++Capslock::Capslock ; Allow Shift + Capslock to actually do caps lock.
 Capslock::Control
 
 ;!l::Send ^l ; Address bar in chrome
