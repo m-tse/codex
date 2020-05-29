@@ -10,38 +10,9 @@ F11::SoundSet,-5
 F12::SoundSet,+5
 
 ; Rebind CapsLock to ctrl to stop stressing my thumb
-+Capslock::Capslock ; Allow Shift + Capslock to actually do caps lock.
-Capslock::Control
+;+Capslock::Capslock ; Allow Shift + Capslock to actually do caps lock.
+Capslock::Ctrl
 
-;!l::Send ^l ; Address bar in chrome
-;!x::Send ^x ; cut
-;!s::Send ^s ; save
-;!w::Send ^w ; close tab
-;!t::Send ^t ; new tab
-;!r::Send ^r ; refresh
-;!z::Send ^z ; undo
-; Tab navigation
-;!1::Send ^1
-;!2::Send ^2
-;!3::Send ^3
-;!4::Send ^4
-;!5::Send ^5
-;!6::Send ^6
-;!7::Send ^7
-;!8::Send ^8
-;!9::Send ^9
-;!0::Send ^0
-
-; Quick way to shrug
-::;shrug::¯\_(ツ)_/¯ 
-
-; Weird hack I found online to disable the start menu from opening when I'm cycling through desktops.
-; Weirdly, it doesn't capture the first time you do it, but locks it down ever after.
-*LWin::Send {Blind}{LWin Down}
-*LWin Up::Send {Blind}{vk00}{LWin Up}
-
-; Function that determines if the mouse is over a specific window, which is different
-; from whether a window is active or not.
 MouseIsOver(WinTitle) {
   MouseGetPos,,, Win
   return WinExist(WinTitle . " ahk_id " . Win)
@@ -71,46 +42,29 @@ Return
 
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
+; Kitty terminal works with emacs style navigation, but doesn't work with home/end
 #IfWinNotActive, ahk_class KiTTY
 
-^+e::Send +{End} ; highlight to end of line
-
-; Rebind paste for everyone else normally
-!v::Send ^v
-; Don't send ctrl C to KiTTY, it would kill the process
-!c::Send ^c
-
-$^f::Send {Right} ; forward character
-#f::Send ^{Right} ; forward by word
-^+f::Send +{Right} ; highlight forward
-#+f::Send ^+{Right} ; highlight forward by word
-!f::Send ^f ;find
-
-^b::Send {Left} ; move back
-#b::Send ^{Left} ; back by word
-^+b::Send +{Left} ; highlight back
-#+b::Send ^+{Left} ; highlight back by word
-
-^d::Send {Del} ; delete character in front
-#d::Send ^{Del} ; delete word in front
-
-^h::Send {Backspace} ; backspace from home row
-#h::Send ^{Backspace} ; delete word in back
-#Backspace::Send ^{Backspace} ; delete word in back
-
-$^p::Send {Up} ; move up a line
-^+p::Send +{Up} ; highlight up a line
-!p::Send ^p ;print
-
-$^n::Send {Down} ; move down a line
-$^+n::Send +{Down} ; highlight down a line
-;!n::Send ^n ; new
-;!+n::Send ^+n ; incognito window
-
-$^k::Send ^{Del} ; delete line
-;!k::Send ^k ; slack jump
-
-$^a::Send {Home} ; beginning of line
-^+a::Send +{Home} ; highlight to beginning of line
-;!a::Send ^a ; select all
-^e::Send {End} ; move to end of line
+; Emacs style navigation/editing using control
+$^b::Send {Left}
+$^+b::Send +{Left}
+#b::Send ^{Left}
+#+b::Send ^+{Left}
+$^f::Send {Right}
+$^+f::Send +{Right}
+#f::Send ^{Right}
+#+f::Send ^+{Right}
+$^a::Send {Home}
+$^+a::Send +{Home}
+$^e::Send {End}
+$^+e::Send +{End}
+$^n::Send {Down}
+$^+n::Send +{Down}
+$^p::Send {Up}
+$^+p::Send +{Up}
+$^d::Send {Del}
+#d::Send ^{Del}
+$^h::Send {Backspace}
+#h::Send ^{Backspace}
+#Backspace::Send ^{Backspace}
+$^k::Send ^{Del}
