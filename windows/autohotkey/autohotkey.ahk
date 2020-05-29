@@ -8,25 +8,28 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; Set F11/F12 to decrease/increase volume.
 F11::SoundSet,-5
 F12::SoundSet,+5
- 
-!l::Send ^l ; Address bar in chrome
-!x::Send ^x ; cut
-!s::Send ^s ; save
-!w::Send ^w ; close tab
-!t::Send ^t ; new tab
-!r::Send ^r ; refresh
-!z::Send ^z ; undo
+
+; Rebind CapsLock to ctrl to stop stressing my thumb
+Capslock::Control
+
+;!l::Send ^l ; Address bar in chrome
+;!x::Send ^x ; cut
+;!s::Send ^s ; save
+;!w::Send ^w ; close tab
+;!t::Send ^t ; new tab
+;!r::Send ^r ; refresh
+;!z::Send ^z ; undo
 ; Tab navigation
-!1::Send ^1
-!2::Send ^2
-!3::Send ^3
-!4::Send ^4
-!5::Send ^5
-!6::Send ^6
-!7::Send ^7
-!8::Send ^8
-!9::Send ^9
-!0::Send ^0
+;!1::Send ^1
+;!2::Send ^2
+;!3::Send ^3
+;!4::Send ^4
+;!5::Send ^5
+;!6::Send ^6
+;!7::Send ^7
+;!8::Send ^8
+;!9::Send ^9
+;!0::Send ^0
 
 ; Quick way to shrug
 ::;shrug::¯\_(ツ)_/¯ 
@@ -100,13 +103,13 @@ $^p::Send {Up} ; move up a line
 
 $^n::Send {Down} ; move down a line
 $^+n::Send +{Down} ; highlight down a line
-!n::Send ^n ; new
-!+n::Send ^+n ; incognito window
+;!n::Send ^n ; new
+;!+n::Send ^+n ; incognito window
 
 $^k::Send ^{Del} ; delete line
-!k::Send ^k ; slack jump
+;!k::Send ^k ; slack jump
 
 $^a::Send {Home} ; beginning of line
 ^+a::Send +{Home} ; highlight to beginning of line
-!a::Send ^a ; select all
+;!a::Send ^a ; select all
 ^e::Send {End} ; move to end of line
