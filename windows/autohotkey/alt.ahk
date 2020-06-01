@@ -1,3 +1,4 @@
+; First autohotkey set, where Alt is used as the super key
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -104,3 +105,4 @@ $^a::Send {Home} ; beginning of line
 ^+a::Send +{Home} ; highlight to beginning of line
 !a::Send ^a ; select all
 ^e::Send {End} ; move to end of line
+
