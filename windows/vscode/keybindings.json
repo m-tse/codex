@@ -1,4 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// First vs code keybindings with alt as the super key.
 [
     {
         "key": "shift+alt+p",

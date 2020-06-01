@@ -1,4 +1,4 @@
-// Place your key bindings in this file to override the defaultsauto[]
+// Fork of vs code keybindings with capslock (ctrl) as the super key
 [
     {
         "key": "ctrl+shift+g",
