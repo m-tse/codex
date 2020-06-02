@@ -4,13 +4,15 @@
     "editor.wordWrap": "on",
     "editor.dragAndDrop": false,
     "editor.minimap.enabled": false,
-    "editor.rulers": [
-        120
-    ],
+    "editor.rulers": [80, 120],
     "files.insertFinalNewline": true,
     "editor.copyWithSyntaxHighlighting": false,
     "files.autoSave": "onFocusChange",
     "editor.hover.delay": 200,
     "editor.quickSuggestionsDelay": 2000,
     "explorer.confirmDragAndDrop": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.enablePreview": false,
+    "editor.fontSize": 14.5,
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
 }
