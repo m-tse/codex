@@ -1,7 +1,7 @@
 // Fork of vs code keybindings with capslock (ctrl) as the super key
 [
     {
-        "key": "ctrl+shift+g",
+        "key": "ctrl+shift+p",
         "command": "workbench.action.showCommands"
     },
     {
@@ -99,11 +99,11 @@
         "command": "workbench.action.editorLayoutTwoColumns"
     },
     {
-        "key": "shift+alt+c",
+        "key": "ctrl+shift+c",
         "command": "workbench.files.action.collapseExplorerFolders"
     },
     {
-        "key": "shift+alt+x",
+        "key": "ctrl+shift+x",
         "command": "workbench.files.action.showActiveFileInExplorer"
     },
     {
@@ -115,7 +115,7 @@
         "command": "explorer.newFolder"
     },
     {
-        "key": "ctrl+shift+c",
+        "key": "ctrl+/",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -125,7 +125,7 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+alt+1",
+        "key": "ctrl+shift+1",
         "command": "workbench.action.moveEditorToFirstGroup"
     },
     {
@@ -133,7 +133,7 @@
         "command": "-workbench.action.moveEditorToFirstGroup"
     },
     {
-        "key": "ctrl+alt+2",
+        "key": "ctrl+shift+2",
         "command": "workbench.action.moveEditorToLastGroup"
     },
     {
@@ -206,7 +206,7 @@
         "command": "-workbench.action.navigateForward"
     },
     {
-        "key": "ctrl+g",
+        "key": "ctrl+p",
         "command": "workbench.action.quickOpen"
     },
     {
@@ -229,7 +229,7 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "alt+g",
+        "key": "ctrl+;",
         "command": "workbench.action.gotoLine"
     },
     {
@@ -239,5 +239,15 @@
     {
         "key": "ctrl+a",
         "command": "selectAll"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
     }
 ]
