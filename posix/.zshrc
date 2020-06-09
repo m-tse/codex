@@ -44,4 +44,8 @@ zstyle ':vcs_info:git:*' formats '[%b]'
 
 # Turn on fish-style autosuggestions. You first need to install this script from
 # https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-# source ~/.zsh/zsh-autosuggestions.zsh
+# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Turn on zsh highlighting. You first need to install this script from
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
+# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
