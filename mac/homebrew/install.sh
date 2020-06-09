@@ -11,8 +11,11 @@ brew cask install karabiner-elements
 brew cask install sensiblesidebuttons
 
 # Command line tools
-brew install \
-  bat \ # Fancy cat with syntax highlighting and line numbers
-  diff-so-fancy \ # Fancy git diff
-  tree \ # View directory tree structure
-  fd # Fancy fast find
+# Fancy cat with syntax highlighting and line numbers
+brew install bat
+# Fancy git diff
+brew install diff-so-fancy
+# View directory tree structure
+brew install tree
+# Fancy fast find
+brew install fd
