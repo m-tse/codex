@@ -34,11 +34,11 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write com.apple.dock no-bouncing -bool TRUE
 
 # Add meta key shortcuts os-wide
-mkdir -p ~/Library/KeyBindings
-ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
+# mkdir -p ~/Library/KeyBindings
+# cp $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/
 
 # Make zsh the default shell
 chsh -s /bin/zsh
 
 # Link the .zshrc
-ln -s ~/Development/codex/posix/.zshrc ~/.zshrc
+# cp ~/Development/codex/posix/.zshrc ~/.zshrc
