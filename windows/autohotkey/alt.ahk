@@ -1,4 +1,3 @@
-; First autohotkey set, where Alt is used as the super key
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
@@ -6,10 +5,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;;; Things to apply everywhere ;;;
 
+Capslock::Esc
+^Capslock::Capslock
+
 ; Set F11/F12 to decrease/increase volume.
 F11::SoundSet,-5
 F12::SoundSet,+5
- 
+
 !l::Send ^l ; Address bar in chrome
 !x::Send ^x ; cut
 !s::Send ^s ; save
@@ -53,6 +55,7 @@ Return
 ;;; Things to only apply in the KiTTY terminal ;;;
 #IfWinActive, ahk_class KiTTY
 !v::+Insert ; Paste in kitty.
+!c::^Insert ; Copy in kitty.
 
 ; Kitty terminal accepts weird meta character keys
 #b::Send !b ; back by word
@@ -60,6 +63,7 @@ Return
 #d::Send !d ; delete forward by word
 #h::Send !{Backspace} ; delete backward by word
 #Backspace::Send !{Backspace} ; delete backward by word
+
 
 ;;; Things to only apply outside the KiTTY terminal ;;;
 #IfWinNotActive, ahk_class KiTTY
@@ -106,3 +110,10 @@ $^a::Send {Home} ; beginning of line
 !a::Send ^a ; select all
 ^e::Send {End} ; move to end of line
 
+
+#IfWinActive, ahk_exe chrome.exe
+!g::Send ^l ; "Go" opens the address bar, closer to left hand side
+#IfWinActive
+#IfWinActive, ahk_exe slack.exe
+!g::Send ^k ; "Go" goes to any channel or PM, G is closer to left side than k
+#IfWinActive
