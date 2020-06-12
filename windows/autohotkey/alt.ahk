@@ -103,7 +103,6 @@ $^+n::Send +{Down} ; highlight down a line
 !+n::Send ^+n ; incognito window
 
 $^k::Send ^{Del} ; delete line
-!k::Send ^k ; slack jump
 
 $^a::Send {Home} ; beginning of line
 ^+a::Send +{Home} ; highlight to beginning of line
@@ -115,5 +114,6 @@ $^a::Send {Home} ; beginning of line
 !g::Send ^l ; "Go" opens the address bar, closer to left hand side
 #IfWinActive
 #IfWinActive, ahk_exe slack.exe
+!k::Send ^k ; slack jump
 !g::Send ^k ; "Go" goes to any channel or PM, G is closer to left side than k
 #IfWinActive
