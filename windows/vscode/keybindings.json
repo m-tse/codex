@@ -31,7 +31,7 @@
         "command": "editor.action.goToDeclaration"
     },
     {
-        "key": "ctrl+end",
+        "key": "end",
         "command": "cursorBottom",
         "when": "textInputFocus"
     },
@@ -131,7 +131,7 @@
         "command": "-workbench.action.navigateBack"
     },
     {
-        "key": "ctrl+home",
+        "key": "home",
         "command": "cursorTop",
         "when": "textInputFocus"
     },
@@ -312,7 +312,7 @@
         "command": "deleteAllRight"
     },
     {
-        "key": "home",
+        "key": "ctrl+a",
         "command": "cursorHome",
         "when": "textInputFocus"
     },
@@ -322,7 +322,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "end",
+        "key": "ctrl+e",
         "command": "cursorEnd",
         "when": "textInputFocus"
     },
@@ -373,5 +373,9 @@
         "key": "ctrl+shift+k",
         "command": "-editor.action.deleteLines",
         "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+a",
+        "command": "selectAll"
     }
 ]
