@@ -104,11 +104,15 @@ $^+n::Send +{Down} ; highlight down a line
 
 $^k::Send ^{Del} ; delete line
 
-$^a::Send {Home} ; beginning of line
-^+a::Send +{Home} ; highlight to beginning of line
-!a::Send ^a ; select all
-^e::Send {End} ; move to end of line
 
+^+a::Send +{Home} ; highlight to beginning of line
+
+
+#IfWinNotActive, ahk_exe Code.exe
+$^a::Send {Home} ; beginning of line
+^e::Send {End} ; move to end of line
+!a::Send ^a ; select all
+#IfWinActive
 
 #IfWinActive, ahk_exe chrome.exe
 !g::Send ^l ; "Go" opens the address bar, closer to left hand side
