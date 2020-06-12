@@ -240,7 +240,7 @@
         "command": "workbench.action.focusNextGroup"
     },
     {
-        "key": "ctrl+alt+1",
+        "key": "shift+alt+1",
         "command": "workbench.action.moveEditorToFirstGroup"
     },
     {
@@ -248,7 +248,7 @@
         "command": "-workbench.action.moveEditorToFirstGroup"
     },
     {
-        "key": "ctrl+alt+2",
+        "key": "shift+alt+2",
         "command": "workbench.action.moveEditorToLastGroup"
     },
     {
@@ -347,6 +347,31 @@
     {
         "key": "alt+right",
         "command": "-workbench.action.navigateForward"
+    },
+    {
+        "key": "alt+d",
+        "command": "editor.action.referenceSearch.trigger"
+    },
+    {
+        "key": "alt+\\",
+        "command": "macros.splitRight"
+    },
+    {
+        "key": "alt+;",
+        "command": "workbench.action.gotoLine"
+    },
+    {
+        "key": "ctrl+g",
+        "command": "-workbench.action.gotoLine"
+    },
+    {
+        "key": "alt+k",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
     }
 ]
-
