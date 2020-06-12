@@ -23,6 +23,11 @@ gitcommit() {
   git commit --all -m "fixup! $(git rev-parse HEAD)"
 }
 
+# Checkout a branch using fuzzy matching.
+gitcheckout() {
+  git checkout $(git branch | grep $1)
+}
+
 # Use bat(syntax highlighted cat) instead of cat
 alias cat='bat'
 
