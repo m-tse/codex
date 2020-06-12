@@ -3,6 +3,9 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+GroupAdd code_kitty, ahk_exe Code.exe
+GroupAdd code_kitty, ahk_class KiTTY
+
 ;;; Things to apply everywhere ;;;
 
 Capslock::Esc
@@ -107,12 +110,11 @@ $^k::Send ^{Del} ; delete line
 
 ^+a::Send +{Home} ; highlight to beginning of line
 
-
-#IfWinNotActive, ahk_exe Code.exe
+#IfWinNotActive, ahk_group code_kitty
 $^a::Send {Home} ; beginning of line
 ^e::Send {End} ; move to end of line
 !a::Send ^a ; select all
-#IfWinActive
+#If
 
 #IfWinActive, ahk_exe chrome.exe
 !g::Send ^l ; "Go" opens the address bar, closer to left hand side
