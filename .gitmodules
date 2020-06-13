@@ -1,0 +1,9 @@
+[submodule "posix/submodules/zsh-autosuggestions"]
+	path = posix/submodules/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "posix/submodules/zsh-syntax-highlighting"]
+	path = posix/submodules/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting
+[submodule "posix/submodules/diff-so-fancy"]
+	path = posix/submodules/diff-so-fancy
+	url = https://github.com/so-fancy/diff-so-fancy
