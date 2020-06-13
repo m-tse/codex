@@ -44,10 +44,8 @@ setopt prompt_subst
 RPROMPT=%F{82}\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '[%b]'
 
-# Turn on fish-style autosuggestions. You first need to install this script from
-# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md
-# source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Turn on fish-style autosuggestions, submodule must have been initialized.
+source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-# Turn on zsh highlighting. You first need to install this script from
-# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md
-# source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Turn on zsh highlighting, submodule must have been initialized.
+source ~/Development/codex/posix/submodules//zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

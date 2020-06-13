@@ -13,8 +13,6 @@ brew cask install sensiblesidebuttons
 # Command line tools
 # Fancy cat with syntax highlighting and line numbers
 brew install bat
-# Fancy git diff
-brew install diff-so-fancy
 # View directory tree structure
 brew install tree
 # Fancy fast find
