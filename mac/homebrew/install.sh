@@ -17,3 +17,5 @@ brew install bat
 brew install tree
 # Fancy fast find
 brew install fd
+# Fancy fast grep
+brew install rg
