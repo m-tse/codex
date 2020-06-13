@@ -25,8 +25,10 @@ setopt HIST_IGNORE_ALL_DUPS # Erase duplicates in history file
 # 0 grabs the history from the first entry
 alias history="history -i 0"
 
-# Enable git completion
-autoload -Uz compinit && compinit -i
+alias ls="ls -a"
+
+# Enable git completion (disabled because it make zsh too slow).
+# autoload -Uz compinit && compinit -i
 
 # Turn on full fuzzy path completion
 zstyle ':completion:*' matcher-list '' \
