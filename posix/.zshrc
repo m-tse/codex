@@ -48,4 +48,9 @@ zstyle ':vcs_info:git:*' formats '[%b]'
 source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Turn on zsh highlighting, submodule must have been initialized.
-source ~/Development/codex/posix/submodules//zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/Development/codex/posix/submodules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Turn on history substring search, submodule must have been initialized.
+source ~/Development/codex/posix/submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
