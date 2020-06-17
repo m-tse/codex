@@ -42,7 +42,11 @@ precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
 RPROMPT=%F{82}\$vcs_info_msg_0_
-zstyle ':vcs_info:git:*' formats '[%b]'
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '+'
+zstyle ':vcs_info:*' unstagedstr '~'
+zstyle ':vcs_info:git:*' formats '%u%c[%b]'
+
 
 # Add the timestamp to the right side after the git branch info.
 RPROMPT=$RPROMPT' %F{178}%D{%L:%M:%S}'
