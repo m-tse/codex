@@ -15,6 +15,7 @@ Capslock::Esc
 F11::SoundSet,-5
 F12::SoundSet,+5
 
+!Tab::Send !{esc} ; Remap alt tab to alt escape, which switches to the next window in this desktop
 !l::Send ^l ; Address bar in chrome
 !x::Send ^x ; cut
 !s::Send ^s ; save
