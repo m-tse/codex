@@ -20,6 +20,7 @@ F12::SoundSet,+5
 !s::Send ^s ; save
 !w::Send ^w ; close tab
 !t::Send ^t ; new tab
+!+t:: Send ^+t ; open recently closed tab
 !r::Send ^r ; refresh
 !z::Send ^z ; undo
 ; Tab navigation
