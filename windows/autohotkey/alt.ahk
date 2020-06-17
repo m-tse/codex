@@ -101,11 +101,13 @@ $^f::Send {Right} ; forward character
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
 !p::Send ^p ;print
+#p::Send {PgUp}
 
 $^n::Send {Down} ; move down a line
 $^+n::Send +{Down} ; highlight down a line
 !n::Send ^n ; new
 !+n::Send ^+n ; incognito window
+#n::Send {PgDn}
 
 $^k::Send ^{Del} ; delete line
 
