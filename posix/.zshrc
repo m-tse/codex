@@ -44,6 +44,9 @@ setopt prompt_subst
 RPROMPT=%F{82}\$vcs_info_msg_0_
 zstyle ':vcs_info:git:*' formats '[%b]'
 
+# Add the timestamp to the right side after the git branch info.
+RPROMPT=$RPROMPT' %F{178}%D{%L:%M:%S}'
+
 # Turn on fish-style autosuggestions, submodule must have been initialized.
 source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
 
