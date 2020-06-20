@@ -15,11 +15,13 @@ Capslock::Esc
 F11::SoundSet,-5
 F12::SoundSet,+5
 
+!Tab::Send !{esc} ; Remap alt tab to alt escape, which switches to the next window in this desktop
 !l::Send ^l ; Address bar in chrome
 !x::Send ^x ; cut
 !s::Send ^s ; save
 !w::Send ^w ; close tab
 !t::Send ^t ; new tab
+!+t:: Send ^+t ; open recently closed tab
 !r::Send ^r ; refresh
 !z::Send ^z ; undo
 ; Tab navigation
@@ -99,11 +101,13 @@ $^f::Send {Right} ; forward character
 $^p::Send {Up} ; move up a line
 ^+p::Send +{Up} ; highlight up a line
 !p::Send ^p ;print
+#p::Send {PgUp}
 
 $^n::Send {Down} ; move down a line
 $^+n::Send +{Down} ; highlight down a line
 !n::Send ^n ; new
 !+n::Send ^+n ; incognito window
+#n::Send {PgDn}
 
 $^k::Send ^{Del} ; delete line
 

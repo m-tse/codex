@@ -1,18 +1,35 @@
 {
-    "editor.renderWhitespace": "boundary",
-    "editor.wordWrapColumn": 120,
-    "editor.wordWrap": "on",
-    "editor.dragAndDrop": false,
-    "editor.minimap.enabled": false,
-    "editor.rulers": [80, 120],
-    "files.insertFinalNewline": true,
     "editor.copyWithSyntaxHighlighting": false,
-    "files.autoSave": "onFocusChange",
-    "editor.hover.delay": 200,
-    "editor.quickSuggestionsDelay": 2000,
-    "explorer.confirmDragAndDrop": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.editor.enablePreview": false,
+    "editor.cursorSurroundingLines": 15,
+    "editor.cursorWidth": 4,
+    "editor.dragAndDrop": false,
     "editor.fontSize": 14.5,
-    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?_",
+    "editor.hover.delay": 200,
+    "editor.minimap.enabled": false,
+    "editor.quickSuggestionsDelay": 2000,
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [80, 120],
+    "editor.suggest.localityBonus": true,
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 120,
+    "explorer.confirmDragAndDrop": false,
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    },
+    "macros": {
+        "splitRight": [
+            "workbench.action.splitEditorDown",
+            "workbench.action.moveEditorToLastGroup",
+        ]
+    },
 }
