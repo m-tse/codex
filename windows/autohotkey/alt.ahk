@@ -8,9 +8,6 @@ GroupAdd code_kitty, ahk_class KiTTY
 
 ;;; Things to apply everywhere ;;;
 
-Capslock::Esc
-^Capslock::Capslock
-
 ; Set F11/F12 to decrease/increase volume.
 F11::SoundSet,-5
 F12::SoundSet,+5
