@@ -32,6 +32,7 @@
             "workbench.action.moveEditorToLastGroup",
         ]
     },
-    "window.zoomLevel": -1,
+    "window.zoomLevel": -1.45,
+    "workbench.startupEditor": "newUntitledFile",
 }
 
