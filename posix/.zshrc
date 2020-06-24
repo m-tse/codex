@@ -1,15 +1,15 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
-PROMPT='%F{27}%m:%F{178}%~ $(check_last_exit_code)%F{166}> %f'
+PROMPT='%F{4}%m:%F{3}%~ $(check_last_exit_code)%F{11}> %f'
 
 # Add last command exit code if not zero
 function check_last_exit_code() {
   local LAST_EXIT_CODE=$?
   if [[ $LAST_EXIT_CODE -ne 0 ]]; then
     local EXIT_CODE_PROMPT=''
-    EXIT_CODE_PROMPT+="%F{8}\$?=%{$reset_color%}"
-    EXIT_CODE_PROMPT+="%F{1}$LAST_EXIT_CODE%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%F{7}\$?=%{$reset_color%}"
+    EXIT_CODE_PROMPT+="%F{9}$LAST_EXIT_CODE%{$reset_color%}"
     EXIT_CODE_PROMPT+=" "
     echo "$EXIT_CODE_PROMPT"
   fi
@@ -80,7 +80,7 @@ autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-RPROMPT=%F{82}\$vcs_info_msg_0_
+RPROMPT=%F{2}\$vcs_info_msg_0_
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '~'
@@ -88,7 +88,7 @@ zstyle ':vcs_info:git:*' formats '%u%c[%b]'
 
 
 # Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' %F{178}%D{%H:%M:%S}'
+RPROMPT=$RPROMPT' %F{6}%D{%H:%M:%S}'
 
 # Turn on fish-style autosuggestions, submodule must have been initialized.
 source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
