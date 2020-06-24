@@ -19,7 +19,7 @@ function check_last_exit_code() {
 export CLICOLOR=1
 
 # Use a friendlier ls color scheme for a dark background
-export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
 
 # History Settings
 HISTFILESIZE=100000
