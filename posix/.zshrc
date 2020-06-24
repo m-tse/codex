@@ -42,8 +42,14 @@ alias history="history -i 0"
 
 alias ls="ls -a"
 
-# Enable git completion (disabled because it make zsh too slow).
-# autoload -Uz compinit && compinit -i
+# Enable auto completion, and use a cache so zsh is still responsive.
+autoload -Uz compinit
+typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
+if [ $(date +'%j') != $updated_at ]; then
+  compinit -i
+else
+  compinit -C -i
+fi
 
 # Turn on full fuzzy path completion
 zstyle ':completion:*' matcher-list '' \
