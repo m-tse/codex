@@ -1,7 +1,7 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
-PROMPT='%F{12}%m:%F{178}%~ $(check_last_exit_code)%F{166}> %f'
+PROMPT='%F{27}%m:%F{178}%~ $(check_last_exit_code)%F{166}> %f'
 
 # Add last command exit code if not zero
 function check_last_exit_code() {
