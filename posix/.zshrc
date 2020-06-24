@@ -18,6 +18,9 @@ function check_last_exit_code() {
 # Use colors for file types with ls
 export CLICOLOR=1
 
+# Use a friendlier ls color scheme for a dark background
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+
 # History Settings
 HISTFILESIZE=100000
 HISTSIZE=100000
