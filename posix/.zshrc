@@ -51,6 +51,9 @@ else
   compinit -C -i
 fi
 
+# ZSH prompts to correct a mispelled command.
+setopt correct_all
+
 # Turn on full fuzzy path completion
 zstyle ':completion:*' matcher-list '' \
   'm:{a-z\-}={A-Z\_}' \
