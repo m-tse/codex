@@ -58,6 +58,8 @@ fi
 zstyle ':completion:*' menu select=3
 # Install a standard set of colors for zsh autocomplete.
 zstyle ':completion:*' list-colors ''
+# Upon second tab of auto complete, automatically select and tab through the options.
+setopt auto_menu
 
 # ZSH prompts to correct a mispelled command.
 setopt correct_all
