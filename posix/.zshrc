@@ -15,6 +15,9 @@ function check_last_exit_code() {
   fi
 }
 
+# Use colors for file types with ls
+export CLICOLOR=1
+
 # History Settings
 HISTFILESIZE=100000
 HISTSIZE=100000
