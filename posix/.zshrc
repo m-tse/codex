@@ -15,11 +15,16 @@ function check_last_exit_code() {
   fi
 }
 
+# See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
+
+# This is for BSD implementation of ls, used in macOS
 # Use colors for file types with ls
 export CLICOLOR=1
-
 # Use a friendlier ls color scheme for a dark background
 export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
+
+# This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
+export LS_COLORS="di=00;93:ln=00;36:ex=00;31"
 
 # History Settings
 HISTFILESIZE=100000
