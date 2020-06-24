@@ -51,6 +51,9 @@ else
   compinit -C -i
 fi
 
+# Only focus on the auto complete menu when there are more than 3 entries.
+zstyle ':completion:*' menu select=3
+
 # ZSH prompts to correct a mispelled command.
 setopt correct_all
 
