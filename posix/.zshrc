@@ -24,7 +24,7 @@ export CLICOLOR=1
 export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
 
 # This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
-export LS_COLORS="di=00;93:ln=00;36:ex=00;31"
+export LS_COLORS="di=00;93:ln=00;36:ex=00;31:ow=00;31"
 
 # History Settings
 HISTFILESIZE=100000
