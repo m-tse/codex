@@ -29,7 +29,7 @@ gitcheckout() {
 }
 
 # Use bat(syntax highlighted cat) instead of cat
-alias cat='bat'
+alias cat='bat --plain'
 
 # Set default editors to vim
 export EDITOR=vim
