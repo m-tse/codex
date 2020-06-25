@@ -15,6 +15,21 @@ function check_last_exit_code() {
   fi
 }
 
+# Set the right side prompt.
+# Put the git branch info on the right side
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=%F{2}\$vcs_info_msg_0_
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '+'
+zstyle ':vcs_info:*' unstagedstr '~'
+zstyle ':vcs_info:git:*' formats '%u%c[%b]'
+
+# Add the timestamp to the right side after the git branch info.
+RPROMPT=$RPROMPT' %F{3}%D{%H:%M:%S}'
+
 # See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
 
 # This is for BSD implementation of ls, used in macOS
@@ -75,20 +90,6 @@ zstyle ':completion:*' matcher-list '' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
-# Put the git branch info on the right side
-autoload -Uz vcs_info
-precmd_vcs_info() { vcs_info }
-precmd_functions+=( precmd_vcs_info )
-setopt prompt_subst
-RPROMPT=%F{2}\$vcs_info_msg_0_
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr '+'
-zstyle ':vcs_info:*' unstagedstr '~'
-zstyle ':vcs_info:git:*' formats '%u%c[%b]'
-
-
-# Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' %F{3}%D{%H:%M:%S}'
 
 # Turn on fish-style autosuggestions, submodule must have been initialized.
 source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
