@@ -88,7 +88,7 @@ zstyle ':vcs_info:git:*' formats '%u%c[%b]'
 
 
 # Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' %F{6}%D{%H:%M:%S}'
+RPROMPT=$RPROMPT' %F{3}%D{%H:%M:%S}'
 
 # Turn on fish-style autosuggestions, submodule must have been initialized.
 source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
