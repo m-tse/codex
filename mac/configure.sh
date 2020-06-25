@@ -40,5 +40,7 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 # Make zsh the default shell
 chsh -s /bin/zsh
 
-# Link the .zshrc
-# cp ~/Development/codex/posix/.zshrc ~/.zshrc
+# Link the dotfiles
+ln -s ~/Development/codex/posix/.zshrc ~/.zshrc
+ln -s ~/Development/codex/posix/.vimrc ~/.vimrc
+ln -s ~/Development/codex/posix/.tmux.conf ~/.tmux.conf
