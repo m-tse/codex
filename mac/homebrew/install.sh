@@ -19,3 +19,4 @@ brew install tree
 brew install fd
 # Fancy fast grep
 brew install rg
+brew install tmux
