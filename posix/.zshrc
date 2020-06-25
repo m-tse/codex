@@ -21,11 +21,11 @@ autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-RPROMPT=%F{2}\$vcs_info_msg_0_
+RPROMPT=%F{10}\$vcs_info_msg_0_
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '~'
-zstyle ':vcs_info:git:*' formats '%u%c[%b]'
+zstyle ':vcs_info:git:*' formats '%u%c%F{2}[%b]'
 
 # Add the timestamp to the right side after the git branch info.
 RPROMPT=$RPROMPT' %F{3}%D{%H:%M:%S}'
