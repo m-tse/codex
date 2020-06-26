@@ -10,3 +10,6 @@
 [submodule "posix/submodules/zsh-history-substring-search"]
 	path = posix/submodules/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search
+[submodule "posix/submodules/tmux-cpu"]
+	path = posix/submodules/tmux-cpu
+	url = https://github.com/tmux-plugins/tmux-cpu
