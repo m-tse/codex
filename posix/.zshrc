@@ -1,7 +1,7 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
-PROMPT='%F{4}%m:%F{3}%~ $(check_last_exit_code)%F{11}> %f'
+PROMPT='%F{4}%m:%F{14}%~ $(check_last_exit_code)%F{11}> %f'
 
 # Add last command exit code if not zero
 function check_last_exit_code() {
@@ -28,7 +28,7 @@ zstyle ':vcs_info:*' unstagedstr '~'
 zstyle ':vcs_info:git:*' formats '%u%c%F{2}[%b]'
 
 # Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' %F{3}%D{%H:%M:%S}'
+RPROMPT=$RPROMPT' %F{14}%D{%H:%M:%S}'
 
 # See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
 
