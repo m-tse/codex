@@ -292,26 +292,6 @@
         "when": "textInputFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+n",
-        "command": "cursorDownSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+down",
-        "command": "-cursorDownSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "ctrl+shift+p",
-        "command": "cursorUpSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+up",
-        "command": "-cursorUpSelect",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+f",
         "command": "cursorRightSelect",
         "when": "textInputFocus"
@@ -348,6 +328,16 @@
         "key": "f12",
         "command": "-editor.action.revealDefinition",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "cursorDownSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "cursorUpSelect",
+        "when": "textInputFocus"
     },
 ]
 
