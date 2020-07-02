@@ -103,3 +103,4 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 source ~/Development/codex/posix/submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
+source ~/.profile
