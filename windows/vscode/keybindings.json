@@ -23,10 +23,6 @@
     },
     {
         "key": "alt+g",
-        "command": "editor.action.revealDeclaration"
-    },
-    {
-        "key": "alt+g",
         "command": "editor.action.goToDeclaration"
     },
     {
@@ -158,24 +154,12 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+alt+1",
-        "command": "workbench.action.editorLayoutSingle"
-    },
-    {
-        "key": "shift+alt+2",
-        "command": "workbench.action.editorLayoutTwoColumns"
-    },
-    {
         "key": "shift+alt+c",
         "command": "workbench.files.action.collapseExplorerFolders"
     },
     {
         "key": "shift+alt+x",
         "command": "workbench.files.action.showActiveFileInExplorer"
-    },
-    {
-        "key": "shift+alt+`",
-        "command": "workbench.action.terminal.new"
     },
     {
         "key": "ctrl+shift+`",
@@ -188,14 +172,6 @@
     {
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "shift+alt+`",
-        "command": "workbench.action.terminal.resizePaneUp"
-    },
-    {
-        "key": "ctrl+alt+`",
-        "command": "workbench.action.terminal.resizePaneDown"
     },
     {
         "key": "ctrl+e",
@@ -250,19 +226,11 @@
         "command": "-workbench.action.moveEditorToLastGroup"
     },
     {
-        "key": "shift+alt+3",
-        "command": "workbench.action.editorLayoutThreeColumns"
-    },
-    {
-        "key": "ctrl+shift+alt+2",
-        "command": "workbench.action.splitEditorRight"
-    },
-    {
         "key": "shift+alt+w",
         "command": "workbench.action.closeOtherEditors"
     },
     {
-        "key": "shift+alt+down",
+        "key": "ctrl+shift+alt+j",
         "command": "cursorColumnSelectDown",
         "when": "textInputFocus"
     },
@@ -272,28 +240,18 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+left",
-        "command": "cursorColumnSelectLeft",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+alt+left",
         "command": "-cursorColumnSelectLeft",
         "when": "textInputFocus"
     },
     {
-        "key": "shift+alt+up",
+        "key": "ctrl+shift+alt+k",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus"
     },
     {
         "key": "ctrl+shift+alt+up",
         "command": "-cursorColumnSelectUp",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+alt+right",
-        "command": "cursorColumnSelectRight",
         "when": "textInputFocus"
     },
     {
@@ -383,17 +341,12 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+p",
-        "command": "scrollLineUp",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+up",
         "command": "-scrollLineUp",
         "when": "textInputFocus"
     },
     {
-        "key": "alt+down",
+        "key": "shift+alt+j",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -421,10 +374,6 @@
         "key": "ctrl+a",
         "command": "-editor.action.webvieweditor.selectAll",
         "when": "!editorFocus && !inputFocus && activeEditor == 'WebviewEditor'"
-    },
-    {
-        "key": "ctrl+delete",
-        "command": "deleteWordPartRight"
     },
     {
         "key": "ctrl+delete",
@@ -485,5 +434,19 @@
         "key": "ctrl+shift+left",
         "command": "-cursorWordStartLeftSelect",
         "when": "textInputFocus"
-    }
+    },
+    {
+        "key": "shift+alt+k",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+up",
+        "command": "-editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+p",
+        "command": "-workbench.action.showCommands"
+    },
 ]
