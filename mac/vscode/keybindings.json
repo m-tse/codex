@@ -1,5 +1,8 @@
-
-mmand": "editor.action.moveLinesDownAction",
+// Place your key bindings in this file to overwrite the defaults
+[
+    {
+        "key": "shift+cmd+j",
+        "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -347,6 +350,13 @@ mmand": "editor.action.moveLinesDownAction",
     {
         "key": "shift+cmd+b",
         "command": "-workbench.action.tasks.build"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+r",
+        "command": "-workbench.action.openRecent"
     }
 ]
-

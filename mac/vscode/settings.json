@@ -14,7 +14,7 @@
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 120,
     "explorer.confirmDragAndDrop": false,
-    "files.autoSave": "onFocusChange",
+    "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -26,6 +26,7 @@
         "editor.insertSpaces": false,
         "editor.tabSize": 4
     },
+    "C_Cpp.errorSquiggles": "Disabled",
     "macros": {
         "splitRight": [
             "workbench.action.splitEditorDown",
@@ -34,5 +35,5 @@
     },
     "window.zoomLevel": -1.45,
     "workbench.startupEditor": "newUntitledFile",
+    "editor.multiCursorModifier": "ctrlCmd",
 }
-
