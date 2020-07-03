@@ -1,12 +1,9 @@
-// Place your key bindings in this file to overwrite the defaults
-[
-    {
-        "key": "cmd+down",
-        "command": "editor.action.moveLinesDownAction",
+
+mmand": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "cmd+up",
+        "key": "shift+cmd+k",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
@@ -38,24 +35,12 @@
         "command": "-workbench.action.navigateBack"
     },
     {
-        "key": "shift+cmd+f",
-        "command": "workbench.action.navigateForward"
-    },
-    {
         "key": "ctrl+shift+-",
         "command": "-workbench.action.navigateForward"
     },
     {
         "key": "alt+down",
         "command": "-editor.action.moveLinesDownAction"
-    },
-    {
-        "key": "alt+up",
-        "command": "editor.action.moveLinesUpAction"
-    },
-    {
-        "key": "cmd+shift+2",
-        "command": "workbench.action.splitEditor"
     },
     {
         "key": "shift+cmd+n",
@@ -84,10 +69,6 @@
         "key": "cmd+down",
         "command": "-cursorBottom",
         "when": "textInputFocus"
-    },
-    {
-        "key": "shift+cmd+1",
-        "command": "workbench.action.editorLayoutSingle"
     },
     {
         "key": "shift+cmd+1",
@@ -339,5 +320,33 @@
         "command": "cursorUpSelect",
         "when": "textInputFocus"
     },
+    {
+        "key": "ctrl+shift+cmd+j",
+        "command": "cursorColumnSelectDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+cmd+down",
+        "command": "-cursorColumnSelectDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+cmd+k",
+        "command": "cursorColumnSelectUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+cmd+up",
+        "command": "-cursorColumnSelectUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build"
+    }
 ]
 
