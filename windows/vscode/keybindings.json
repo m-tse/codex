@@ -260,10 +260,6 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+delete",
-        "command": "deleteAllRight"
-    },
-    {
         "key": "ctrl+a",
         "command": "cursorHome",
         "when": "textInputFocus || listFocus"
@@ -448,5 +444,9 @@
     {
         "key": "ctrl+shift+p",
         "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+delete",
+        "command": "deleteWordPartRight"
     },
 ]
