@@ -166,10 +166,6 @@
         "command": "-workbench.action.terminal.new"
     },
     {
-        "key": "alt+`",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
     },
@@ -448,5 +444,9 @@
     {
         "key": "ctrl+delete",
         "command": "deleteWordPartRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "deleteAllRight"
     },
 ]
