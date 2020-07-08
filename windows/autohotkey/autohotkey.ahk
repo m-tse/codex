@@ -106,15 +106,13 @@ $^+n::Send +{Down} ; highlight down a line
 !+n::Send ^+n ; incognito window
 #n::Send {PgDn}
 
-$^k::Send ^{Del} ; delete line
-
-
 ^+a::Send +{Home} ; highlight to beginning of line
 
 #IfWinNotActive, ahk_group code_kitty
 $^a::Send {Home} ; beginning of line
 ^e::Send {End} ; move to end of line
 !a::Send ^a ; select all
+$^k::Send ^{Del} ; delete line
 #If
 
 #IfWinActive, ahk_exe chrome.exe
