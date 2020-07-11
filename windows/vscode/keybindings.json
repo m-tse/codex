@@ -26,7 +26,7 @@
         "command": "editor.action.goToDeclaration"
     },
     {
-        "key": "end",
+        "key": "alt+win+n",
         "command": "cursorBottom",
         "when": "textInputFocus"
     },
@@ -126,7 +126,7 @@
         "command": "-workbench.action.navigateBack"
     },
     {
-        "key": "home",
+        "key": "alt+win+p",
         "command": "cursorTop",
         "when": "textInputFocus"
     },
