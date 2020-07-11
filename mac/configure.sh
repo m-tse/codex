@@ -37,6 +37,8 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 mkdir -p ~/Library/KeyBindings
 ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
+# Use a custom US Keyboard layout which fixes option n, allowing it to be bound in vs code.
+ln -s $DIR/mtse.keylayout ~/Library/Keyboard\ Layouts/mtse.keylayout
 
 # Make zsh the default shell
 chsh -s /bin/zsh
