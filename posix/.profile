@@ -4,6 +4,7 @@
 gitdiffbranch() {
   git diff $(git merge-base --fork-point master)
 }
+alias gdb='gitdiffbranch'
 
 # Shortcut to list the files changed in your current branch against the merge point in the master branch.
 gitdiffbranchfiles() {
