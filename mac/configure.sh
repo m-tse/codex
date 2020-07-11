@@ -38,6 +38,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 mkdir -p ~/Library/KeyBindings
 ln -s $DIR/DefaultKeyBinding.dict ~/Library/KeyBindings/DefaultKeyBinding.dict
 # Use a custom US Keyboard layout which fixes option n, allowing it to be bound in vs code.
+# After doing this, you need to select this as a special keyboard layout,
+# like selecting mandarin as a custom keyboard type.
 ln -s $DIR/mtse.keylayout ~/Library/Keyboard\ Layouts/mtse.keylayout
 
 # Make zsh the default shell
