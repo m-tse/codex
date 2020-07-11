@@ -59,8 +59,18 @@
         "when": "textInputFocus"
     },
     {
+        "key": "alt+cmd+p",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
         "key": "cmd+up",
         "command": "-cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+n",
+        "command": "cursorBottom",
         "when": "textInputFocus"
     },
     {
@@ -378,5 +388,15 @@
         "key": "cmd+enter",
         "command": "-editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly"
-    }
+    },
+    {
+        "key": "alt+n",
+        "command": "cursorPageDown",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+p",
+        "command": "cursorPageUp",
+        "when": "textInputFocus"
+    },
 ]
