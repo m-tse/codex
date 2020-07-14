@@ -23,6 +23,9 @@ defaults write com.apple.dock autohide-delay -float 0
 # Prevent Time Machine from prompting to use new hard drives as backup volume?
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
+# Stop spaces from auto-rearranging based on most recent use.
+defaults write com.apple.dock mru-spaces -bool false
+
 # Set screenshots location to ~/Downloads/"
 defaults write com.apple.screencapture location ~/Downloads/
 
