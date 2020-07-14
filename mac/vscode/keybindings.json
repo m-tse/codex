@@ -54,7 +54,7 @@
         "command": "explorer.newFolder"
     },
     {
-        "key": "home",
+        "key": "ctrl+alt+cmd+p",
         "command": "cursorTop",
         "when": "textInputFocus"
     },
@@ -69,7 +69,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "alt+cmd+n",
+        "key": "ctrl+alt+cmd+n",
         "command": "cursorBottom",
         "when": "textInputFocus"
     },
@@ -390,12 +390,12 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "alt+n",
+        "key": "ctrl+alt+n",
         "command": "cursorPageDown",
         "when": "textInputFocus"
     },
     {
-        "key": "alt+p",
+        "key": "ctrl+alt+p",
         "command": "cursorPageUp",
         "when": "textInputFocus"
     },
