@@ -399,4 +399,8 @@
         "command": "cursorPageUp",
         "when": "textInputFocus"
     },
+    {
+        "key": "cmd+escape",
+        "command": "workbench.action.focusNextGroup"
+    },
 ]
