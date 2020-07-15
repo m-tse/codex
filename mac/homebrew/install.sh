@@ -7,6 +7,8 @@ brew cask install google-backup-and-sync
 brew cask install rectangle
 # To get mouse 4/5 to behave as back/forward
 brew cask install sensiblesidebuttons
+# iterm2 is an improvement over native Terminal, enough to make it worth the hassle
+brew cask install iterm2
 
 # Command line tools
 # Fancy cat with syntax highlighting and line numbers
