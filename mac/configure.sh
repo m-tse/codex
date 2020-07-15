@@ -57,8 +57,18 @@ defaults write com.apple.dock mru-spaces -bool false
 # Disable dock bouncing on notification
 defaults write com.apple.dock no-bouncing -bool TRUE
 
+#####################
+# Screenshot settings
+#####################
+
 # Set screenshots location to ~/Downloads/"
 defaults write com.apple.screencapture location ~/Downloads/
+
+# Set default screenshot basename
+defaults write com.apple.screencapture name "screenshot"
+
+# Disable shadow in screenshot
+defaults write com.apple.screencapture disable-shadow -bool true
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume?
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
