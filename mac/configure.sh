@@ -20,6 +20,9 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0
 
+# Disable show recent apps in dock
+defaults write com.apple.dock show-recents -bool false
+
 # Prevent Time Machine from prompting to use new hard drives as backup volume?
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
