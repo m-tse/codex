@@ -15,6 +15,10 @@ function check_last_exit_code() {
   fi
 }
 
+# Weirdly, this is required to retain emacs style navigation in tmux, in macOS only.
+# See https://stackoverflow.com/questions/18240683/how-to-force-emacs-style-status-keys-in-tmux/39520371
+bindkey -e
+
 # Set the right side prompt.
 # Put the git branch info on the right side
 autoload -Uz vcs_info
