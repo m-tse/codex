@@ -16,7 +16,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.18431372940540314
   },
-  "Normal Font" : "SFMono-Regular 14",
+  "Normal Font" : "SFMono-Regular 14.5",
   "Draw Powerline Glyphs" : false,
   "Bold Color" : {
     "Green Component" : 1,
@@ -79,7 +79,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.29999999999999999
   },
-  "Columns" : 120,
+  "Columns" : 100,
   "Idle Code" : 0,
   "Ansi 13 Color" : {
     "Red Component" : 0.59607843137254901,
