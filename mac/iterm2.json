@@ -333,11 +333,11 @@
   },
   "Right Option Key Sends" : 2,
   "Ansi 6 Color" : {
-    "Red Component" : 0.30196078431372547,
+    "Red Component" : 0.3819122314453125,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.56470588235294117
+    "Green Component" : 0.503753662109375
   },
   "Ansi 7 Color" : {
     "Red Component" : 0.7803921568627451,
