@@ -1,3 +1,5 @@
+# Non-brittle settings to set from the command line to configure macOS.
+
 # Disabling press-and-hold for special keys in favor of key repeat
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
@@ -41,8 +43,3 @@ defaults write com.apple.dock no-bouncing -bool TRUE
 
 # Make zsh the default shell
 chsh -s /bin/zsh
-
-# Link the dotfiles
-ln -s ~/Development/codex/posix/.zshrc ~/.zshrc
-ln -s ~/Development/codex/posix/.vimrc ~/.vimrc
-ln -s ~/Development/codex/posix/.tmux.conf ~/.tmux.conf
