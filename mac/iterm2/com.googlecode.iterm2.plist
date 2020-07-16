@@ -43,7 +43,7 @@
 	<key>NSFontPanelAttributes</key>
 	<string>1, 4</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/Development/codex/mac</string>
+	<string>~/Development/codex/mac/iterm2</string>
 	<key>NSNavLastUserSetHideExtensionButtonState</key>
 	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -1694,12 +1694,16 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{99, 959}</string>
+		<string>{858, 817}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>729E4D46-A912-4E06-88F3-8E674DCE36E6</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
 	<integer>2</integer>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
+	<true/>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
 	<true/>
 	<key>NoSyncNewTabFromTmuxOpensTmux_selection</key>
@@ -2501,7 +2505,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/mtse/Development/codex/mac</string>
+	<string>/Users/mtse/Development/codex/mac/iterm2</string>
 	<key>PromptOnQuit</key>
 	<false/>
 	<key>RequireCmdForDraggingText</key>
