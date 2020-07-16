@@ -74,11 +74,11 @@
   "Description" : "Default",
   "Screen" : -1,
   "Selection Color" : {
-    "Red Component" : 0.29999999999999999,
+    "Red Component" : 0.14509803921568629,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.29999999999999999,
+    "Blue Component" : 0.14509803921568629,
     "Alpha Component" : 1,
-    "Green Component" : 0.29999999999999999
+    "Green Component" : 0.14509803921568629
   },
   "Columns" : 100,
   "Idle Code" : 0,
