@@ -399,6 +399,8 @@
 			<real>1</real>
 			<key>Idle Code</key>
 			<integer>0</integer>
+			<key>Initial Use Transparency</key>
+			<false/>
 			<key>Jobs to Ignore</key>
 			<array>
 				<string>rlogin</string>
@@ -985,7 +987,7 @@
 			<key>Thin Strokes</key>
 			<integer>3</integer>
 			<key>Transparency</key>
-			<real>0.041045368020304569</real>
+			<real>0.0</real>
 			<key>Unlimited Scrollback</key>
 			<false/>
 			<key>Use Bold Font</key>
@@ -1025,7 +1027,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{820, 894}</string>
+		<string>{221, 672}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>729E4D46-A912-4E06-88F3-8E674DCE36E6</string>
