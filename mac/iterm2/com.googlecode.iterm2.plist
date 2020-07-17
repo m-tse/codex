@@ -29,7 +29,7 @@
 	<key>DimBackgroundWindows</key>
 	<false/>
 	<key>DoubleClickPerformsSmartSelection</key>
-	<true/>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideScrollbar</key>
@@ -96,9 +96,9 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>557 465 799 448 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 18 934 1039 0 0 1920 1057 </string>
+	<string>0 288 925 769 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>255 127 925 747 0 0 1920 1057 </string>
+	<string>751 176 925 769 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>453 33 925 747 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -383,7 +383,7 @@
 			<key>Draw Powerline Glyphs</key>
 			<false/>
 			<key>Flashing Bell</key>
-			<false/>
+			<true/>
 			<key>Foreground Color</key>
 			<dict>
 				<key>Blue Component</key>
@@ -746,7 +746,7 @@
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
-			<false/>
+			<true/>
 			<key>Status Bar Layout</key>
 			<dict>
 				<key>advanced configuration</key>
@@ -1025,7 +1025,7 @@
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1920, 1080}}</string>
 		<key>topLeft</key>
-		<string>{858, 817}</string>
+		<string>{820, 894}</string>
 	</dict>
 	<key>NoSyncInstallationId</key>
 	<string>729E4D46-A912-4E06-88F3-8E674DCE36E6</string>
@@ -1877,6 +1877,8 @@
 	<false/>
 	<key>WindowNumber</key>
 	<true/>
+	<key>WordCharacters</key>
+	<string></string>
 	<key>iTerm Version</key>
 	<string>3.3.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
