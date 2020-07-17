@@ -1,6 +1,4 @@
-#!/bin/bash
 # os_x specific default terminal profile
-alias ls='ls -aF'
 
 function datefromint () {
   date -r $1

@@ -29,9 +29,6 @@ gitcheckout() {
   git checkout $(git branch | grep $1)
 }
 
-# Use bat(syntax highlighted cat) instead of cat
-alias cat='bat --plain'
-
 # Set default editors to vim
 export EDITOR=vim
 export VISUAL=vim
