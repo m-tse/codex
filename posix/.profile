@@ -24,6 +24,11 @@ gitcommit() {
   git commit --all -m "fixup! $(git rev-parse HEAD)"
 }
 
+# Combine gitcommit and gitrebase into one command.
+gitupdate() {
+  gitcommit && gitrebase
+}
+
 # Checkout a branch using fuzzy matching.
 gitcheckout() {
   git checkout $(git branch | grep $1)
