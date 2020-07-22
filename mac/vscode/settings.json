@@ -43,7 +43,7 @@
     },
     "[go]": {
         "editor.insertSpaces": false,
-        "editor.tabSize": 4
+        "editor.tabSize": 2
     },
     "window.zoomLevel": -1.5,
     "window.nativeFullScreen": false,
