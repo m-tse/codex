@@ -22,3 +22,4 @@ brew install rg
 brew install tmux
 # Fuzzy command line finder
 brew install fzf
+brew install jq
