@@ -27,7 +27,7 @@
     "macros": {
         "splitRight": [
             "workbench.action.splitEditorDown",
-            "workbench.action.moveEditorToLastGroup",
+            "workbench.action.editorLayoutTwoColumns",
         ]
     },
     "search.seedWithNearestWord": true,

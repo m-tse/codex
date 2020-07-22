@@ -433,4 +433,8 @@
         "command": "-breadcrumbs.focusAndSelect",
         "when": "breadcrumbsPossible"
     },
+    {
+        "key": "cmd+\\",
+        "command": "macros.splitRight"
+    },
 ]
