@@ -26,7 +26,9 @@ gitcommit() {
 
 # Combine gitcommit, gitrebase, and git force push into one command.
 gitupdate() {
-  gitcommit && gitrebase && git push -f
+  gitcommit
+  gitrebase
+  git push -f
 }
 
 # Checkout a branch using fuzzy matching.
