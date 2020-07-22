@@ -24,9 +24,9 @@ gitcommit() {
   git commit --all -m "fixup! $(git rev-parse HEAD)"
 }
 
-# Combine gitcommit and gitrebase into one command.
+# Combine gitcommit, gitrebase, and git force push into one command.
 gitupdate() {
-  gitcommit && gitrebase
+  gitcommit && gitrebase && git push -f
 }
 
 # Checkout a branch using fuzzy matching.
