@@ -37,6 +37,7 @@
     "search.sortOrder": "countDescending",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "workbench.editor.closeOnFileDelete": true,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "[python]": {
@@ -50,6 +51,7 @@
     "window.zoomLevel": -1.5,
     "window.nativeFullScreen": false,
     "workbench.activityBar.visible": false,
+    "workbench.commandPalette.history": 5,
     "workbench.editor.closeEmptyGroups": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
