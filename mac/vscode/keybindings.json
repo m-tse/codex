@@ -1,12 +1,12 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
-        "key": "shift+cmd+j",
+        "key": "ctrl+cmd+n",
         "command": "editor.action.moveLinesDownAction",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "shift+cmd+k",
+        "key": "ctrl+cmd+p",
         "command": "editor.action.moveLinesUpAction",
         "when": "editorTextFocus && !editorReadonly"
     },
