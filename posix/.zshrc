@@ -29,7 +29,7 @@ RPROMPT=%F{5}\$vcs_info_msg_0_
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '~'
-zstyle ':vcs_info:git:*' formats '%u%c%F{2}[%b]'
+zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
 # Add the timestamp to the right side after the git branch info.
 RPROMPT=$RPROMPT' %F{14}%D{%H:%M:%S}'
