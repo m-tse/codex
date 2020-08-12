@@ -1,5 +1,6 @@
 {
     "C_Cpp.errorSquiggles": "Disabled",
+    "editor.acceptSuggestionOnEnter": "off",
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSurroundingLines": 15,
     "editor.cursorWidth": 4,
