@@ -10,6 +10,7 @@ alias gdb='gitdiffbranch'
 gitdiffbranchfiles() {
   git diff --name-only $(git merge-base --fork-point master)
 }
+alias gdbf='gitdiffbranchfiles'
 
 # Rebase the current branch off the merge point in the master branch and autosquash any fixup commits.
 # Set the GIT_EDITOR to true to automatically accept the changes, then set it back to normal.
