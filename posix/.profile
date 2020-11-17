@@ -32,6 +32,16 @@ gitupdate() {
   git push -f
 }
 
+# When doing an interactive rebase and needing to resolve conflicts, after conflicts are resolved,
+# run this command to add all dirty files and auto-accept the rebase commit contents.
+gitrebasecontinue() {
+  git add .
+  export GIT_EDITOR=true;
+  git rebase --continue
+  export GIT_EDITOR=vim;
+}
+alias grc='gitrebasecontinue'
+
 # Checkout a branch using fuzzy matching.
 gitcheckout() {
   git checkout $(git branch | grep $1)
