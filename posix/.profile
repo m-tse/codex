@@ -42,6 +42,10 @@ gitrebasecontinue() {
 }
 alias grc='gitrebasecontinue'
 
+grim() {
+  git rebase -i master
+}
+
 # Checkout a branch using fuzzy matching.
 gitcheckout() {
   git checkout $(git branch | grep $1)
