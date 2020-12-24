@@ -63,4 +63,5 @@
     "workbench.fontAliasing": "auto",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tips.enabled": false,
+    "go.formatTool": "goimports",
 }
