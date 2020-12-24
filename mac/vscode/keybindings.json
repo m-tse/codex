@@ -334,7 +334,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+cmd+j",
+        "key": "ctrl+shift+alt+n",
         "command": "cursorColumnSelectDown",
         "when": "textInputFocus"
     },
@@ -344,7 +344,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+cmd+k",
+        "key": "ctrl+shift+alt+p",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus"
     },

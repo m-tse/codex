@@ -10,6 +10,7 @@ alias gdb='gitdiffbranch'
 gitdiffbranchfiles() {
   git diff --name-only $(git merge-base --fork-point master)
 }
+alias gdbf='gitdiffbranchfiles'
 
 # Rebase the current branch off the merge point in the master branch and autosquash any fixup commits.
 # Set the GIT_EDITOR to true to automatically accept the changes, then set it back to normal.
@@ -29,6 +30,20 @@ gitupdate() {
   gitcommit
   gitrebase
   git push -f
+}
+
+# When doing an interactive rebase and needing to resolve conflicts, after conflicts are resolved,
+# run this command to add all dirty files and auto-accept the rebase commit contents.
+gitrebasecontinue() {
+  git add .
+  export GIT_EDITOR=true;
+  git rebase --continue
+  export GIT_EDITOR=vim;
+}
+alias grc='gitrebasecontinue'
+
+grim() {
+  git rebase -i master
 }
 
 # Checkout a branch using fuzzy matching.
