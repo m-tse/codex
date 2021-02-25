@@ -46,6 +46,11 @@ grim() {
   git rebase -i master
 }
 
+# Delete a branch
+gbd() {
+  git branch -D $1
+}
+
 # Checkout a branch using fuzzy matching.
 gitcheckout() {
   git checkout $(git branch | grep $1)
