@@ -437,4 +437,8 @@
         "key": "cmd+\\",
         "command": "macros.splitRight"
     },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.files.action.refreshFilesExplorer"
+    }
 ]
