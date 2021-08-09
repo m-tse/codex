@@ -65,4 +65,5 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tips.enabled": false,
     "go.formatTool": "goimports",
+    "gitlens.codeLens.enabled": false,
 }
