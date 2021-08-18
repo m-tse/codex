@@ -440,5 +440,13 @@
     {
         "key": "shift+cmd+r",
         "command": "workbench.files.action.refreshFilesExplorer"
-    }
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
 ]
