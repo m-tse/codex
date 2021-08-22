@@ -54,12 +54,7 @@
         "command": "explorer.newFolder"
     },
     {
-        "key": "ctrl+alt+cmd+p",
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+cmd+p",
+        "key": "cmd+up",
         "command": "cursorTop",
         "when": "textInputFocus"
     },
@@ -69,12 +64,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+cmd+n",
-        "command": "cursorBottom",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
+        "key": "cmd+down",
         "command": "cursorBottom",
         "when": "textInputFocus"
     },
