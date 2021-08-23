@@ -1,16 +1,12 @@
 " Paste and autoindent are mutually exclusive.
-" Here we choose to have paste on by default, with the F8
-" command turning on autoindent (and disabling paste mode)
+" Just disable autoindent, it drives me crazy.
 set paste " set paste mode (paste code in insert without weird newlines/indents)
-:noremap <F8> :set autoindent<CR>
-" Here is the commented out of alternate commands where autoindent is enabled by default, and paste is <F8>
-" set autoindent
-" set pastetoggle=<F8>
+set noautoindent
+filetype indent off
 
 set tabstop=2 " indent using 2 spaces
 set smarttab " Insert tab stop number of spaces when Tab is pressed
 set expandtab " convert tabs to spaces
-filetype indent on " Enable indent rules that are file specific
 
 syntax enable " syntax highlighting
 set cursorline " Show a horizontal line where the cursor is across the screen
