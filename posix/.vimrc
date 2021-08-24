@@ -3,6 +3,8 @@
 set paste " set paste mode (paste code in insert without weird newlines/indents)
 set noautoindent
 filetype indent off
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+command Wq :execute ':silent w !sudo tee % > /dev/null' | :edit! | :quit
 
 set tabstop=2 " indent using 2 spaces
 set smarttab " Insert tab stop number of spaces when Tab is pressed
