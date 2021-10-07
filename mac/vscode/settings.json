@@ -65,4 +65,9 @@
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tips.enabled": false,
     "go.formatTool": "goimports",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "go.toolsManagement.autoUpdate": true,
+    "workbench.editor.untitled.hint": "hidden",
 }

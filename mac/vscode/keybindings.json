@@ -54,12 +54,7 @@
         "command": "explorer.newFolder"
     },
     {
-        "key": "ctrl+alt+cmd+p",
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "alt+cmd+p",
+        "key": "home",
         "command": "cursorTop",
         "when": "textInputFocus"
     },
@@ -334,7 +329,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+alt+n",
+        "key": "ctrl+shift+cmd+j",
         "command": "cursorColumnSelectDown",
         "when": "textInputFocus"
     },
@@ -344,7 +339,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+alt+p",
+        "key": "ctrl+shift+cmd+k",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus"
     },
@@ -436,5 +431,10 @@
     {
         "key": "cmd+\\",
         "command": "macros.splitRight"
+    },
+    {
+        "key": "home",
+        "command": "-cursorHome",
+        "when": "textInputFocus"
     },
 ]
