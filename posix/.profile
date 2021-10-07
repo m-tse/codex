@@ -1,5 +1,13 @@
 # Functions/settings shared by both zsh and bash that work across operating systems.
 
+gcm() {
+  git checkout master
+}
+
+gcb() {
+  git checkout -b $1
+}
+
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffbranch() {
   git diff $(git merge-base --fork-point master)

@@ -54,7 +54,11 @@
         "command": "explorer.newFolder"
     },
     {
+<<<<<<< HEAD
         "key": "home",
+=======
+        "key": "cmd+up",
+>>>>>>> 035119b1a9144e7b995fb05d8a63e6e85767c858
         "command": "cursorTop",
         "when": "textInputFocus"
     },
@@ -64,12 +68,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+alt+cmd+n",
-        "command": "cursorBottom",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "end",
+        "key": "cmd+down",
         "command": "cursorBottom",
         "when": "textInputFocus"
     },
@@ -436,5 +435,25 @@
         "key": "home",
         "command": "-cursorHome",
         "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.files.action.refreshFilesExplorer"
+    },
+    {
+        "key": "shift+cmd+v",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+shift+cmd+1",
+        "command": "workbench.action.editorLayoutSingle"
+    },
+    {
+        "key": "ctrl+shift+cmd+2",
+        "command": "workbench.action.editorLayoutTwoColumns"
     },
 ]
