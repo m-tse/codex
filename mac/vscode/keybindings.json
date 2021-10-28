@@ -54,30 +54,6 @@
         "command": "explorer.newFolder"
     },
     {
-<<<<<<< HEAD
-        "key": "home",
-=======
-        "key": "cmd+up",
->>>>>>> 035119b1a9144e7b995fb05d8a63e6e85767c858
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+up",
-        "command": "-cursorTop",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+down",
-        "command": "cursorBottom",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "cmd+down",
-        "command": "-cursorBottom",
-        "when": "textInputFocus"
-    },
-    {
         "key": "shift+cmd+1",
         "command": "-editor.action.replaceOne",
         "when": "editorFocus && findWidgetVisible"
@@ -328,7 +304,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+cmd+j",
+        "key": "ctrl+shift+alt+n",
         "command": "cursorColumnSelectDown",
         "when": "textInputFocus"
     },
@@ -338,7 +314,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+cmd+k",
+        "key": "ctrl+shift+alt+p",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus"
     },
@@ -432,11 +408,6 @@
         "command": "macros.splitRight"
     },
     {
-        "key": "home",
-        "command": "-cursorHome",
-        "when": "textInputFocus"
-    },
-    {
         "key": "shift+cmd+r",
         "command": "workbench.files.action.refreshFilesExplorer"
     },
@@ -455,5 +426,19 @@
     {
         "key": "ctrl+shift+cmd+2",
         "command": "workbench.action.editorLayoutTwoColumns"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "search.action.replace"
+    },
+    {
+        "key": "end",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "home",
+        "command": "cursorTop",
+        "when": "textInputFocus"
     },
 ]
