@@ -71,4 +71,5 @@
     "go.toolsManagement.autoUpdate": true,
     "workbench.editor.untitled.hint": "hidden",
     "gitlens.codeLens.enabled": false,
+    "editor.scrollbar.verticalScrollbarSize": 3,
 }
