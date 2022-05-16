@@ -54,6 +54,21 @@
         "command": "explorer.newFolder"
     },
     {
+        "key": "home",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+cmd+p",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "end",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
         "key": "shift+cmd+1",
         "command": "-editor.action.replaceOne",
         "when": "editorFocus && findWidgetVisible"
@@ -340,8 +355,8 @@
         "command": "-workbench.action.openRecent"
     },
     {
-        "key": "shift+enter",
-        "command": "editor.action.insertLineAfter",
+        "key": "ctrl+enter",
+        "command": "editor.action.insertLineBefore",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -350,8 +365,8 @@
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+enter",
-        "command": "editor.action.insertLineBefore",
+        "key": "shift+enter",
+        "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
@@ -372,6 +387,16 @@
     {
         "key": "cmd+escape",
         "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "f5",
+        "command": "-workbench.action.debug.start",
+        "when": "!inDebugMode"
     },
     {
         "key": "ctrl+tab",
@@ -408,6 +433,34 @@
         "command": "macros.splitRight"
     },
     {
+        "key": "cmd+1",
+        "command": "-workbench.action.focusFirstEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+end",
+        "command": "-cursorEndSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+a",
+        "command": "cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+home",
+        "command": "-cursorHomeSelect",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+",
+        "command": "columnSelect"
+    },
+    {
         "key": "shift+cmd+r",
         "command": "workbench.files.action.refreshFilesExplorer"
     },
@@ -428,17 +481,28 @@
         "command": "workbench.action.editorLayoutTwoColumns"
     },
     {
+        "key": "cmd+n",
+        "command": "openEditors.newUntitledFile"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "-workbench.action.newWindow"
+    },
+    {
+        "key": "shift+cmd+n",
+        "command": "workbench.action.newWindow"
+    },
+    {
         "key": "cmd+enter",
         "command": "search.action.replace"
     },
     {
-        "key": "end",
-        "command": "cursorBottom",
-        "when": "textInputFocus"
+        "key": "cmd+e",
+        "command": "-actions.findWithSelection"
     },
     {
-        "key": "home",
-        "command": "cursorTop",
-        "when": "textInputFocus"
-    },
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    }
 ]
