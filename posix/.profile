@@ -8,6 +8,10 @@ gcb() {
   git checkout -b $1
 }
 
+gc() {
+  git checkout $1
+}
+
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffbranch() {
   git diff $(git merge-base --fork-point master)
@@ -57,11 +61,6 @@ grim() {
 # Delete a branch
 gbd() {
   git branch -D $1
-}
-
-# Checkout a branch using fuzzy matching.
-gitcheckout() {
-  git checkout $(git branch | grep $1)
 }
 
 # Set default editors to vim
