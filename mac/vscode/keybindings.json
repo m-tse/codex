@@ -355,16 +355,6 @@
         "command": "-workbench.action.openRecent"
     },
     {
-        "key": "ctrl+enter",
-        "command": "editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
-        "key": "shift+cmd+enter",
-        "command": "-editor.action.insertLineBefore",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "shift+enter",
         "command": "editor.action.insertLineAfter",
         "when": "editorTextFocus && !editorReadonly"
