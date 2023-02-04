@@ -1,19 +1,7 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
-PROMPT='%F{4}%m:%F{14}%~ $(check_last_exit_code)%F{11}> %f'
-
-# Add last command exit code if not zero
-function check_last_exit_code() {
-  local LAST_EXIT_CODE=$?
-  if [[ $LAST_EXIT_CODE -ne 0 ]]; then
-    local EXIT_CODE_PROMPT=''
-    EXIT_CODE_PROMPT+="%F{7}\$?=%{$reset_color%}"
-    EXIT_CODE_PROMPT+="%F{9}$LAST_EXIT_CODE%{$reset_color%}"
-    EXIT_CODE_PROMPT+=" "
-    echo "$EXIT_CODE_PROMPT"
-  fi
-}
+PROMPT='%F{4}%m:%F{14}%~ %F{11}> %f'
 
 # Set the right side prompt.
 # Put the git branch info on the right side
