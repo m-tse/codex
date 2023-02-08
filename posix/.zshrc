@@ -3,6 +3,20 @@ export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
 PROMPT='%F{4}%m:%F{14}%~ %F{11}> %f'
 
+# Add last command exit code if not zero
+function check_last_exit_code() {
+  local LAST_EXIT_CODE=$?
+  local EXIT_CODE_PROMPT=''
+  if [[ $LAST_EXIT_CODE -eq 0 ]]; then
+    EXIT_CODE_PROMPT+="%F{7}"
+  else
+    EXIT_CODE_PROMPT+="%F{1}"
+  fi
+  EXIT_CODE_PROMPT+="$LAST_EXIT_CODE%{$reset_color%}"
+  EXIT_CODE_PROMPT+=""
+  echo "$EXIT_CODE_PROMPT"
+}
+
 # Set the right side prompt.
 # Put the git branch info on the right side
 autoload -Uz vcs_info
@@ -16,7 +30,7 @@ zstyle ':vcs_info:*' unstagedstr '~'
 zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
 # Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' %F{14}%D{%H:%M:%S}'
+RPROMPT=$RPROMPT' $(check_last_exit_code) %F{14}%D{%H:%M:%S}'
 
 # See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
 
