@@ -276,18 +276,8 @@
         "when": "textInputFocus"
     },
     {
-        "key": "shift+right",
-        "command": "-cursorRightSelect",
-        "when": "textInputFocus"
-    },
-    {
         "key": "ctrl+shift+b",
         "command": "cursorLeftSelect",
-        "when": "textInputFocus"
-    },
-    {
-        "key": "shift+left",
-        "command": "-cursorLeftSelect",
         "when": "textInputFocus"
     },
     {
