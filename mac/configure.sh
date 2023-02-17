@@ -31,9 +31,6 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # quick navigation to parent directories.
 defaults write com.apple.finder ShowPathbar -bool true
 
-# Show the status bar on the bottom of finder, it shows items and storage.
-defaults write com.apple.finder ShowStatusBar -bool false
-
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
@@ -69,6 +66,3 @@ defaults write com.apple.screencapture name "screenshot"
 
 # Disable shadow in screenshot
 defaults write com.apple.screencapture disable-shadow -bool true
-
-# Prevent Time Machine from prompting to use new hard drives as backup volume?
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
