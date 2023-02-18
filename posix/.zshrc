@@ -84,7 +84,8 @@ zstyle ':completion:*' list-colors ''
 setopt auto_menu
 
 # ZSH prompts to correct a mispelled command.
-setopt correct_all
+# Disabled for now, this sometimes annoyingly asks to correct something that is correct.
+# setopt correct_all
 
 # Turn on full fuzzy path completion
 zstyle ':completion:*' matcher-list '' \
