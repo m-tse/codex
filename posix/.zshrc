@@ -3,6 +3,9 @@ export TERM=screen-256color
 # Set the left prompt to 'host:path $?= >' with colors
 PROMPT='%F{4}%m:%F{14}%~ %F{11}> %f'
 
+# Display an empty character instead of a '%' to indicate EOL when cat-ing a file.
+PROMPT_EOL_MARK=''
+
 # Add last command exit code if not zero
 function check_last_exit_code() {
   local LAST_EXIT_CODE=$?
