@@ -1,5 +1,6 @@
 #!/bin/bash
-# posix (os_x or linux) terminal profile
+# DEPRECATED: Use zsh instead.
+# posix (os_x or linux) bash profile.
 PROMPT_COMMAND=__prompt_command
 __prompt_command() {
   local NORMAL_COLOR='\[\e[0m\]'

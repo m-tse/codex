@@ -95,14 +95,16 @@ zstyle ':completion:*' matcher-list '' \
 
 
 # Turn on fish-style autosuggestions, submodule must have been initialized.
-source ~/Development/codex/posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh-autosuggestions.zsh
 
 # Turn on zsh highlighting, submodule must have been initialized.
-source ~/Development/codex/posix/submodules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.zsh-syntax-highlighting.zsh
 # Enable the bracket highlighter in addition to main one. Others don't to do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Turn on history substring search, submodule must have been initialized.
-source ~/Development/codex/posix/submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.zsh-history-substring-search.zsh
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
+
+source ~/.profile
