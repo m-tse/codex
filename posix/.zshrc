@@ -110,4 +110,5 @@ source ~/.zsh-history-substring-search.zsh
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 
-source ~/.profile
+# Somehow, this messes up ctrl+a ctrl+e in tmux with tmux shell integration...
+# source ~/.profile
