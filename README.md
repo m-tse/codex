@@ -11,7 +11,7 @@ This is supposed to be composable with the pieces you want. To setup a basic pos
 cd codex
 cp posix/submodules/zsh-autosuggestions/zsh-autosuggestions.zsh ~/.zsh-autosuggestions.zsh
 cp posix/submodules/zsh-history-substring-search/zsh-history-substring-search.zsh ~/.zsh-history-substring-search.zsh
-cp posix/submodules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ~/.zsh-syntax-highlighting.zsh
+cp -R posix/submodules/zsh-syntax-highlighting ~/.zsh-syntax-highlighting
 cp posix/submodules/diff-so-fancy/diff-so-fancy ~/.diff-so-fancy
 cp posix/.zshrc ~/.zshrc
 cp posix/.profile ~/.profile

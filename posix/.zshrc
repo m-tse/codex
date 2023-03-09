@@ -101,7 +101,7 @@ zstyle ':completion:*' matcher-list '' \
 source ~/.zsh-autosuggestions.zsh
 
 # Turn on zsh highlighting, submodule must have been initialized.
-source ~/.zsh-syntax-highlighting.zsh
+source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Enable the bracket highlighter in addition to main one. Others don't to do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
