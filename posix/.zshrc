@@ -90,6 +90,9 @@ setopt auto_menu
 # Disabled for now, this sometimes annoyingly asks to correct something that is correct.
 # setopt correct_all
 
+# Prevents "zsh: command not found: #"
+setopt INTERACTIVE_COMMENTS
+
 # Turn on full fuzzy path completion
 zstyle ':completion:*' matcher-list '' \
   'm:{a-z\-}={A-Z\_}' \
