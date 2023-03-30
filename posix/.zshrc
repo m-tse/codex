@@ -86,10 +86,6 @@ zstyle ':completion:*' list-colors ''
 # Upon second tab of auto complete, automatically select and tab through the options.
 setopt auto_menu
 
-# ZSH prompts to correct a mispelled command.
-# Disabled for now, this sometimes annoyingly asks to correct something that is correct.
-# setopt correct_all
-
 # Prevents "zsh: command not found: #"
 setopt INTERACTIVE_COMMENTS
 
@@ -98,7 +94,6 @@ zstyle ':completion:*' matcher-list '' \
   'm:{a-z\-}={A-Z\_}' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
-
 
 # Turn on fish-style autosuggestions, submodule must have been initialized.
 source ~/.zsh-autosuggestions.zsh
