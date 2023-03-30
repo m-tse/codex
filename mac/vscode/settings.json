@@ -1,6 +1,14 @@
 {
-    "C_Cpp.errorSquiggles": "Disabled",
+    "[go]": {
+        "editor.insertSpaces": false,
+        "editor.tabSize": 2
+    },
+    "[python]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
     "editor.acceptSuggestionOnEnter": "off",
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
     "editor.copyWithSyntaxHighlighting": false,
     "editor.cursorSurroundingLines": 15,
     "editor.cursorWidth": 4,
@@ -13,63 +21,55 @@
     "editor.padding.bottom": 10,
     "editor.padding.top": 10,
     "editor.quickSuggestionsDelay": 500,
+    "editor.renderLineHighlight": "all",
+    "editor.renderLineHighlightOnlyWhenFocus": true,
     "editor.renderWhitespace": "boundary",
-    "editor.rulers": [80, 100, 120],
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "editor.scrollbar.verticalScrollbarSize": 9,
     "editor.smoothScrolling": true,
-    "editor.suggest.maxVisibleSuggestions": 4,
     "editor.suggest.localityBonus": true,
     "editor.tabSize": 2,
-    "editor.wordWrap": "on",
+    "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 120,
     "editor.wrappingIndent": "deepIndent",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
     "explorer.openEditors.visible": 0,
     "extensions.ignoreRecommendations": true,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
     "files.insertFinalNewline": true,
-    "macros": {
-        "splitRight": [
-            "workbench.action.splitEditorDown",
-            "workbench.action.editorLayoutTwoColumns",
-        ]
-    },
+    "gitlens.codeLens.enabled": false,
+    "gitlens.showWelcomeOnInstall": false,
     "search.seedWithNearestWord": true,
     "search.smartCase": true,
     "search.sortOrder": "countDescending",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    "workbench.editor.closeOnFileDelete": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "[python]": {
-        "editor.insertSpaces": true,
-        "editor.tabSize": 4
-    },
-    "[go]": {
-        "editor.insertSpaces": false,
-        "editor.tabSize": 2
-    },
-    "window.zoomLevel": -1.5,
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.automationProfile.windows": {},
+    "window.autoDetectColorScheme": true,
     "window.nativeFullScreen": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": -1.5,
     "workbench.activityBar.visible": false,
     "workbench.commandPalette.history": 5,
     "workbench.editor.closeEmptyGroups": false,
+    "workbench.editor.closeOnFileDelete": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 4,
     "workbench.editor.openPositioning": "first",
     "workbench.editor.revealIfOpen": true,
     "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
     "workbench.fontAliasing": "auto",
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.tips.enabled": false,
-    "go.formatTool": "goimports",
-    "workbench.editorAssociations": {
-        "*.ipynb": "jupyter.notebook.ipynb"
-    },
-    "go.toolsManagement.autoUpdate": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "gitlens.codeLens.enabled": false,
-    "editor.scrollbar.verticalScrollbarSize": 9,
+    "workbench.tips.enabled": false
 }
