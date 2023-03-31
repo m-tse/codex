@@ -54,7 +54,6 @@
     "search.sortOrder": "countDescending",
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.automationProfile.windows": {},
-    "window.autoDetectColorScheme": true,
     "window.nativeFullScreen": false,
     "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
     "window.titleBarStyle": "native",
