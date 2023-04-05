@@ -1,7 +1,5 @@
 # Enable 256 colors (might not be necessary on mac, but required for putty)
 export TERM=screen-256color
-# Set the left prompt to 'host:path $?= >' with colors
-PROMPT='%F{4}%m:%F{14}%~ %F{11}> %f'
 
 # Display an empty character instead of a '%' to indicate EOL when cat-ing a file.
 PROMPT_EOL_MARK=''
@@ -20,20 +18,16 @@ function check_last_exit_code() {
   echo "$EXIT_CODE_PROMPT"
 }
 
-# Set the right side prompt.
-# Put the git branch info on the right side
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
 precmd_functions+=( precmd_vcs_info )
 setopt prompt_subst
-RPROMPT=%F{5}\$vcs_info_msg_0_
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '~'
 zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
-# Add the timestamp to the right side after the git branch info.
-RPROMPT=$RPROMPT' $(check_last_exit_code) %F{14}%D{%H:%M:%S}'
+PROMPT=$'%F{11}%D{%H:%M:%S} %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{12}%m:%F{14}%~ %F{11}> %f'
 
 # See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
 
