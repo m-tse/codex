@@ -27,7 +27,7 @@ zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '~'
 zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
-PROMPT=$'%F{11}%D{%H:%M:%S} %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{12}%m:%F{14}%~ %F{11}> %f'
+PROMPT=$'%F{11}|%D{%H:%M:%S}| %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{12}%m:%F{14}%~ %F{11}> %f'
 
 # See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
 
