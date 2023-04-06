@@ -99,10 +99,11 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Turn on history substring search
 source ~/.zsh-history-substring-search.zsh
-bindkey '^P' history-substring-search-up
-bindkey '^N' history-substring-search-down
 
 source ~/.profile
+
 # See https://stackoverflow.com/questions/23128353/zsh-shortcut-ctrl-a-not-working
 # This is needed to restore ctrl+a/ctrl+e functionality after setting EDITOR/VISUAL=vim in ~/.profile
 bindkey -e
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
