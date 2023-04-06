@@ -22,7 +22,7 @@ set ignorecase " Ignore case when searching
 set smartcase " Automatically switch search to case-sensitive when search query contains an upper letter
 
 " A nice default color scheme that looks close to the homebrew terminal colors
-" colorscheme murphy
+colorscheme pablo
 
 set autoread " Automatically re-read files if unmodified in vim
 set noswapfile " Disable swap files.
