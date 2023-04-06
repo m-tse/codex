@@ -103,3 +103,6 @@ bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 
 source ~/.profile
+# See https://stackoverflow.com/questions/23128353/zsh-shortcut-ctrl-a-not-working
+# This is needed to restore ctrl+a/ctrl+e functionality after setting EDITOR/VISUAL=vim in ~/.profile
+bindkey -e
