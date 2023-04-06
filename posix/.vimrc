@@ -14,6 +14,7 @@ syntax enable " syntax highlighting
 set cursorline " Show a horizontal line where the cursor is across the screen
 set showmatch " Automatically highlight the matching brace, paren, bracket, etc.
 set ruler " Display the current row, column, and % of document on bottom right
+set scrolloff=10 " When scrolling up/down, maintain a buffer so we don't scroll at the end.
 
 set hlsearch " Enable search highlighting
 set incsearch " Incremental search that shows partial matches
@@ -25,3 +26,4 @@ set smartcase " Automatically switch search to case-sensitive when search query 
 
 set autoread " Automatically re-read files if unmodified in vim
 set noswapfile " Disable swap files.
+
