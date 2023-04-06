@@ -89,18 +89,17 @@ zstyle ':completion:*' matcher-list '' \
   'r:[^[:alpha:]]||[[:alpha:]]=** r:|=* m:{a-z\-}={A-Z\_}' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
-# Turn on fish-style autosuggestions, submodule must have been initialized.
+# Turn on fish-style autosuggestions
 source ~/.zsh-autosuggestions.zsh
 
-# Turn on zsh highlighting, submodule must have been initialized.
+# Turn on zsh highlighting
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-# Enable the bracket highlighter in addition to main one. Others don't to do anything.
+# Enable the bracket highlighter in addition to main one. Others don't do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
-# Turn on history substring search, submodule must have been initialized.
+# Turn on history substring search
 source ~/.zsh-history-substring-search.zsh
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
 
-# Somehow, this messes up ctrl+a ctrl+e in tmux with tmux shell integration...
-# source ~/.profile
+source ~/.profile
