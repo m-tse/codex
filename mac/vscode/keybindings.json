@@ -309,7 +309,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+alt+n",
+        "key": "ctrl+shift+cmd+n",
         "command": "cursorColumnSelectDown",
         "when": "textInputFocus"
     },
@@ -319,7 +319,7 @@
         "when": "textInputFocus"
     },
     {
-        "key": "ctrl+shift+alt+p",
+        "key": "ctrl+shift+cmd+p",
         "command": "cursorColumnSelectUp",
         "when": "textInputFocus"
     },
