@@ -237,7 +237,7 @@
         "command": "-workbench.action.closeOtherEditors"
     },
     {
-        "key": "ctrl+cmd+1",
+        "key": "shift+cmd+1",
         "command": "workbench.action.moveEditorToFirstGroup"
     },
     {
@@ -245,7 +245,7 @@
         "command": "-workbench.action.moveEditorToFirstGroup"
     },
     {
-        "key": "ctrl+cmd+2",
+        "key": "shift+cmd+2",
         "command": "workbench.action.moveEditorToLastGroup"
     },
     {
