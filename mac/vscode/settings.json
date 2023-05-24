@@ -31,7 +31,7 @@
         100,
         120
     ],
-    "editor.scrollbar.verticalScrollbarSize": 9,
+    "editor.scrollbar.verticalScrollbarSize": 15,
     "editor.smoothScrolling": true,
     "editor.suggest.localityBonus": true,
     "editor.tabSize": 2,
