@@ -9,7 +9,7 @@ gcb() {
 }
 
 gc() {
-  git checkout $1
+  git checkout "$@"
 }
 
 # Shortcut to diff your current branch against the merge point in the master branch.
