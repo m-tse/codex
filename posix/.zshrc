@@ -40,6 +40,11 @@ export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
 # This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
 export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
 
+unalias ls
+ls() {
+  ls --color=auto "$@"
+}
+
 # History Settings
 HISTFILESIZE=100000
 HISTSIZE=100000
