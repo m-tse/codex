@@ -63,6 +63,13 @@ gbd() {
   git branch -D $1
 }
 
+shell() {
+  # Run something as another user without assuming that user in an interactive shell
+  USER="$1"
+  ARGS="${@:2}"
+  sudo -u $USER zsh -c "$ARGS"
+}
+
 # Set default editors to vim
 export EDITOR=vim
 export VISUAL=vim
