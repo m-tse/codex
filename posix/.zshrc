@@ -41,8 +41,8 @@ export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
 export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
 
 unalias ls
-ls() {
-  ls --color=auto "$@"
+function ls() {
+  command ls --color=auto "$@"
 }
 
 # History Settings
