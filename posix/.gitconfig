@@ -11,3 +11,5 @@
   whitespace = red reverse
 [include]
   path = ~/.gitconfig_user
+[push]
+	autoSetupRemote = true
