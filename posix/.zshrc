@@ -96,6 +96,9 @@ source ~/.submodules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Enable the bracket highlighter in addition to main one. Others don't do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=yellow,bold'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=yellow,bold'
+
 # Turn on history substring search
 source ~/.submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
 HISTORY_SUBSTRING_SEARCH_FUZZY='yes'
