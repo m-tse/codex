@@ -86,9 +86,9 @@
   },
   "Blur" : false,
   "Ansi 13 Color" : {
-    "Red Component" : 0.59607843137254901,
+    "Red Component" : 0.59607845544815063,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.94901960784313721,
+    "Blue Component" : 0.94901961088180542,
     "Alpha Component" : 1,
     "Green Component" : 0
   },
@@ -286,11 +286,11 @@
     "Green Component" : 0.50980392156862742
   },
   "Ansi 14 Color" : {
-    "Red Component" : 0.55294117647058827,
+    "Red Component" : 0.51129359006881714,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.65098039215686276
+    "Green Component" : 0.66666668653488159
   },
   "Rows" : 80,
   "Background Color (Light)" : {
@@ -660,11 +660,11 @@
     "Green Component" : 0.35915297269821167
   },
   "Ansi 6 Color" : {
-    "Red Component" : 0.3819122314453125,
+    "Red Component" : 0.3529411764705882,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.503753662109375
+    "Green Component" : 0.47058823529411764
   },
   "Silence Bell" : true,
   "Ansi 4 Color (Dark)" : {
@@ -682,11 +682,11 @@
     "Green Component" : 0.22352941176470589
   },
   "Ansi 12 Color" : {
-    "Red Component" : 0.414154052734375,
+    "Red Component" : 0.11764705926179886,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.18431372940540314
+    "Green Component" : 0.11764705926179886
   },
   "Ansi 1 Color (Light)" : {
     "Red Component" : 1,
@@ -703,9 +703,9 @@
     "Green Component" : 0
   },
   "Ansi 5 Color" : {
-    "Red Component" : 0.42745098039215684,
+    "Red Component" : 0.42745098471641541,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.94901960784313721,
+    "Blue Component" : 0.94901961088180542,
     "Alpha Component" : 1,
     "Green Component" : 0
   },
@@ -715,11 +715,11 @@
     "Blue Component" : 0.73333334922790527
   },
   "Ansi 4 Color" : {
-    "Red Component" : 0.2342071533203125,
+    "Red Component" : 0.23529411852359772,
     "Color Space" : "sRGB",
     "Blue Component" : 1,
     "Alpha Component" : 1,
-    "Green Component" : 0.18431372940540314
+    "Green Component" : 0.23529411852359772
   },
   "Use Separate Colors for Light and Dark Mode" : false,
   "Draw Powerline Glyphs" : false,
