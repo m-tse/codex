@@ -90,7 +90,3 @@ function ls() {
   # -A lists dotfiles, and is compatible between mac and linux
   command ls -A --color=auto "$@"
 }
-
-#########################
-# Add Custom Entries Here
-#########################
