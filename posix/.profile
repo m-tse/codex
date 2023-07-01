@@ -90,3 +90,7 @@ function ls() {
   # -A lists dotfiles, and is compatible between mac and linux
   command ls -A --color=auto "$@"
 }
+
+function grep() {
+  command grep --color=auto "$@"
+}
