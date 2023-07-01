@@ -28,7 +28,8 @@ set background=dark
 set notermguicolors " Use terminal colors
 highlight Statement ctermfg=3 " Yellow for statements (for, while if)
 highlight Comment ctermfg=14 " Cyan comments
-highlight Constant ctermfg=9 " Red constants
+highlight Identifier ctermfg=4 " Blue identifiers
+highlight Constant ctermfg=11 " Dark Yellow constants
 highlight Type ctermfg=2 " green types
 highlight PreProc ctermfg=12 " Purple
 highlight Special ctermfg=4 " Blue
