@@ -1,5 +1,5 @@
 {
-  "Non-ASCII Anti Aliased" : true,
+  "Close Sessions On End" : 2,
   "Ansi 15 Color (Dark)" : {
     "Red Component" : 1,
     "Color Space" : "sRGB",
@@ -7,15 +7,11 @@
     "Alpha Component" : 1,
     "Green Component" : 1
   },
-  "Foreground Color (Dark)" : {
-    "Green Component" : 0.73333334922790527,
-    "Red Component" : 0.73333334922790527,
-    "Blue Component" : 0.73333334922790527
-  },
+  "Non-ASCII Anti Aliased" : true,
   "Cursor Text Color" : {
     "Green Component" : 1,
-    "Red Component" : 1,
-    "Blue Component" : 1
+    "Blue Component" : 1,
+    "Red Component" : 1
   },
   "Smart Cursor Color" : true,
   "Prompt Before Closing 2" : false,
@@ -43,7 +39,7 @@
     "Red Component" : 0,
     "Blue Component" : 0
   },
-  "Guid" : "9604C161-28B1-408D-B86C-B80ED3AB5706",
+  "Guid" : "E6617445-8927-4A94-83D9-8FD80904EB0E",
   "Cursor Color (Dark)" : {
     "Green Component" : 0.73333334922790527,
     "Red Component" : 0.73333334922790527,
@@ -481,11 +477,11 @@
   "Minimum Contrast (Dark)" : 0,
   "Smart Cursor Color (Light)" : false,
   "Ansi 7 Color" : {
-    "Red Component" : 0.7803921568627451,
+    "Red Component" : 0.78431373834609985,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.7803921568627451,
+    "Blue Component" : 0.78431373834609985,
     "Alpha Component" : 1,
-    "Green Component" : 0.7803921568627451
+    "Green Component" : 0.78431373834609985
   },
   "Keyboard Map" : {
     "0xf700-0x260000" : {
@@ -728,11 +724,11 @@
   "Subtitle" : "",
   "Custom Tab Title" : "asdf",
   "Ansi 3 Color" : {
-    "Red Component" : 0.84313725490196079,
+    "Red Component" : 1,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.047058823529411764,
+    "Blue Component" : 0,
     "Alpha Component" : 1,
-    "Green Component" : 0.68627450980392157
+    "Green Component" : 0.78497023809523814
   },
   "Blinking Cursor" : true,
   "Ansi 6 Color (Light)" : {
@@ -787,12 +783,16 @@
     "Alpha Component" : 1,
     "Green Component" : 0.18431372940540314
   },
-  "Close Sessions On End" : 2,
   "Ansi 0 Color" : {
-    "Red Component" : 0.29999999999999999,
+    "Red Component" : 0.30000001192092896,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.29999999999999999,
+    "Blue Component" : 0.30000001192092896,
     "Alpha Component" : 1,
-    "Green Component" : 0.29999999999999999
+    "Green Component" : 0.30000001192092896
+  },
+  "Foreground Color (Dark)" : {
+    "Green Component" : 0.73333334922790527,
+    "Red Component" : 0.73333334922790527,
+    "Blue Component" : 0.73333334922790527
   }
 }
