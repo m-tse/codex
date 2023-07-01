@@ -27,7 +27,7 @@ syntax enable " syntax highlighting
 set background=dark
 set notermguicolors " Use terminal colors
 highlight Statement ctermfg=3 " Yellow for statements (for, while if)
-highlight Comment ctermfg=8 " Grey comments
+highlight Comment ctermfg=14 " Cyan comments
 highlight Constant ctermfg=9 " Red constants
 highlight Type ctermfg=2 " green types
 highlight PreProc ctermfg=12 " Purple
