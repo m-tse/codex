@@ -103,7 +103,7 @@ function less() {
 export LESS_TERMCAP_me=$'\e[0m' # White
 export LESS_TERMCAP_se=$'\e[0m' # White
 export LESS_TERMCAP_ue=$'\e[0m' # White
-export LESS_TERMCAP_mb=$'\e[33m' # Yellow
+export LESS_TERMCAP_mb=$'\e[0m' # White
 export LESS_TERMCAP_md=$'\e[33m' # Yellow
 export LESS_TERMCAP_so=$'\e[31m' # Red for Accent
 export LESS_TERMCAP_us=$'\e[32m' # Green for search terms
