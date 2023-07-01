@@ -10,7 +10,6 @@ set tabstop=2 " indent using 2 spaces
 set smarttab " Insert tab stop number of spaces when Tab is pressed
 set expandtab " convert tabs to spaces
 
-syntax enable " syntax highlighting
 set cursorline " Show a horizontal line where the cursor is across the screen
 set showmatch " Automatically highlight the matching brace, paren, bracket, etc.
 set ruler " Display the current row, column, and % of document on bottom right
@@ -24,3 +23,13 @@ set smartcase " Automatically switch search to case-sensitive when search query 
 set autoread " Automatically re-read files if unmodified in vim
 set noswapfile " Disable swap files.
 
+syntax enable " syntax highlighting
+set background=dark
+set notermguicolors " Use terminal colors
+highlight Statement ctermfg=3 " Yellow for statements (for, while if)
+highlight Comment ctermfg=8 " Grey comments
+highlight Constant ctermfg=9 " Red constants
+highlight Type ctermfg=2 " green types
+highlight PreProc ctermfg=12 " Purple
+highlight Special ctermfg=4 " Blue
+highlight Title ctermfg=4 " Blue
