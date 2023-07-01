@@ -98,6 +98,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Turn on history substring search
 source ~/.submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
+HISTORY_SUBSTRING_SEARCH_FUZZY='yes'
 
 # Source non ZSH specific configuration
 source ~/.profile
