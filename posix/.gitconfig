@@ -9,3 +9,5 @@
   old = red
   new = green
   whitespace = red reverse
+[include]
+  path = ~/.gitconfig_user
