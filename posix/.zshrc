@@ -95,15 +95,15 @@ zstyle ':completion:*' matcher-list '' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
 # Turn on fish-style autosuggestions
-source ~/.zsh-autosuggestions.zsh
+source ~/.submodules/.zsh-autosuggestions.zsh
 
 # Turn on zsh highlighting
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.submodules/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Enable the bracket highlighter in addition to main one. Others don't do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Turn on history substring search
-source ~/.zsh-history-substring-search.zsh
+source ~/.submodules/.zsh-history-substring-search.zsh
 
 source ~/.profile
 

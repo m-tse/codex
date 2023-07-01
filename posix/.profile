@@ -4,10 +4,6 @@ gcm() {
   git checkout master
 }
 
-gcb() {
-  git checkout -b $1
-}
-
 gc() {
   git checkout "$@"
 }
