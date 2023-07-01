@@ -40,10 +40,10 @@ export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
 # This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
 export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
 
-unalias ls
-function ls() {
-  command ls --all --color=auto "$@"
-}
+#unalias ls
+#function ls() {
+#  command ls --all --color=auto "$@"
+#}
 
 # History Settings
 HISTFILESIZE=100000
@@ -95,15 +95,15 @@ zstyle ':completion:*' matcher-list '' \
   'r:|?=** m:{a-z\-}={A-Z\_}'
 
 # Turn on fish-style autosuggestions
-source ~/.submodules/.zsh-autosuggestions.zsh
+source ~/.submodules/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Turn on zsh highlighting
-source ~/.submodules/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/.submodules/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Enable the bracket highlighter in addition to main one. Others don't do anything.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
 # Turn on history substring search
-source ~/.submodules/.zsh-history-substring-search.zsh
+source ~/.submodules/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 source ~/.profile
 
