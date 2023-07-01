@@ -41,22 +41,6 @@ function host_color() {
 
 PROMPT=$'%F{11}|%D{%H:%M:%S}| %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{11}> %f'
 
-# See http://www.bigsoft.co.uk/blog/2008/04/11/configuring-ls_colors for a detailed explanation
-
-# This is for BSD implementation of ls, used in macOS
-# Use colors for file types with ls
-export CLICOLOR=1
-# Use a friendlier ls color scheme for a dark background
-export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
-
-# This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
-export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
-
-function ls() {
-  # -A lists dotfiles, and is compatible between mac and linux
-  command ls -A --color=auto "$@"
-}
-
 # History Settings
 HISTFILESIZE=100000
 HISTSIZE=100000
