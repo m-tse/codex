@@ -4,12 +4,32 @@ gcm() {
   git checkout master
 }
 
-gc() {
+ga() {
+  git add "$@"
+}
+
+gs() {
+  git status
+}
+
+gch() {
   git checkout "$@"
 }
 
-gp() {
+gco() {
+  git commit "$@"
+}
+
+gpl() {
   git pull
+}
+
+gps() {
+  git push "$@"
+}
+
+gd() {
+  git diff
 }
 
 # Shortcut to diff your current branch against the merge point in the master branch.
