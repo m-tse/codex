@@ -79,8 +79,6 @@ setopt HIST_IGNORE_ALL_DUPS # Erase duplicates in history file
 # 0 grabs the history from the first entry
 alias history="history -i 0"
 
-alias ls="ls -a"
-
 # Enable auto completion, and use a cache so zsh is still responsive.
 autoload -Uz compinit
 typeset -i updated_at=$(date +'%j' -r ~/.zcompdump 2>/dev/null || stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)
