@@ -101,7 +101,7 @@ export GIT_EDITOR=vim
 # Use colors for file types with ls
 export CLICOLOR=1
 # Use a friendlier ls color scheme for a dark background
-export LSCOLORS=dxgxhxhxbxhxhxbxbxhxhx
+export LSCOLORS=DxGxhxhxBxhxhxBxBxhxhx
 
 # This is for GNU implementation of ls, used in linux and putty. Note `ls --color=auto` is required.
 export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
