@@ -29,13 +29,13 @@ zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
 function host_color() {
   if [[ "$HOST" =~ .*"prd".* ]]; then
-    echo "1" # Red
+    echo "9" # Bold Red
   elif [[ "$HOST" =~ .*"qa".* ]]; then
     echo "5" # Purple
   elif [[ "$HOST" =~ .*"dev".* ]]; then
-    echo "3" # Yellow
+    echo "11" # Bold Yellow
   else
-    echo "12" # Indigo
+    echo "4" # Blue
   fi
 }
 
