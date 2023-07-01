@@ -12,6 +12,10 @@ gc() {
   git checkout "$@"
 }
 
+gp() {
+  git pull
+}
+
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffbranch() {
   git diff $(git merge-base --fork-point master)
