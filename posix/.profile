@@ -88,9 +88,13 @@ export LS_COLORS="di=00;33:ln=00;36:ex=00;31:ow=00;31"
 
 function ls() {
   # -A lists dotfiles, and is compatible between mac and linux
-  command ls -A --color=auto "$@"
+  command ls -A --color=always "$@"
 }
 
 function grep() {
-  command grep --color=auto "$@"
+  command grep --color=always "$@"
+}
+
+function less() {
+  command less -R "$@"
 }
