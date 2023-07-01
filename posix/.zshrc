@@ -109,7 +109,7 @@ source ~/.submodules/zsh-history-substring-search/zsh-history-substring-search.z
 source ~/.profile
 
 # Source any machine specific local configuration, but don't error if not found
-source ~/.local 2>/dev/null
+source ~/.local_profile 2>/dev/null
 
 # See https://stackoverflow.com/questions/23128353/zsh-shortcut-ctrl-a-not-working
 # This is needed to restore ctrl+a/ctrl+e functionality after setting EDITOR/VISUAL=vim in ~/.profile
