@@ -3,12 +3,13 @@
 [color]
   ui = auto
 [color "diff"]
-  meta = yellow
-  commit = green
-  frag = blue
-  old = red
-  new = green
-  whitespace = red reverse
+  meta = bold yellow
+  commit = bold green
+  frag = bold blue
+  func = magenta
+  old = bold red
+  new = bold green
+  whitespace = reverse bold red
 [include]
   path = ~/.gitconfig_user
 [push]
