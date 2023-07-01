@@ -28,11 +28,11 @@ zstyle ':vcs_info:*' unstagedstr '~'
 zstyle ':vcs_info:git:*' formats '%u%c%F{2}%b'
 
 function host_color() {
-  if [[ "$HOSTNAME" =~ .*"prd".* ]]; then
+  if [[ "$HOST" =~ .*"prd".* ]]; then
     echo "1" # Red
-  elif [[ "$HOSTNAME" =~ .*"qa".* ]]; then
+  elif [[ "$HOST" =~ .*"qa".* ]]; then
     echo "5" # Purple
-  elif [[ "$HOSTNAME" =~ .*"dev".* ]]; then
+  elif [[ "$HOST" =~ .*"dev".* ]]; then
     echo "3" # Yellow
   else
     echo "12" # Indigo
