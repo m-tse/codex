@@ -1,6 +1,6 @@
 # Functions/settings shared by both zsh and bash that work across operating systems.
 
-gcm() {
+gcom() {
   git checkout master
 }
 
@@ -12,11 +12,11 @@ gs() {
   git status
 }
 
-gch() {
+gco() {
   git checkout "$@"
 }
 
-gco() {
+gcm() {
   git commit "$@"
 }
 
