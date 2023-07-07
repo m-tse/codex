@@ -47,7 +47,7 @@ function host_color() {
   fi
 }
 
-PROMPT=$'%F{11}$(local_time) %F{3}$(utc_time) %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
+PROMPT=$'\n%F{11}$(local_time) %F{3}$(utc_time) %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
 
 # History Settings
 HISTFILESIZE=100000
