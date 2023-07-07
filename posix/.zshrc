@@ -4,18 +4,21 @@ export TERM=screen-256color
 # Display an empty character instead of a '%' to indicate EOL when cat-ing a file.
 PROMPT_EOL_MARK=''
 
-# Add last command exit code if not zero
+# Must use precmd_functions, otherwise this will return the value of local_time() or utc_time()
+# rather than the actual last exit code.
+precmd_functions=("check_last_exit_code" ${precmd_functions[@]})
+# Colorize last command exit code
 function check_last_exit_code() {
   local LAST_EXIT_CODE=$?
   local EXIT_CODE_PROMPT=''
   if [[ $LAST_EXIT_CODE -eq 0 ]]; then
     EXIT_CODE_PROMPT+="%F{7}"
   else
-    EXIT_CODE_PROMPT+="%F{1}"
+    EXIT_CODE_PROMPT+="%F{9}"
   fi
   EXIT_CODE_PROMPT+="$LAST_EXIT_CODE%{$reset_color%}"
   EXIT_CODE_PROMPT+=""
-  echo "$EXIT_CODE_PROMPT"
+  last_exit=$EXIT_CODE_PROMPT
 }
 
 function local_time() {
@@ -47,7 +50,7 @@ function host_color() {
   fi
 }
 
-PROMPT=$'\n%F{11}$(local_time) %F{3}$(utc_time) %F{13}\\$\?=$(check_last_exit_code) %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
+PROMPT=$'\n%F{11}$(local_time) %F{3}$(utc_time) %F{13}\\$\?=${last_exit} %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
 
 # History Settings
 HISTFILESIZE=100000
