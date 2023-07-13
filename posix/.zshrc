@@ -50,7 +50,7 @@ function host_color() {
   fi
 }
 
-PROMPT=$'\n%F{11}$(local_time) %F{3}$(utc_time) %F{13}\\$\?=${last_exit} %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
+PROMPT=$'\n\e[4m%F{11}$(local_time) %F{3}$(utc_time)\e[0m %F{13}\\$\?=${last_exit} %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
 
 # History Settings
 HISTFILESIZE=100000
