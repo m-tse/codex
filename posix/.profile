@@ -63,6 +63,7 @@ gitupdate() {
   gitrebase
   git push -f
 }
+alias gu='gitupdate'
 
 # When doing an interactive rebase and needing to resolve conflicts, after conflicts are resolved,
 # run this command to add all dirty files and auto-accept the rebase commit contents.
