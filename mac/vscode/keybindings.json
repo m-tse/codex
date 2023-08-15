@@ -85,16 +85,8 @@
     "when": "folderMatchFocus && replaceActive && searchViewletVisible"
   },
   {
-    "key": "cmd+1",
-    "command": "workbench.action.openEditorAtIndex1"
-  },
-  {
     "key": "ctrl+1",
     "command": "-workbench.action.openEditorAtIndex1"
-  },
-  {
-    "key": "cmd+2",
-    "command": "workbench.action.openEditorAtIndex2"
   },
   {
     "key": "ctrl+2",
@@ -507,5 +499,13 @@
     "key": "shift+cmd+r",
     "command": "-rerunSearchEditorSearch",
     "when": "inSearchEditor"
+  },
+  {
+    "key": "cmd+2",
+    "command": "workbench.action.focusLastEditorGroup"
+  },
+  {
+    "key": "cmd+1",
+    "command": "workbench.action.focusFirstEditorGroup"
   }
 ]
