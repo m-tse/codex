@@ -353,10 +353,6 @@
     "when": "textInputFocus"
   },
   {
-    "key": "cmd+escape",
-    "command": "workbench.action.focusNextGroup"
-  },
-  {
     "key": "f5",
     "command": "-workbench.action.debug.continue",
     "when": "inDebugMode"
