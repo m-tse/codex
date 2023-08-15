@@ -90,6 +90,8 @@ zstyle ':completion:*' list-colors ''
 # Upon second tab of auto complete, automatically select and tab through the options.
 setopt auto_menu
 
+# Prevent globbing patterns, like ls file*, but allows things like | jq .[0]
+setopt no_nomatch
 # Prevents "zsh: command not found: #"
 setopt INTERACTIVE_COMMENTS
 
