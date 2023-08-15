@@ -46,11 +46,7 @@
     "command": "-editor.action.moveLinesDownAction"
   },
   {
-    "key": "shift+cmd+n",
-    "command": "explorer.newFile"
-  },
-  {
-    "key": "ctrl+shift+cmd+n",
+    "key": "shift+cmd+m",
     "command": "explorer.newFolder"
   },
   {
@@ -409,10 +405,6 @@
     "when": "breadcrumbsPossible"
   },
   {
-    "key": "cmd+\\",
-    "command": "macros.splitRight"
-  },
-  {
     "key": "cmd+1",
     "command": "-workbench.action.focusFirstEditorGroup"
   },
@@ -439,10 +431,6 @@
   {
     "key": "shift+cmd+",
     "command": "columnSelect"
-  },
-  {
-    "key": "shift+cmd+r",
-    "command": "workbench.files.action.refreshFilesExplorer"
   },
   {
     "key": "shift+cmd+v",
@@ -501,4 +489,23 @@
     "key": "cmd+k cmd+right",
     "command": "-workbench.action.focusRightGroup"
   },
+  {
+    "key": "shift+cmd+r",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "f2",
+    "command": "-editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+m",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "shift+cmd+r",
+    "command": "-rerunSearchEditorSearch",
+    "when": "inSearchEditor"
+  }
 ]
