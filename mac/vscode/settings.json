@@ -2,11 +2,11 @@
   "[go]": {
     "editor.insertSpaces": false,
     "editor.tabSize": 2
-    },
+  },
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
-    },
+  },
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.copyWithSyntaxHighlighting": false,
@@ -16,6 +16,7 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13.5,
+  "window.zoomLevel": -1.5,
   "editor.formatOnPaste": true,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
@@ -26,11 +27,7 @@
   "editor.renderLineHighlight": "all",
   "editor.renderLineHighlightOnlyWhenFocus": true,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [
-    80,
-    100,
-    120
-  ],
+  "editor.rulers": [80, 100, 120],
   "editor.scrollbar.verticalScrollbarSize": 15,
   "editor.smoothScrolling": true,
   "editor.suggest.localityBonus": true,
@@ -56,7 +53,6 @@
   "window.nativeFullScreen": false,
   "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
   "window.titleBarStyle": "native",
-  "window.zoomLevel": -1.5,
   "workbench.activityBar.visible": false,
   "workbench.commandPalette.history": 5,
   "workbench.editor.closeEmptyGroups": false,
@@ -73,5 +69,12 @@
   "workbench.enableExperiments": false,
   "workbench.fontAliasing": "auto",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.tips.enabled": false
+  "workbench.tips.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false
+  },
+  "editor.formatOnSave": true
 }
