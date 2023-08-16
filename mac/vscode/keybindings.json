@@ -503,5 +503,17 @@
   {
     "key": "cmd+1",
     "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "cmd+\\",
+    "command": "workbench.action.splitEditorToRightGroup"
+  },
+  {
+    "key": "cmd+3",
+    "command": "workbench.action.nextEditorInGroup"
+  },
+  {
+    "key": "cmd+k alt+cmd+right",
+    "command": "-workbench.action.nextEditorInGroup"
   }
 ]
