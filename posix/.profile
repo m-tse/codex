@@ -20,6 +20,10 @@ gcm() {
   git commit "$@"
 }
 
+gcmm() {
+  git commit -amm
+}
+
 gpl() {
   git pull
 }
