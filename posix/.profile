@@ -1,7 +1,7 @@
 # Functions/settings shared by both zsh and bash that work across operating systems.
 
 gcom() {
-  git checkout master
+  git checkout master "$@"
 }
 
 ga() {
