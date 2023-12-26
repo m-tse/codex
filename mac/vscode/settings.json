@@ -53,7 +53,6 @@
   "window.nativeFullScreen": false,
   "window.title": "${activeEditorMedium}${separator}${rootName}${separator}${profileName}",
   "window.titleBarStyle": "native",
-  "workbench.activityBar.visible": false,
   "workbench.commandPalette.history": 5,
   "workbench.editor.closeEmptyGroups": false,
   "workbench.editor.closeOnFileDelete": true,
@@ -61,11 +60,10 @@
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.editor.limit.enabled": true,
   "workbench.editor.limit.perEditorGroup": true,
-  "workbench.editor.limit.value": 2,
+  "workbench.editor.limit.value": 3,
   "workbench.editor.openPositioning": "first",
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.tabCloseButton": "off",
-  "workbench.editor.untitled.hint": "hidden",
   "workbench.enableExperiments": false,
   "workbench.fontAliasing": "auto",
   "workbench.startupEditor": "newUntitledFile",
@@ -76,5 +74,10 @@
     "markdown": true,
     "scminput": false
   },
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "genieai.openai.model": "gpt-4",
+  "genieai.enableConversationHistory": true,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.tabActionCloseVisibility": false
 }
