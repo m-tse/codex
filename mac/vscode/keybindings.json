@@ -523,5 +523,25 @@
   {
     "key": "cmd+k alt+cmd+left",
     "command": "-workbench.action.previousEditorInGroup"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "cmd+k shift+enter",
+    "command": "-workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "cmd+k shift+enter",
+    "command": "-workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
   }
 ]
