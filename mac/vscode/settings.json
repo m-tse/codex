@@ -16,7 +16,7 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13.5,
-  "window.zoomLevel": -1.5,
+  "window.zoomLevel": -1,
   "editor.formatOnPaste": true,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
@@ -117,4 +117,5 @@
   "editor.suggest.showReferences": false,
   "editor.suggest.showVariables": false,
   "editor.suggest.showWords": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
 }
