@@ -6,3 +6,5 @@ ln -s $SCRIPT_DIR/.zshrc ~/.zshrc
 ln -s $SCRIPT_DIR/.gitconfig ~/.gitconfig
 ln -s $SCRIPT_DIR/.vimrc ~/.vimrc
 ln -s $SCRIPT_DIR/.submodules ~/.submodules
+# Put any local settings into this file
+touch ~/.local_profile
