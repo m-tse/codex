@@ -41,9 +41,14 @@ defaults write -g NSTableViewDefaultSizeMode -int 1
 # Dock settings
 ###############
 
-# Set Dock to auto-hide and remove the auto-hiding delay
+# Set Dock to auto-hide
 defaults write com.apple.dock autohide -bool true
+# Remove any delay to begin the autohide or autoshow
 defaults write com.apple.dock autohide-delay -float 0
+# Remove the animation for autohide/show
+defaults write com.apple.dock autohide-time-modifier -int 0
+# Need to call this to reset the settings above
+killall Dock
 
 # Disable show recent apps in dock
 defaults write com.apple.dock show-recents -bool false
