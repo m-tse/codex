@@ -88,6 +88,15 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "prettier.trailingComma": "all",
-  // Enable copilot auto suggest, but don't show intellisense automatically unless I press the shortcut (cmd+shift+enter)
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  // Enable copilot inline auto-suggest
+  "editor.inlineSuggest.enabled": true,
+ // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
   "editor.suggestOnTriggerCharacters": false,
+  // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off",
+  },
 }
