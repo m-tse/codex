@@ -1,15 +1,6 @@
 # Installing homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-brew cask install visual-studio-code
-brew cask install google-backup-and-sync
-# To get window management keyboard shortcuts
-brew cask install rectangle
-# To get mouse 4/5 to behave as back/forward
-brew cask install sensiblesidebuttons
-# iterm2 is an improvement over native Terminal, enough to make it worth the hassle
-brew cask install iterm2
-
 # Command line tools
 # Fancy cat with syntax highlighting and line numbers
 brew install bat
@@ -21,3 +12,5 @@ brew install fd
 brew install rg
 brew install tmux
 brew install jq
+# Better jq
+brew install fx
