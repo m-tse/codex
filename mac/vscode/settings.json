@@ -8,6 +8,10 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  "black-formatter.args": [
+    "--line-length",
+    "100"
+  ],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -26,7 +30,7 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13.5,
-  "window.zoomLevel": -1,
+  "window.zoomLevel": -0.95,
   "editor.formatOnPaste": true,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
@@ -102,4 +106,5 @@
     "comments": "off",
     "strings": "off",
   },
+  "prettier.printWidth": 100,
 }
