@@ -570,4 +570,8 @@
     "command": "inlineChat.start",
     "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   },
+  {
+    "key": "cmd+u",
+    "command": "github.copilot.interactiveEditor.explain"
+  },
 ]
