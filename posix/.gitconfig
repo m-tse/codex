@@ -19,3 +19,6 @@
 	rebase = false
 [init]
 	defaultBranch = master
+[user]
+  name = Matthew Tse
+  email = matthew@matthewtse.com
