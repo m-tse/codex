@@ -574,4 +574,9 @@
     "key": "cmd+u",
     "command": "github.copilot.interactiveEditor.explain"
   },
+  {
+    "key": "cmd+enter",
+    "command": "interactive.acceptChanges",
+    "when": "inlineChatHasProvider && inlineChatVisible && !inlineChatDocumentChanged || inlineChatHasProvider && inlineChatVisible && config.inlineChat.mode != 'preview'"
+  },
 ]
