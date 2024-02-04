@@ -8,10 +8,7 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "black-formatter.args": [
-    "--line-length",
-    "100"
-  ],
+  "black-formatter.args": ["--line-length", "100"],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -98,13 +95,14 @@
   "editor.suggestSelection": "recentlyUsedByPrefix",
   // Enable copilot inline auto-suggest
   "editor.inlineSuggest.enabled": true,
- // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
+  // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
   "editor.suggestOnTriggerCharacters": false,
   // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
   "editor.quickSuggestions": {
     "other": "off",
     "comments": "off",
-    "strings": "off",
+    "strings": "off"
   },
   "prettier.printWidth": 100,
+  "security.workspace.trust.untrustedFiles": "open"
 }
