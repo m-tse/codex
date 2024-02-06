@@ -18,6 +18,9 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+    "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.copyWithSyntaxHighlighting": false,
