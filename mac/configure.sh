@@ -9,7 +9,8 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set key repeat settings
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
-defaults write NSGlobalDomain KeyRepeat -int 2
+# It's basically the N x 15ms, so 2 = 30ms in between repeat rate, 1 = 15ms in between repeat rate.
+defaults write NSGlobalDomain KeyRepeat -int 1
 
 #################
 # Finder Settings
