@@ -71,3 +71,10 @@ defaults write com.apple.screencapture name "screenshot"
 
 # Disable shadow in screenshot
 defaults write com.apple.screencapture disable-shadow -bool true
+
+###################
+# Language Settings
+###################
+
+# Disables the random popup above the typing cursor, that indicates which language we're in.
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
