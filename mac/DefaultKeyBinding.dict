@@ -1,4 +1,6 @@
 {
+    /* Don't bother trying to remap meta+shift+{f|b}, those cannot be remapped... */
+    /* To test out new keybindings, just totally quit chrome and re-open, no need to logout/login */
     "~f"        = "moveWordForward:";           /* M-f */
     "~b"        = "moveWordBackward:";          /* M-b */
     "~d"        = "deleteWordForward:";         /* M-d */
