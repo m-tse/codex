@@ -1,9 +1,10 @@
 {
-    /* Don't bother trying to remap meta+shift+{f|b}, those cannot be remapped... */
     /* To test out new keybindings, just totally quit chrome and re-open, no need to logout/login */
-    "~f"        = "moveWordForward:";           /* M-f */
-    "~b"        = "moveWordBackward:";          /* M-b */
-    "~d"        = "deleteWordForward:";         /* M-d */
-    "~\010"     = "deleteWordBackward:";        /* M-backspace */
-    "~h"        = "deleteWordBackward:";        /* M-h */
+    "~f"        = "moveWordForward:";                    /* Meta-f */
+    "~$F"       = "moveWordForwardAndModifySelection:";  /* Meta-shift-f */
+    "~b"        = "moveWordBackward:";                   /* Meta-b */
+    "~$B"       = "moveWordBackwardAndModifySelection:"; /* Meta-Shift-b */
+    "~d"        = "deleteWordForward:";                  /* Meta-d */
+    "~\010"     = "deleteWordBackward:";                 /* Meta-backspace */
+    "~h"        = "deleteWordBackward:";                 /* Meta-h */
 }
