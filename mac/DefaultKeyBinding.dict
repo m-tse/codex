@@ -1,5 +1,6 @@
 {
-    /* To test out new keybindings, just totally quit chrome and re-open, no need to logout/login */
+    /* To test out new keybindings, just totally quit chrome and re-open, no need to logout/login. */
+    /* Visit https://developer.apple.com/documentation/appkit/nsstandardkeybindingresponding for a full list of possible commands. */
     "~f"        = "moveWordForward:";                    /* Meta-f */
     "~$F"       = "moveWordForwardAndModifySelection:";  /* Meta-shift-f */
     "~b"        = "moveWordBackward:";                   /* Meta-b */
