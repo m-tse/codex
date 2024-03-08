@@ -18,7 +18,13 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-    "[json]": {
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.acceptSuggestionOnEnter": "off",
@@ -31,7 +37,6 @@
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13.5,
   "window.zoomLevel": -0.95,
-  "editor.formatOnPaste": true,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -107,5 +112,6 @@
     "strings": "off"
   },
   "prettier.printWidth": 100,
-  "security.workspace.trust.untrustedFiles": "open"
+  "security.workspace.trust.untrustedFiles": "open",
+  "window.customTitleBarVisibility": "never",
 }
