@@ -114,4 +114,18 @@
   "prettier.printWidth": 100,
   "security.workspace.trust.untrustedFiles": "open",
   "window.customTitleBarVisibility": "never",
+  "javascript.autoClosingTags": false,
+  "typescript.autoClosingTags": false,
+  "[markdown]": {
+  
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
+  }
 }
