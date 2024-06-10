@@ -38,7 +38,7 @@ gd() {
 
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffmaster() {
-  git diff $(git merge-base --fork-point master)
+  git diff $(git merge-base --fork-point main)
 }
 gitdiffhead() {
   git diff $(git merge-base --fork-point HEAD)
@@ -48,7 +48,7 @@ alias gdh='gitdiffhead'
 
 # Shortcut to list the files changed in your current branch against the merge point in the master branch.
 gitdiffmasterfiles() {
-  git diff --name-only $(git merge-base --fork-point master)
+  git diff --name-only $(git merge-base --fork-point main)
 }
 alias gdmf='gitdiffmasterfiles'
 gitdiffheadfiles() {
