@@ -88,7 +88,7 @@ gitrebasecontinue() {
 alias grc='gitrebasecontinue'
 
 grim() {
-  git rebase -i master
+  git rebase -i main
 }
 
 # Delete a branch
