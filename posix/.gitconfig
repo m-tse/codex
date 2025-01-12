@@ -22,3 +22,5 @@
 [user]
   name = Matthew Tse
   email = matthew@matthewtse.com
+[includeIf "gitdir:~/Code/improvmx/**"]
+    path = ~/Code/improvmx/.gitconfig
