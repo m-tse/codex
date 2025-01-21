@@ -1,7 +1,7 @@
 # Functions/settings shared by both zsh and bash that work across operating systems.
 
 gcom() {
-  git checkout main "$@"
+  git checkout master "$@"
 }
 
 ga() {
@@ -38,7 +38,7 @@ gd() {
 
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffmaster() {
-  git diff $(git merge-base --fork-point main)
+  git diff $(git merge-base --fork-point master)
 }
 gitdiffhead() {
   git diff $(git merge-base --fork-point HEAD)
@@ -48,7 +48,7 @@ alias gdh='gitdiffhead'
 
 # Shortcut to list the files changed in your current branch against the merge point in the master branch.
 gitdiffmasterfiles() {
-  git diff --name-only $(git merge-base --fork-point main)
+  git diff --name-only $(git merge-base --fork-point master)
 }
 alias gdmf='gitdiffmasterfiles'
 gitdiffheadfiles() {
@@ -88,7 +88,7 @@ gitrebasecontinue() {
 alias grc='gitrebasecontinue'
 
 grim() {
-  git rebase -i main
+  git rebase -i master
 }
 
 # Delete a branch
