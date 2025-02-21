@@ -13,7 +13,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -101,11 +101,8 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "prettier.trailingComma": "all",
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  // Enable copilot inline auto-suggest
   "editor.inlineSuggest.enabled": true,
-  // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
   "editor.suggestOnTriggerCharacters": false,
-  // Disable intellisense auto-suggest dropdown, only enable it with "cmd+shift+enter"
   "editor.quickSuggestions": {
     "other": "off",
     "comments": "off",
@@ -117,7 +114,6 @@
   "javascript.autoClosingTags": false,
   "typescript.autoClosingTags": false,
   "[markdown]": {
-  
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "diffEditor.ignoreTrimWhitespace": false,
@@ -127,5 +123,7 @@
       "strings": "off",
       "other": "off"
     }
-  }
+  },
+  "cursor.cpp.disabledLanguages": ["scminput"],
+  "workbench.colorTheme": "Default Dark Modern"
 }

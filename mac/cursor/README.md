@@ -1,4 +1,4 @@
-VS Code settings for mac
+Cursor settings for mac
 ========================
 
 For some reason, we cannot symlink this file to where vs code reads these configs.
