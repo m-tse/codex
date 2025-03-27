@@ -7,8 +7,8 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
+
   },
-  "black-formatter.args": ["--line-length", "100"],
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -36,7 +36,6 @@
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontSize": 13.5,
-  "window.zoomLevel": -0.95,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -92,7 +91,6 @@
     "markdown": true,
     "scminput": false
   },
-  "editor.formatOnSave": true,
   "workbench.activityBar.location": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
@@ -125,5 +123,6 @@
     }
   },
   "cursor.cpp.disabledLanguages": ["scminput"],
-  "workbench.colorTheme": "Default Dark Modern"
+  "workbench.colorTheme": "Default Dark Modern",
+  "editor.formatOnSave": true
 }

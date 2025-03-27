@@ -627,11 +627,6 @@
     "when": "editorFocus && inlineChatHasProvider && !editorReadonly"
   },
   {
-    "key": "cmd+i",
-    "command": "aipopup.action.modal.generate",
-    "when": "editorFocus"
-  },
-  {
     "key": "shift+cmd+k",
     "command": "-aipopup.action.modal.generate",
     "when": "editorFocus"
@@ -656,10 +651,6 @@
     "key": "cmd+y",
     "command": "-editor.action.inlineDiffs.acceptPartialEdit",
     "when": "editorTextFocus && (arbitrary function)"
-  },
-  {
-    "key": "cmd+y",
-    "command": "composer.openAsBar"
   },
   {
     "key": "shift+cmd+k",
