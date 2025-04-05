@@ -655,5 +655,9 @@
   {
     "key": "shift+cmd+k",
     "command": "-composer.openAsBar"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
   }
 ]

@@ -7,7 +7,6 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
-
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -26,6 +25,12 @@
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.exclude": {
+    "**/venv/**": true
+  },
+  "search.exclude": {
+    "**/venv/**": true
   },
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
@@ -85,12 +90,6 @@
   "workbench.fontAliasing": "auto",
   "workbench.startupEditor": "newUntitledFile",
   "workbench.tips.enabled": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false
-  },
   "workbench.activityBar.location": "hidden",
   "workbench.editor.empty.hint": "hidden",
   "workbench.editor.tabActionCloseVisibility": false,
@@ -124,5 +123,8 @@
   },
   "cursor.cpp.disabledLanguages": ["scminput"],
   "workbench.colorTheme": "Default Dark Modern",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "window.zoomLevel": -0.2,
+  "search.useGlobalIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true
 }
