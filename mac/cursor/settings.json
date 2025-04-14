@@ -8,11 +8,15 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  // This is inconsistent with pre-commit checks unfortunately.
+  // "[vue]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -40,7 +44,7 @@
   "editor.cursorWidth": 4,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13.5,
+  "editor.fontSize": 13.0,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -124,7 +128,7 @@
   "cursor.cpp.disabledLanguages": ["scminput"],
   "workbench.colorTheme": "Default Dark Modern",
   "editor.formatOnSave": true,
-  "window.zoomLevel": -0.2,
+  "window.zoomLevel": -0.4,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true
 }
