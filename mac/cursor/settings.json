@@ -48,8 +48,9 @@
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
-  "editor.padding.bottom": 10,
-  "editor.padding.top": 10,
+  // Not sure what these do, but they cause a bug in cursor completion, DO NOT RE-ENABLE
+  // "editor.padding.bottom": 10,
+  // "editor.padding.top": 10,
   "editor.quickSuggestionsDelay": 0,
   "editor.renderLineHighlight": "all",
   "editor.renderLineHighlightOnlyWhenFocus": true,
@@ -102,7 +103,7 @@
   "typescript.updateImportsOnFileMove.enabled": "always",
   "prettier.trailingComma": "all",
   "editor.suggestSelection": "recentlyUsedByPrefix",
-  "editor.inlineSuggest.enabled": true,
+  "editor.inlineSuggest.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.quickSuggestions": {
     "other": "off",
@@ -130,5 +131,6 @@
   "editor.formatOnSave": true,
   "window.zoomLevel": -0.4,
   "search.useGlobalIgnoreFiles": true,
-  "search.useParentIgnoreFiles": true
+  "search.useParentIgnoreFiles": true,
+  "update.mode": "manual"
 }
