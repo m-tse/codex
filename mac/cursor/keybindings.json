@@ -111,10 +111,6 @@
     "command": "-workbench.action.openEditorAtIndex3"
   },
   {
-    "key": "cmd+4",
-    "command": "workbench.action.openEditorAtIndex4"
-  },
-  {
     "key": "ctrl+4",
     "command": "-workbench.action.openEditorAtIndex4"
   },
@@ -535,35 +531,14 @@
     "command": "-workbench.action.previousEditorInGroup"
   },
   {
-    "key": "cmd+4",
-    "command": "workbench.action.pinEditor",
-    "when": "!activeEditorIsPinned"
-  },
-  {
     "key": "cmd+k shift+enter",
     "command": "-workbench.action.pinEditor",
     "when": "!activeEditorIsPinned"
   },
   {
-    "key": "cmd+4",
-    "command": "workbench.action.unpinEditor",
-    "when": "activeEditorIsPinned"
-  },
-  {
     "key": "cmd+k shift+enter",
     "command": "-workbench.action.unpinEditor",
     "when": "activeEditorIsPinned"
-  },
-  // This is intellisense suggestion.
-  {
-    "key": "ctrl+cmd+enter",
-    "command": "editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
-  },
-  {
-    "key": "ctrl+space",
-    "command": "-editor.action.triggerSuggest",
-    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
   },
   {
     "key": "cmd+enter",
@@ -669,5 +644,9 @@
     "key": "cmd+k",
     "command": "-aipopup.action.modal.generate",
     "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "cmd+4",
+    "command": "workbench.action.toggleEditorWidths",
   }
 ]

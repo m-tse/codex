@@ -44,7 +44,7 @@
   "editor.cursorWidth": 4,
   "editor.dragAndDrop": false,
   "editor.fontFamily": "SF Mono, Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13.0,
+  "editor.fontSize": 12.0,
   "editor.hover.delay": 800,
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
@@ -129,8 +129,8 @@
   "cursor.cpp.disabledLanguages": ["scminput"],
   "workbench.colorTheme": "Default Dark Modern",
   "editor.formatOnSave": true,
-  "window.zoomLevel": -0.4,
+  "window.zoomLevel": -0.9,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "update.mode": "manual"
+  "update.mode": "manual",
 }
