@@ -8,25 +8,25 @@
     "editor.tabSize": 4,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  // This is inconsistent with pre-commit checks unfortunately.
+  // These JS formatters are inconsistent with pre-commit checks unfortunately.
   // "[vue]": {
   //   "editor.defaultFormatter": "esbenp.prettier-vscode"
   // },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "[javascriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
