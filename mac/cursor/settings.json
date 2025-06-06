@@ -133,4 +133,5 @@
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
   "update.mode": "manual",
+  "editor.parameterHints": false,
 }
