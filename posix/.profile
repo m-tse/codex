@@ -11,6 +11,12 @@ ga() {
 gs() {
   git status
 }
+gst() {
+  git stash
+}
+gsp() {
+  git stash pop
+}
 
 gco() {
   git checkout "$@"
