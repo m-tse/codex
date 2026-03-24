@@ -18,8 +18,7 @@ brew install --cask \
   spotify \
   vlc \
   anydesk \
-  google-chrome \
-  stats
+  google-chrome
 
 # UTC Time - only available from the Mac App Store:
 # https://apps.apple.com/us/app/utc-time/id1538245904?mt=12
