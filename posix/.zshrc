@@ -7,18 +7,14 @@ PROMPT_EOL_MARK=''
 # Must use precmd_functions, otherwise this will return the value of local_time() or utc_time()
 # rather than the actual last exit code.
 precmd_functions=("check_last_exit_code" ${precmd_functions[@]})
-# Colorize last command exit code
+# Capture last command exit status as a prompt color: white on success, red on failure.
 function check_last_exit_code() {
   local LAST_EXIT_CODE=$?
-  local EXIT_CODE_PROMPT=''
   if [[ $LAST_EXIT_CODE -eq 0 ]]; then
-    EXIT_CODE_PROMPT+="%F{7}"
+    prompt_arrow_color="15" # White
   else
-    EXIT_CODE_PROMPT+="%F{9}"
+    prompt_arrow_color="9"  # Bold Red
   fi
-  EXIT_CODE_PROMPT+="$LAST_EXIT_CODE%{$reset_color%}"
-  EXIT_CODE_PROMPT+=""
-  last_exit=$EXIT_CODE_PROMPT
 }
 
 function local_time() {
@@ -50,7 +46,7 @@ function host_color() {
   fi
 }
 
-PROMPT=$'\n\e[4m%F{11}$(local_time)\e[0m \e[4m%F{3}$(utc_time)\e[0m %F{13}\\$\?=${last_exit} %F{5}\$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{15}> %f'
+PROMPT=$'\n\e[4m%F{11}$(local_time)\e[0m \e[4m%F{3}$(utc_time)\e[0m %F{5}$vcs_info_msg_0_ \n%F{$(host_color)}%m:%F{14}%~ %F{${prompt_arrow_color}}> %f'
 
 # History Settings
 HISTFILESIZE=100000
