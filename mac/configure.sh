@@ -80,3 +80,6 @@ defaults write com.apple.screencapture disable-shadow -bool true
 
 # Disables the random popup above the typing cursor, that indicates which language we're in.
 defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
+# Removes the 'Last login: Sun Apr 12 01:03:09 on ttys051' message on new shell creation
+touch ~/.hushlogin
