@@ -423,7 +423,7 @@
     "command": "-workbench.action.toggleSidebarVisibility",
   },
   {
-    "key": "shift+cmd+1",
+    "key": "ctrl+shift+cmd+1",
     "command": "workbench.action.editorLayoutSingle",
   },
   {
@@ -663,11 +663,19 @@
     "command": "-workbench.action.splitEditorRight"
   },
   {
-    "key": "shift+cmd+2",
+    "key": "ctrl+shift+cmd+2",
     "command": "workbench.action.moveEditorToNextGroup"
   },
   {
     "key": "ctrl+cmd+right",
     "command": "-workbench.action.moveEditorToNextGroup"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "shift+cmd+2",
+    "command": "workbench.action.moveEditorToLastGroup"
   },
 ]
