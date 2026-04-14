@@ -495,10 +495,6 @@
     "command": "workbench.action.focusFirstEditorGroup",
   },
   {
-    "key": "cmd+\\",
-    "command": "workbench.action.splitEditorToRightGroup",
-  },
-  {
     "key": "cmd+3",
     "command": "workbench.action.nextEditorInGroup",
   },
@@ -581,18 +577,9 @@
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible",
   },
   {
-    "key": "cmd+i",
-    "command": "-inlineChat.start",
-    "when": "editorFocus && inlineChatHasProvider && !editorReadonly",
-  },
-  {
     "key": "shift+cmd+k",
     "command": "-aipopup.action.modal.generate",
     "when": "editorFocus",
-  },
-  {
-    "key": "shift+cmd+i",
-    "command": "aichat.insertselectionintochat",
   },
   {
     "key": "cmd+u",
@@ -614,15 +601,6 @@
   {
     "key": "shift+cmd+k",
     "command": "-composer.openAsBar",
-  },
-  {
-    "key": "cmd+i",
-    "command": "composerMode.agent",
-  },
-  {
-    "key": "shift+cmd+k",
-    "command": "aipopup.action.modal.generate",
-    "when": "editorFocus && !composerBarIsVisible",
   },
   {
     "key": "cmd+k",
@@ -678,4 +656,33 @@
     "key": "shift+cmd+2",
     "command": "workbench.action.moveEditorToLastGroup"
   },
+  {
+    "key": "shift+cmd+k",
+    "command": "-aipopup.action.modal.generate",
+    "when": "editorFocus && !composerBarIsVisible"
+  },
+  {
+    "key": "shift+cmd+k",
+    "command": "-editor.action.inlineDiffs.focusEditor",
+    "when": "editorHasPromptBar && editorPromptBarFocused"
+  },
+  {
+    "key": "cmd+l",
+    "command": "-composer.sendToAgent",
+    "when": "editorHasPromptBar && editorPromptBarFocused"
+  },
+  {
+    "key": "alt+cmd+s",
+    "command": "workbench.action.toggleUnifiedSidebarFromKeyboard",
+    "when": "!isAuxiliaryWindowFocusedContext"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-inlineChat2.reveal",
+    "when": "inlineChatHasEditsAgent && !chatEdits.isGlobalEditingSession && chatEdits.requestCount >= 1"
+  },
+  {
+    "key": "shift+cmd+i",
+    "command": "aipopup.action.modal.generate"
+  }
 ]

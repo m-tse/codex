@@ -110,8 +110,8 @@
   "window.zoomLevel": -0.9,
   "search.useGlobalIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
-  "update.mode": "manual",
   "cursor.composer.textSizeScale": 0.85,
   "git.autofetch": true,
-  "git.blame.editorDecoration.enabled": true
+  "git.blame.editorDecoration.enabled": true,
+  "workbench.layoutControl.enabled": false
 }
