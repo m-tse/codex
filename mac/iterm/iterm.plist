@@ -1382,13 +1382,13 @@ Edit Tab Title</string>
 				<key>Alpha Component</key>
 				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.19215686274509805</real>
+				<real>0.169830322265625</real>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.19215686274509805</real>
+				<real>0.169830322265625</real>
 				<key>Red Component</key>
-				<real>0.19215686274509805</real>
+				<real>0.169830322265625</real>
 			</dict>
 			<key>Selection Color (Dark)</key>
 			<dict>
@@ -1575,7 +1575,7 @@ Edit Tab Title</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 932}}</string>
 		<key>topLeft</key>
-		<string>{87, 660}</string>
+		<string>{599, 679}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -1586,7 +1586,7 @@ Edit Tab Title</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>188</integer>
+	<integer>189</integer>
 	<key>NoSyncLoggingStyle</key>
 	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
