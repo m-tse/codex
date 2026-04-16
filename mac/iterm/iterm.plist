@@ -1215,7 +1215,7 @@ Edit Tab Title</string>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>Icon</key>
-			<integer>1</integer>
+			<integer>0</integer>
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Use Transparency</key>
@@ -1575,7 +1575,7 @@ Edit Tab Title</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 932}}</string>
 		<key>topLeft</key>
-		<string>{0, 659}</string>
+		<string>{87, 660}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
