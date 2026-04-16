@@ -684,5 +684,9 @@
   {
     "key": "shift+cmd+i",
     "command": "aipopup.action.modal.generate"
+  },
+  {
+    "key": "shift+cmd+o",
+    "command": "workbench.action.files.openFileFolder"
   }
 ]
