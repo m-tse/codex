@@ -1542,12 +1542,12 @@ Edit Tab Title</string>
 	<key>NoSyncAllAppVersions</key>
 	<array>
 		<string>3.4.23</string>
-		<string>3.5.0beta19</string>
-		<string>3.5.0beta18</string>
-		<string>3.5.0beta20</string>
-		<string>3.6.9</string>
 		<string>3.5.11</string>
+		<string>3.5.0beta18</string>
+		<string>3.6.9</string>
+		<string>3.5.0beta20</string>
 		<string>3.6.8</string>
+		<string>3.5.0beta19</string>
 	</array>
 	<key>NoSyncAutoBurialReveal</key>
 	<true/>
@@ -1586,7 +1586,7 @@ Edit Tab Title</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>186</integer>
+	<integer>188</integer>
 	<key>NoSyncLoggingStyle</key>
 	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
@@ -2697,7 +2697,7 @@ Edit Tab Title</string>
 	<key>SUAutomaticallyUpdate</key>
 	<true/>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
 	<key>SUFeedAlternateAppNameKey</key>
 	<string>iTerm</string>
 	<key>SUFeedURL</key>
