@@ -285,7 +285,7 @@ Edit Tab Title</string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 903 0 0 1440 903 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-1014 -45 850 903 -1366 -92 1366 994 </string>
+	<string>0 0 850 903 0 0 1440 903 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 0 1914 1048 0 0 1920 1055 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -974,8 +974,8 @@ Edit Tab Title</string>
 				<key>Red Component</key>
 				<integer>0</integer>
 			</dict>
-			<key>Background Image Location</key>
-			<string></string>
+			<key>Background Image Mode</key>
+			<integer>0</integer>
 			<key>Badge Color</key>
 			<dict>
 				<key>Alpha Component</key>
@@ -1057,7 +1057,7 @@ Edit Tab Title</string>
 			<key>Close Sessions On End</key>
 			<integer>2</integer>
 			<key>Columns</key>
-			<integer>120</integer>
+			<integer>205</integer>
 			<key>Command</key>
 			<string></string>
 			<key>Cursor Boost</key>
@@ -1534,7 +1534,7 @@ Edit Tab Title</string>
 			<key>Visual Bell</key>
 			<false/>
 			<key>Window Type</key>
-			<integer>15</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/mtse</string>
 		</dict>
@@ -1573,9 +1573,9 @@ Edit Tab Title</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1440, 932}}</string>
+		<string>{{-1366, -92}, {1366, 1024}}</string>
 		<key>topLeft</key>
-		<string>{599, 679}</string>
+		<string>{-1022, 624}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -1586,7 +1586,7 @@ Edit Tab Title</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>189</integer>
+	<integer>195</integer>
 	<key>NoSyncLoggingStyle</key>
 	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
@@ -2635,7 +2635,7 @@ Edit Tab Title</string>
 		<key>0</key>
 		<string>{0, 903}</string>
 		<key>1</key>
-		<string>{-1014, 858}</string>
+		<string>{0, 903}</string>
 	</dict>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>727894139.50656998</real>
@@ -2724,6 +2724,8 @@ Edit Tab Title</string>
 	<false/>
 	<key>TmuxWindowsShouldCloseAfterDetach</key>
 	<true/>
+	<key>UseBorder</key>
+	<false/>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>findMode_iTerm</key>
