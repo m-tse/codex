@@ -285,7 +285,7 @@ Edit Tab Title</string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 0 1440 903 0 0 1440 903 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>0 0 850 903 0 0 1440 903 </string>
+	<string>0 0 1440 903 0 0 1440 903 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>0 0 1914 1048 0 0 1920 1055 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -482,7 +482,7 @@ Edit Tab Title</string>
 				<key>Color Space</key>
 				<string>P3</string>
 				<key>Green Component</key>
-				<real>0.15686275064945221</real>
+				<real>0.27450980392156865</real>
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
@@ -1573,9 +1573,9 @@ Edit Tab Title</string>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{-1366, -92}, {1366, 1024}}</string>
+		<string>{{0, 0}, {1440, 932}}</string>
 		<key>topLeft</key>
-		<string>{-1022, 624}</string>
+		<string>{504, 798}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -1586,7 +1586,7 @@ Edit Tab Title</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>195</integer>
+	<integer>197</integer>
 	<key>NoSyncLoggingStyle</key>
 	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
