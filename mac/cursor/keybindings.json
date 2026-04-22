@@ -215,6 +215,10 @@
     "when": "textInputFocus && !editorReadonly",
   },
   {
+    "key": "shift+cmd+x",
+    "command": "workbench.files.action.showActiveFileInExplorer",
+  },
+  {
     "key": "shift+cmd+c",
     "command": "workbench.files.action.collapseExplorerFolders",
   },

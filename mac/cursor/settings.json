@@ -114,7 +114,5 @@
   "git.autofetch": true,
   "git.blame.editorDecoration.enabled": true,
   "workbench.layoutControl.enabled": false,
-  "remote.SSH.remotePlatform": {
-    "bastion.improvmx.com": "linux"
-  },
+  "update.mode": "manual",
 }
