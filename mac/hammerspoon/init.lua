@@ -2,26 +2,7 @@
 -- path; otherwise pass the Cmd+V through unchanged. Touches no other apps.
 
 local ITERM_BUNDLE = "com.googlecode.iterm2"
-local CACHE_DIR = os.getenv("HOME") .. "/.cache/iterm-paste-fix"
-local MAX_AGE_DAYS = 7
-hs.fs.mkdir(CACHE_DIR)
-
-local function sweepOldClips()
-    local cutoff = os.time() - (MAX_AGE_DAYS * 86400)
-    local removed = 0
-    for file in hs.fs.dir(CACHE_DIR) do
-        if file:match("^clip%-.+%.png$") then
-            local path = CACHE_DIR .. "/" .. file
-            local attrs = hs.fs.attributes(path)
-            if attrs and attrs.modification < cutoff then
-                if os.remove(path) then removed = removed + 1 end
-            end
-        end
-    end
-    return removed
-end
-
-local swept = sweepOldClips()
+local CACHE_DIR = "/tmp"
 
 local cmdV = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event)
     local flags = event:getFlags()
@@ -36,7 +17,7 @@ local cmdV = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event
     local image = hs.pasteboard.readImage()
     if not image then return false end
 
-    local path = string.format("%s/clip-%s.png", CACHE_DIR, os.date("%Y%m%d-%H%M%S"))
+    local path = string.format("%s/screenshot-%s.png", CACHE_DIR, os.date("%Y%m%d-%H%M%S"))
     if not image:saveToFile(path) then return false end
 
     hs.eventtap.keyStrokes(path)
@@ -45,4 +26,9 @@ end)
 
 cmdV:start()
 
-hs.alert.show(string.format("iTerm paste fix loaded (swept %d)", swept))
+-- macOS occasionally disables eventtaps; re-enable on a timer.
+hs.timer.doEvery(30, function()
+    if not cmdV:isEnabled() then cmdV:start() end
+end)
+
+hs.alert.show("iTerm paste fix loaded")

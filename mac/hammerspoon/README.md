@@ -2,7 +2,7 @@
 
 Hammerspoon config that makes **Cmd+V** in iTerm2 paste a screenshot as a file
 path instead of failing. When the clipboard contains an image, the script
-saves it as a PNG to `~/.cache/iterm-paste-fix/` and types the file path into
+saves it as a PNG to `/tmp/` and types the file path into
 iTerm — Claude Code, Codex CLI, etc. then pick it up as an image attachment.
 For text clipboards, Cmd+V behaves normally.
 
@@ -29,8 +29,8 @@ Slack, etc. continues to work as before.
    Privacy & Security → Accessibility → Hammerspoon ✅). Required to
    intercept Cmd+V and synthesize keystrokes.
 
-5. Confirm: a brief `iTerm paste fix loaded (swept N)` banner appears on
-   load. If not, click the Hammerspoon menu bar icon → **Reload Config**.
+5. Confirm: a brief `iTerm paste fix loaded` banner appears on load. If
+   not, click the Hammerspoon menu bar icon → **Reload Config**.
 
 ## Usage
 
@@ -48,7 +48,7 @@ Slack, etc. continues to work as before.
   `com.googlecode.iterm2`. Other apps are ignored.
 - Reads the pasteboard via `hs.pasteboard.readImage()`. If there's no
   image, the original Cmd+V flows through unchanged.
-- If there is an image, writes it to `~/.cache/iterm-paste-fix/clip-<ts>.png`,
+- If there is an image, writes it to `/tmp/screenshot-<ts>.png`
   types the path with `hs.eventtap.keyStrokes`, and swallows the original
   Cmd+V.
 
@@ -59,13 +59,10 @@ Edit constants at the top of `init.lua`:
 - `ITERM_BUNDLE` — change or extend if you also want this in Ghostty,
   Alacritty, etc.
 - `CACHE_DIR` — where saved PNGs live.
-- `MAX_AGE_DAYS` — clips older than this are deleted on each Hammerspoon
-  reload (default 7).
 
 ## Uninstall
 
 ```bash
 rm ~/.hammerspoon/init.lua
 brew uninstall --cask hammerspoon
-rm -rf ~/.cache/iterm-paste-fix
 ```
