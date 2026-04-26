@@ -114,5 +114,5 @@
   "git.autofetch": true,
   "git.blame.editorDecoration.enabled": true,
   "workbench.layoutControl.enabled": false,
-  "update.mode": "manual",
+  "window.restoreWindows": "none",
 }
