@@ -17,10 +17,14 @@ local cmdV = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event
     local image = hs.pasteboard.readImage()
     if not image then return false end
 
-    local path = string.format("%s/screenshot-%s.png", CACHE_DIR, os.date("%Y%m%d-%H%M%S"))
-    if not image:saveToFile(path) then return false end
-
-    hs.eventtap.keyStrokes(path)
+    -- Defer file I/O and keystroke synthesis: the eventtap callback must return
+    -- quickly or macOS disables the tap.
+    hs.timer.doAfter(0, function()
+        local path = string.format("%s/screenshot-%s.png", CACHE_DIR, os.date("%Y%m%d-%H%M%S"))
+        if image:saveToFile(path) then
+            hs.eventtap.keyStrokes(path)
+        end
+    end)
     return true  -- swallow the original Cmd+V
 end)
 
@@ -28,7 +32,10 @@ cmdV:start()
 
 -- macOS occasionally disables eventtaps; re-enable on a timer.
 hs.timer.doEvery(30, function()
-    if not cmdV:isEnabled() then cmdV:start() end
+    if not cmdV:isEnabled() then
+        cmdV:stop()
+        cmdV:start()
+    end
 end)
 
 hs.alert.show("iTerm paste fix loaded")
