@@ -487,10 +487,6 @@
     "when": "inSearchEditor",
   },
   {
-    "key": "cmd+2",
-    "command": "workbench.action.focusLastEditorGroup",
-  },
-  {
     "key": "cmd+1",
     "command": "workbench.action.focusFirstEditorGroup",
   },
@@ -688,5 +684,25 @@
   {
     "key": "shift+cmd+o",
     "command": "workbench.action.files.openFileFolder"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-glass.goToTab2",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-glass.goToTab2",
+    "when": "isGlassAgentWorkspace && terminalFocusInAny"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-glass.goToTab1",
+    "when": "isGlassAgentWorkspace"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-glass.goToTab1",
+    "when": "isGlassAgentWorkspace && terminalFocusInAny"
   }
 ]
