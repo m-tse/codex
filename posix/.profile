@@ -41,6 +41,9 @@ gps() {
 gd() {
   git diff
 }
+gl() {
+  git log
+}
 
 # Shortcut to diff your current branch against the merge point in the master branch.
 gitdiffmaster() {
