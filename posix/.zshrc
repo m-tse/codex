@@ -115,6 +115,12 @@ HISTORY_SUBSTRING_SEARCH_FUZZY='yes'
 # Source non ZSH specific configuration
 source ~/.profile
 
+# Source OS-specific configuration
+case "$OSTYPE" in
+  darwin*) [ -f ~/Code/codex/mac/.mac_profile ] && source ~/Code/codex/mac/.mac_profile ;;
+  linux*)  [ -f ~/Code/codex/linux/.linux_profile ] && source ~/Code/codex/linux/.linux_profile ;;
+esac
+
 # Source any machine specific local configuration, but don't error if not found
 source ~/.local_profile 2>/dev/null
 
