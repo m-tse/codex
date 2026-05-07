@@ -29,6 +29,8 @@
 	<integer>128000</integer>
 	<key>AitermURL</key>
 	<string>https://api.openai.com/v1/responses</string>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>ApplePressAndHoldEnabled</key>
@@ -63,6 +65,32 @@
 			<integer>39</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0x48-0x120000-0x4</key>
+		<dict>
+			<key>Action</key>
+			<integer>33</integer>
+			<key>Apply Mode</key>
+			<integer>0</integer>
+			<key>Escaping</key>
+			<integer>1</integer>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>2</integer>
+		</dict>
+		<key>0x4c-0x120000-0x25</key>
+		<dict>
+			<key>Action</key>
+			<integer>34</integer>
+			<key>Apply Mode</key>
+			<integer>0</integer>
+			<key>Escaping</key>
+			<integer>1</integer>
+			<key>Text</key>
+			<string></string>
+			<key>Version</key>
+			<integer>2</integer>
 		</dict>
 		<key>0x54-0x120000-0x11</key>
 		<dict>
@@ -158,24 +186,10 @@ Edit Tab Title</string>
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x320000</key>
-		<dict>
-			<key>Action</key>
-			<integer>33</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
 			<key>Action</key>
 			<integer>0</integer>
-			<key>Text</key>
-			<string></string>
-		</dict>
-		<key>0xf703-0x320000</key>
-		<dict>
-			<key>Action</key>
-			<integer>34</integer>
 			<key>Text</key>
 			<string></string>
 		</dict>
@@ -1575,7 +1589,7 @@ Edit Tab Title</string>
 		<key>screenFrame</key>
 		<string>{{0, 0}, {1440, 932}}</string>
 		<key>topLeft</key>
-		<string>{504, 798}</string>
+		<string>{90, 782}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -1586,7 +1600,7 @@ Edit Tab Title</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>197</integer>
+	<integer>204</integer>
 	<key>NoSyncLoggingStyle</key>
 	<integer>0</integer>
 	<key>NoSyncNewTabFromTmuxOpensTmux</key>
