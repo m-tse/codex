@@ -9,6 +9,16 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Middle click to Mission Control",
+                        "manipulators": [
+                            {
+                                "from": { "pointing_button": "button3" },
+                                "to": [{ "apple_vendor_keyboard_key_code": "mission_control" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Control+B/F/N/P for arrow navigation (emacs-style), excluded in terminals",
                         "manipulators": [
                             {
@@ -212,6 +222,22 @@
                         "vendor_id": 1452
                     },
                     "ignore": true
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 50475,
+                        "vendor_id": 1133
+                    },
+                    "ignore_vendor_events": true
+                },
+                {
+                    "identifiers": {
+                        "is_pointing_device": true,
+                        "product_id": 50475,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false
                 }
             ],
             "name": "Default",
