@@ -115,4 +115,7 @@
   "git.blame.editorDecoration.enabled": true,
   "workbench.layoutControl.enabled": false,
   "window.restoreWindows": "none",
+  "cursorpyright.analysis.diagnosticSeverityOverrides": {
+    "reportMissingImports": "none"
+  }
 }
